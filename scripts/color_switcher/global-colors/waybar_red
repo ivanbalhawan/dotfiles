@@ -1,0 +1,4 @@
+@define-color Main rgb(243, 139, 168);
+@define-color Active rgb(205, 214, 244);
+@define-color Urgent rgb(249, 226, 175);
+

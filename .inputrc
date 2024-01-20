@@ -1,0 +1,18 @@
+$include /etc/inputrc
+set mark-directories on
+set mark-symlinked-directories
+
+set show-mode-in-prompt on
+set vi-cmd-mode-string "\1\e[1;31m\2[CMD] "
+set vi-ins-mode-string "\1\e[1;33m\2[INS] "
+
+set keyseq-timeout 0
+
+set colored-stats on
+set history-preserve-point on
+
+# Key bindings, up/down arrow searches through history
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+"\eOA": history-search-backward
+"\eOB": history-search-forward

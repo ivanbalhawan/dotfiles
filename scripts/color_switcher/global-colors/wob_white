@@ -1,0 +1,17 @@
+width = 240
+height = 40
+anchor = bottom
+margin = 240
+
+border_size = 2
+border_offset = 4
+
+border_color = cdd6f4
+bar_color = cdd6f4
+overflow_bar_color = f38ba8
+overflow_border_color = cdd6f4
+background_color = 11111b
+
+overflow_mode = wrap
+
+

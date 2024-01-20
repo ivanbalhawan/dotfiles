@@ -1,0 +1,10 @@
+font=Fira Code
+font-size=18
+indicator-radius=300
+text-color=d8dee9ff
+text-wrong-color=bf616aff
+inside-color=00000000
+inside-clear-color=00000000
+inside-ver-color=0000FF50
+inside-caps-lock-color=d08770ff
+color=2e3440

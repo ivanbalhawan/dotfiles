@@ -1,0 +1,33 @@
+window:
+  padding:
+    x: 10
+    y: 10
+font:
+  normal:
+    family: Iosevka Term
+    style: Regular
+  size: 13.5
+colors:
+  primary:
+    foreground: "#d8dee9"
+    background: "#2e3440"
+  normal:
+    black: "#2e3440"  # 
+    red: "#bf616a"  # 
+    green: "#a3be8c"  # 
+    yellow: "#ebcb8b"  # 
+    blue: "#5e81ac"  # 
+    magenta: "#b48ead"  # 
+    cyan: "#88c0d0"  # 
+    white: "#eceff4"  # 
+  bright:
+    black: "#2e3440"  # 
+    red: "#bf616a"  # 
+    green: "#a3be8c"  # 
+    yellow: "#ebcb8b"  # 
+    blue: "#5e81ac"  # 
+    magenta: "#b48ead"  # 
+    cyan: "#88c0d0"  # 
+    white: "#eceff4"  # 
+mouse:
+  hide_when_typing: true

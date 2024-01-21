@@ -53,7 +53,7 @@ export PAGER="/usr/bin/less"
 export MOZ_ENABLE_WAYLAND=1
 export WLR_DRM_NO_MODIFIERS=1
 export XDG_CURRENT_DESKTOP=sway
-export PATH="/home/ivan/.pyenv/bin:$PATH:/home/ivan/.local/bin:/home/ivan/dotfiles/scripts"
+export PATH="~/.pyenv/bin:$PATH:~/.local/bin:~/dotfiles/scripts"
 eval "$(pyenv init -)"
 
 # customize prompt
@@ -69,8 +69,8 @@ alias gl='git log --oneline --graph'
 alias gpsup='git push -u origin "$(git branch --show-current)"'
 alias connect='/usr/bin/nmcli connection up'
 alias volta-env='source ~/volta/dev/.volta-venv/bin/activate'
-alias shconf='nvim /home/ivan/.bashrc'
-alias swayconf='nvim /home/ivan/.config/sway/config'
+alias shconf='nvim ~/.bashrc'
+alias swayconf='nvim ~/.config/sway/config'
 
 alias ls="eza"
 alias ll="eza -lh"

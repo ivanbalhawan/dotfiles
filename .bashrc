@@ -59,10 +59,10 @@ eval "$(pyenv init -)"
 # customize prompt
 PS1=''
 PS1=$PS1'\[\033[1;36m\]\u'
-PS1=$PS1'\[\033[1;34m\]@'
-PS1=$PS1'\[\033[1;34m\]\H'
-PS1=$PS1'\[\033[1;35m\] \W\n'
-export PS1=$PS1'\[\033[1;33m\]λ \[\033[0;37m\]'
+PS1=$PS1'\[\033[34m\]@'
+PS1=$PS1'\[\033[34m\]\H'
+PS1=$PS1'\[\033[35m\] \W\n'
+export PS1=$PS1'\[\033[33m\]λ \[\033[0;37m\]'
 
 ### Define Aliases ###
 alias gl='git log --oneline --graph'

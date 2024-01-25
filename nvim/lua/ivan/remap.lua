@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>tt", vim.cmd.NvimTreeToggle)
 vim.keymap.set("n", "<leader><space>", vim.cmd.nohlsearch)
-vim.keymap.set("n", "<leader>ww", vim.cmd.VimwikiIndex)
+-- vim.keymap.set("n", "<leader>ww", vim.cmd.VimwikiIndex)
 
 vim.keymap.set("n", "j", "gj")
 vim.keymap.set("n", "k", "gk")

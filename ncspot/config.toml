@@ -1,0 +1,21 @@
+use_nerdfont = true
+
+[track_format]
+left = "%title - %artists"
+center = "%album"
+right = "%saved %duration"
+
+[keybindings]
+"Space" = "playpause"
+"Shift+p" = "noop"
+"h" = "move left 1"
+"j" = "move down 1"
+"k" = "move up 1"
+"l" = "move right 1"
+"Shift+h" = "previous"
+"Shift+l" = "next"
+"/" = "search"
+"Shift+r" = "reload"
+"g" = "move top"
+"G" = "move bottom"
+

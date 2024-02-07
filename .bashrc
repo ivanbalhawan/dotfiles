@@ -35,6 +35,7 @@ source /usr/share/bash-completion/completions/nmcli
 source /usr/share/bash-completion/completions/rc-update
 source /usr/share/bash-completion/completions/rc-status
 source /usr/share/bash-completion/completions/rc-service
+source /usr/share/bash-completion/completions/sftp
 
 # source /usr/share/bash-completion/completions/systemctl
 # source /usr/share/fzf/completion.bash
@@ -44,7 +45,6 @@ source /usr/share/fzf/key-bindings.bash
 HISTSIZE=-1
 HISTFILESIZE=-1
 export IPYTHONDIR="$HOME/.config/ipython"
-export PYENV_ROOT="$HOME/.pyenv"
 export VISUAL_EDITOR="/usr/bin/nvim"
 export GIT_EDITOR="/usr/bin/nvim"
 export EDITOR="/usr/bin/nvim"
@@ -53,8 +53,12 @@ export PAGER="/usr/bin/less"
 export MOZ_ENABLE_WAYLAND=1
 export WLR_DRM_NO_MODIFIERS=1
 export XDG_CURRENT_DESKTOP=sway
-export PATH="~/.pyenv/bin:$PATH:~/.local/bin:~/dotfiles/scripts"
+
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+
+export PATH="$PATH:~/.local/bin:~/dotfiles/scripts"
 
 # customize prompt
 PS1=''
@@ -65,6 +69,7 @@ PS1=$PS1'\[\033[35m\] \W\n'
 export PS1=$PS1'\[\033[33m\]λ \[\033[0;37m\]'
 
 ### Define Aliases ###
+alias upscale='gamescope -h 1080 -H 1440 -F fsr --fsr-sharpness 0 -f'
 alias gl='git log --oneline --graph'
 alias gpsup='git push -u origin "$(git branch --show-current)"'
 alias connect='/usr/bin/nmcli connection up'

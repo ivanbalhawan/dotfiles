@@ -31,6 +31,7 @@ shadows_on_csd on
 shadow_blur_radius 20
 default_dim_inactive 0.1
 corner_radius 8
+blur enable
 # smart_corner_radius on
 # 
 ### Variables
@@ -122,8 +123,8 @@ exec swayidle -w
     # Start a terminal
     bindsym $mod+Shift+I saturation minus 0.25
     bindsym $mod+Shift+O saturation plus 0.25
-    bindsym $mod+greater opacity plus 0.2
-    bindsym $mod+less opacity minus 0.2
+    bindsym $mod+greater opacity plus 0.1
+    bindsym $mod+less opacity minus 0.1
     bindsym $mod+O exec "killall -SIGUSR1 waybar"
     bindsym $mod+Return exec $term
     # bindsym $mod+Shift+Return exec foot
@@ -480,6 +481,7 @@ for_window [app_id="imv"]: {
 for_window [app_id=".*transmission.*"] floating enable
 for_window [app_id="wdisplays"] floating enable
 for_window [app_id="klavaro"] floating enable
+for_window [app_id="thunderbird"] floating enable
 
 
 # Steam tweaks

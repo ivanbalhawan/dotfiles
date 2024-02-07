@@ -10,5 +10,11 @@ require('neorg').setup {
                 },
             },
         },
+        ["core.keybinds"] = {
+            config = {
+                default_keybinds = true,
+            },
+        },
+        ["core.integrations.telescope"] = {},
     }
 }

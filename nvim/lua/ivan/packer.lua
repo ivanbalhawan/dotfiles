@@ -11,7 +11,7 @@ return require('packer').startup(function(use)
     use {
         "nvim-neorg/neorg",
         run = ":Neorg sync-parsers",
-        requires = "nvim-lua/plenary.nvim",
+        requires = { "nvim-lua/plenary.nvim", "nvim-neorg/neorg-telescope" },
     }
     -- Highlight TODO
 	use({
@@ -42,9 +42,19 @@ return require('packer').startup(function(use)
 
     use { "rcarriga/nvim-notify" }
 
-    use ({'ms-jpq/coq_nvim', branch='coq'})
-    use ({'ms-jpq/coq.artifacts', branch='artifacts'})
-    use ({'ms-jpq/coq.thirdparty', branch='3p'})
+    use {
+        "hrsh7th/nvim-cmp",
+        "hrsh7th/cmp-vsnip",
+        "hrsh7th/vim-vsnip",
+        "hrsh7th/cmp-buffer",
+        "hrsh7th/cmp-path",
+        "hrsh7th/cmp-cmdline",
+        "hrsh7th/cmp-nvim-lsp",
+    }
+
+    -- use ({'ms-jpq/coq_nvim', branch='coq'})
+    -- use ({'ms-jpq/coq.artifacts', branch='artifacts'})
+    -- use ({'ms-jpq/coq.thirdparty', branch='3p'})
 
     use {
         "williamboman/mason.nvim",
@@ -52,7 +62,7 @@ return require('packer').startup(function(use)
         "neovim/nvim-lspconfig"
     }
 
-    use 'vimwiki/vimwiki'
+    -- use 'vimwiki/vimwiki'
 
     use 'lervag/vimtex'
 

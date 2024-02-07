@@ -26,3 +26,6 @@ vim.keymap.set("n", "<leader>ss", ":s/")
 vim.keymap.set("n", "<leader>S", ":%s/")
 
 vim.keymap.set("n", "<leader>w", "<c-w>")
+
+vim.keymap.set('n', '<leader>nw', ':Telescope neorg switch_workspace<CR>')
+

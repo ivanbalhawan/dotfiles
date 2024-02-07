@@ -1,38 +1,39 @@
 require("mason").setup()
 require("mason-lspconfig").setup()
 local lsp = require "lspconfig"
-local coq = require "coq"
 local telescope_builtin = require("telescope.builtin")
 
 
 -- Configure Lua LSP for neovim configuration
-lsp.lua_ls.setup(coq.lsp_ensure_capabilities({}))
+-- lsp.lua_ls.setup(coq.lsp_ensure_capabilities({}))
 -- Configure GDScript LSP for Godot development
-lsp.gdscript.setup(
-    coq.lsp_ensure_capabilities({
+
+-- Set up lspconfig.
+local cmp_capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+require('lspconfig').lua_ls.setup {
+    capabilities = cmp_capabilities
+}
+
+lsp.gdscript.setup({
     flags= {
         debounce_text_changes = 150,
     }
-}))
--- Configure Python LSP
-lsp.pylsp.setup(
-    coq.lsp_ensure_capabilities({
-        single_file_support = false,
-        settings = {
-            pylsp = {
-                plugins = {
-                    pycodestyle = {
-                        enabled = false,
-                    },
-                }
+})
+
+lsp.pylsp.setup({
+    -- single_file_support = false,
+    capabilities = cmp_capabilities,
+    settings = {
+        pylsp = {
+            plugins = {
+                pycodestyle = {
+                    maxLineLength = 100
+                },
             }
         }
-    })
-)
-
-lsp.clangd.setup(
-    coq.lsp_ensure_capabilities({})
-)
+    }
+})
 
 
 -- Use LspAttach autocommand to only map the following keys

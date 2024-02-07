@@ -25,6 +25,7 @@ vim.keymap.set('n', '<leader>ft', builtin.filetypes, {})
 vim.keymap.set('n', '<leader>fm', builtin.marks, {})
 vim.keymap.set('n', '<leader>fM', builtin.keymaps, {})
 
+
 -- vim.keymap.set('n', '<leader>fs', function()
 	-- builtin.grep_string({ search = vim.fn.input("Grep > ") });
 -- end)

@@ -69,7 +69,7 @@ PS1=$PS1'\[\033[35m\] \W\n'
 export PS1=$PS1'\[\033[33m\]λ \[\033[0;37m\]'
 
 ### Define Aliases ###
-alias upscale='gamescope -h 1080 -H 1440 -F fsr --fsr-sharpness 0 -f'
+alias upscale='gamescope -h 1080 -H 1440 -F fsr -f'
 alias gl='git log --oneline --graph'
 alias gpsup='git push -u origin "$(git branch --show-current)"'
 alias connect='/usr/bin/nmcli connection up'

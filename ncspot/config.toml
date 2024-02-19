@@ -6,6 +6,7 @@ center = "%album"
 right = "%saved %duration"
 
 [keybindings]
+"Esc" = "back"
 "Space" = "playpause"
 "Shift+p" = "noop"
 "h" = "move left 1"

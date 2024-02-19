@@ -1,3 +1,5 @@
+vim.g.statusline = "%-{y} %-{f} %-{m} %-{h} %-{r}"
+
 vim.opt.formatoptions = "cqj"
 -- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1
@@ -52,3 +54,5 @@ vim.opt.foldmethod = "indent"
 vim.opt.foldlevel = 1000
 
 vim.opt.textwidth = 120
+
+

@@ -137,7 +137,8 @@ exec swayidle -w
     # Start your launcher
     # bindsym $mod+r exec $menu
     # bindsym $mod+r exec "wofi -S drun -G"
-    bindsym $mod+r exec "/home/ivan/dotfiles/scripts/toggle-fuzzel.sh"
+    # bindsym $mod+r exec "/home/ivan/dotfiles/scripts/toggle-fuzzel.sh"
+    bindcode --release 133 exec "/home/ivan/dotfiles/scripts/toggle-fuzzel.sh"
     bindsym $mod+u exec "bemenu-run -c"
 
     # Start your browser
@@ -213,8 +214,10 @@ exec swayidle -w
     bindgesture swipe:4:left exec /home/ivan/dotfiles/scripts/sway-change-workspace.sh next
     bindgesture pinch:3:inward exec /home/ivan/dotfiles/scripts/enable-floating-sway.sh
     bindgesture pinch:3:outward floating disable
-    bindgesture swipe:3:down move scratchpad
-    bindgesture swipe:3:up scratchpad show
+    bindgesture swipe:3:down focus output down
+    bindgesture swipe:3:up focus output up
+    bindgesture swipe:4:down move workspace output down
+    bindgesture swipe:4:up move workspace output up
     bindgesture hold:3 exec killall -SIGUSR1 waybar
     # Move your focus around
     bindsym $mod+$left focus left
@@ -229,8 +232,12 @@ exec swayidle -w
 
     bindsym $mod+bracketleft focus output left
     bindsym $mod+bracketright focus output right
+    bindsym $mod+apostrophe focus output up
+    bindsym $mod+semicolon focus output down
     bindsym $mod+Shift+bracketleft move workspace to output left
     bindsym $mod+Shift+bracketright move workspace to output right
+    bindsym $mod+Shift+apostrophe move workspace to output up
+    bindsym $mod+Shift+semicolon move workspace to output down
 
 
     # Move the focused window with the same, but add Shift
@@ -323,8 +330,8 @@ exec swayidle -w
 
     # Switch the current container between different layout styles
     bindsym $mod+s exec swaymsg sticky toggle
-    # bindsym $mod+w layout tabbed
-    # bindsym $mod+e layout toggle split
+    bindsym $mod+w layout tabbed
+    bindsym $mod+e layout toggle split
 
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
@@ -361,6 +368,8 @@ mode "lock" {
 
 bindsym $mod+m mode "move"
 mode "move" {
+    # mouse?
+    bindsym --whole-window button1 move position mouse
     bindsym $left move left 30px
     bindsym $up move up 30px
     bindsym $right move right 30px
@@ -410,7 +419,7 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 
-bindsym $mod+Shift+r mode "resize"
+bindsym $mod+r mode "resize"
 
 bar {
     swaybar_command waybar
@@ -455,10 +464,14 @@ for_window [urgent=recent] focus
 for_window [app_id="lutris"] floating enable
 for_window [title="Blender Preferences"] floating enable
 for_window [title="OpenRGB"] floating enable
+for_window [app_id="OpenRGB"] floating enable
 for_window [instance="Godot_Engine"] floating enable
 for_window [class="Godot*"] floating enable
 for_window [title="Text Import*"] floating enable
-for_window [title="Firefox — Sharing Indicator"] floating enable
+for_window [title="Firefox — Sharing Indicator"]: {
+    floating enable
+    move position 240 px 50px
+}
 # for_window [title="Open"] floating enable
 for_window [title=("*(DEBUG)")] floating enable
 for_window [app_id="mpv"] floating enable
@@ -485,6 +498,7 @@ for_window [app_id="thunderbird"] floating enable
 
 
 # Steam tweaks
+for_window [class="^Steam$"] move workspace 9
 for_window [class="^Steam$" title="^Friends$"] floating enable
 for_window [class="^Steam$" title="Steam - News"] floating enable
 for_window [class="^Steam$" title=".* - Chat"] floating enable

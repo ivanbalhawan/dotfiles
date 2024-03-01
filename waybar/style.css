@@ -24,7 +24,7 @@
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Symbols Nerd Font, Cairo, Iceberg, FiraCode, Goldman, Gruppo, terminus, Roboto, Helvetica, Arial, sans-serif;
+    font-family: Symbols Nerd Font, Cairo;
     font-weight: normal;
     min-width: 25px;
     /*background-color: transparent;*/

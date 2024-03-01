@@ -21,18 +21,18 @@ lsp.gdscript.setup({
     }
 })
 
-lsp.pyright.setup({
+lsp.pylsp.setup({
     -- single_file_support = false,
     capabilities = cmp_capabilities,
-    -- settings = {
-    --     pylsp = {
-    --         plugins = {
-    --             pycodestyle = {
-    --                 maxLineLength = 100
-    --             },
-    --         }
-    --     }
-    -- }
+    settings = {
+        pylsp = {
+            plugins = {
+                pycodestyle = {
+                    maxLineLength = 100
+                },
+            }
+        }
+    }
 })
 
 

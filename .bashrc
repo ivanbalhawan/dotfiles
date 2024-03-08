@@ -82,6 +82,9 @@ alias ll="eza -lh"
 alias la="eza -lAh"
 alias tree="eza -T --level=3"
 
+alias wifi-show="nmcli device wifi rescan && sleep 1 && nmcli device wifi list"
+alias wifi-connect="nmcli device wifi connect"
+
 
 # Shell integration for Foot term
 # osc7_cwd() {

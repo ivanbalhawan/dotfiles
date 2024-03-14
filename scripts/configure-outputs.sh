@@ -17,8 +17,8 @@ then
     swaymsg output $edp pos 3640 0 mode 1920x1080@240Hz
 elif [[ -n $dp ]]
 then
-    swaymsg output $dp pos 0 0 mode 2560x1440@165Hz adaptive_sync on
-    swaymsg output $edp pos 2560 0 mode 1920x1080@240Hz
+    swaymsg output $edp pos 0 0 mode 1920x1080@240Hz
+    swaymsg output $dp pos 1920 0 mode 2560x1440@165Hz adaptive_sync on
 elif [[ -n $hdmi ]]
 then
     swaymsg output $edp pos 0 0 mode 1920x1080@240Hz

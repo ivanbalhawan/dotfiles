@@ -19,4 +19,5 @@ right = "%saved %duration"
 "Shift+r" = "reload"
 "g" = "move top"
 "G" = "move bottom"
+"d" = "noop"
 

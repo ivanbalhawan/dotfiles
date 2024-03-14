@@ -63,13 +63,13 @@ window#waybar.empty #window {
   /*color: @nord0*/
 }
 .modules-right {
-  border-radius: 8px;
+  border-radius: 0px;
 }
 .modules-center {
-  border-radius: 8px;
+  border-radius: 0px;
 }
 .modules-left {
-  border-radius: 8px;
+  border-radius: 0px;
 }
 /*
 window#waybar.empty {
@@ -93,7 +93,7 @@ window#waybar.chromium {
     font-family: Cairo;
     background-color: @nord2;
     border: 2px solid @nord1;
-    border-radius: 8px;
+    border-radius: 0px;
     margin-left: 0px;
     margin-top: 8px;
     margin-bottom: 8px;
@@ -114,7 +114,7 @@ window#waybar.chromium {
     /* Avoid rounded borders under each workspace name */
     border: none;
     border-bottom: 2px solid @nord15;
-    border-radius: 2px;
+    border-radius: 0px;
     margin-left: 12px;
     margin-right: 12px;
     margin-bottom: 0px;
@@ -129,7 +129,7 @@ window#waybar.chromium {
 
 #workspaces button.focused {
   border-bottom: 3px solid @nord8;
-  border-radius: 2px;
+  border-radius: 0px;
 }
 
 #workspaces button.focused.current_output {
@@ -163,7 +163,7 @@ window#waybar.chromium {
 #bluetooth,
 #custom-launcher,
 #custom-nightlight,
-#custom-notificationcenter,
+#custom-dnd,
 #clock,
 #cpu,
 #memory,
@@ -182,7 +182,7 @@ window#waybar.chromium {
 }
 
 #tray {
-    border-radius: 8px;
+    border-radius: 0px;
     border: 2px solid @nord1;
     background-color: @nord2;
     margin-top: 8px;
@@ -190,7 +190,7 @@ window#waybar.chromium {
 }
 
 #hardware {
-    border-radius: 8px;
+    border-radius: 0px;
     border: 2px solid @nord1;
     background-color: @nord2;
     color: @nord12;
@@ -199,7 +199,7 @@ window#waybar.chromium {
 }
 
 #audio {
-    border-radius: 8px;
+    border-radius: 0px;
     border: 2px solid @nord1;
     background-color: @nord2;
     color: @nord13;
@@ -208,7 +208,7 @@ window#waybar.chromium {
 }
 
 #video {
-    border-radius: 8px;
+    border-radius: 0px;
     border: 2px solid @nord1;
     background-color: @nord2;
     color: @nord8;
@@ -267,14 +267,14 @@ button:hover {
     margin-left: 10px;
     margin-top: 8px;
     margin-bottom: 8px;
-    border-radius: 8px;
+    border-radius: 0px;
     color: @nord6;
-    border: 1px solid @nord1;
+    border: 2px solid @nord1;
     background-color: @nord15;
 }
 
 #clock {
-    border-radius: 8px;
+    border-radius: 0px;
     border: 2px solid @nord1;
     background-color: @nord2;
     color: @nord4;
@@ -289,7 +289,7 @@ button:hover {
 
 
 #battery {
-    border-radius: 8px;
+    border-radius: 0px;
     margin-top: 8px;
     margin-bottom: 8px;
     margin-right: 12px;
@@ -326,7 +326,7 @@ label:focus {
 }
 
 #connectivity {
-    border-radius: 8px;
+    border-radius: 0px;
     border: 2px solid @nord1;
     background-color: @nord2;
     color: @nord15;

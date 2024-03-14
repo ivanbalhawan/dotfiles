@@ -76,14 +76,15 @@ alias connect='/usr/bin/nmcli connection up'
 alias volta-env='source ~/volta/dev/.volta-venv/bin/activate'
 alias shconf='nvim ~/.bashrc'
 alias swayconf='nvim ~/.config/sway/config'
+alias riverconf='nvim ~/.config/river/init'
+alias hyprconf='nvim ~/.config/hypr/hyprland.conf'
 
 alias ls="eza"
 alias ll="eza -lh"
 alias la="eza -lAh"
 alias tree="eza -T --level=3"
 
-alias wifi-show="nmcli device wifi rescan && sleep 1 && nmcli device wifi list"
-alias wifi-connect="nmcli device wifi connect"
+alias wifi="nmcli device wifi"
 
 
 # Shell integration for Foot term

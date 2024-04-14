@@ -82,7 +82,7 @@ alias hyprconf='nvim ~/.config/hypr/hyprland.conf'
 alias ls="eza"
 alias ll="eza -lh"
 alias la="eza -lAh"
-alias tree="eza -T --level=3"
+alias tree="eza -T"
 
 alias wifi="nmcli device wifi"
 
@@ -113,3 +113,4 @@ ranger() {
         exit
     fi
 }
+eval "$(zoxide init bash)"

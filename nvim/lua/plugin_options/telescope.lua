@@ -14,11 +14,9 @@ require("telescope").setup({
 				["<m-j>"] = "results_scrolling_down",
 				["<m-k>"] = "results_scrolling_up",
 				["<m-l>"] = "results_scrolling_right",
-				["<c-i>"] = "which_key",
 			},
 			n = {
 				["<c-q>"] = actions.smart_send_to_qflist + actions.open_qflist,
-				["<c-i>"] = "which_key",
 				["<c-h>"] = "preview_scrolling_left",
 				["<c-j>"] = "preview_scrolling_down",
 				["<c-k>"] = "preview_scrolling_up",

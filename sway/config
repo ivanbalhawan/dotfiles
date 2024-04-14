@@ -1,5 +1,7 @@
+include colors
+
 # Define Global Variables
-set $mod Mod1
+set $mod Mod4
 set $left h
 set $down j
 set $up k
@@ -9,11 +11,6 @@ set $browser firefox
 
 # Set Theme/Colorscheme/etc.
 ### Colors
-set $bgcolor #434c5e
-set $focused #88c0d0
-set $unfocused #4c566a
-set $indicator #5e81ac
-set $urgent #d08770
 set $gtk-theme Adwaita-dark
 set $gnome-schema org.gnome.desktop.interface
 
@@ -23,14 +20,38 @@ exec {
      gsettings set $gnome-schema cursor-theme 'Bibata-Original-Classic'
      gsettings set $gnome-schema cursor-size 14
      gsettings set $gnome-schema font-name "Cairo 14"
+     gsettings set $gnome-schema text-scaling-factor 0.85
 }
 seat seat0 xcursor_theme Bibata-Original-Classic 14
 
 
-client.focused $focused $bgcolor $focused $indicator $focused
-client.urgent $urgent $bgcolor $urgent $urgent $urgent
-client.focused_inactive $unfocused $bgcolor $unfocused $unfocused $unfocused
-client.unfocused $unfocused $bgcolor $unfocused $unfocused $unfocused
+client.focused \
+    $color-nord-frost-2 \
+    $color-nord-dark-1 \
+    $color-nord-frost-2 \
+    $color-nord-yellow \
+    $color-nord-frost-2
+
+client.urgent \
+    $color-nord-orange \
+    $color-nord-dark-1 \
+    $color-nord-orange \
+    $color-nord-orange \
+    $color-nord-orange
+
+client.focused_inactive \
+    $color-nord-dark-1 \
+    $color-nord-dark-1 \
+    $color-nord-dark-1 \
+    $color-nord-dark-1 \
+    $color-nord-dark-1
+
+client.unfocused \
+    $color-nord-dark-1 \
+    $color-nord-dark-1 \
+    $color-nord-dark-1 \
+    $color-nord-dark-1 \
+    $color-nord-dark-1
 
 # Set Layout Options
 gaps outer 10
@@ -51,7 +72,7 @@ set $mic_mute XF86AudioMicMute
 
 
 output * bg /home/ivan/Pictures/wallpapers/poos_wallpapers/poos_nord.png fill
-exec_always "/home/ivan/dotfiles/scripts/configure-outputs.sh"
+exec "/home/ivan/dotfiles/scripts/configure-outputs.sh auto"
 
 
 exec --no-startup-id dbus-update-activation-environment --all
@@ -62,6 +83,8 @@ exec "gentoo-pipewire-launcher restart"
 exec wl-paste -t text --watch clipman store 
 
 ### Input configuration
+input "1356:1476:Wireless_Controller_Touchpad" events disabled
+input "1356:1476:Sony_Computer_Entertainment_Wireless_Controller_Touchpad" events disabled
 input "1739:32382:PNP0C50:0e_06CB:7E7E_Touchpad" {
     dwt enabled
     drag enabled
@@ -76,30 +99,30 @@ input * {
 }
 
 
-bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+bindsym $mod+Shift+e exec swaynag -t default -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 bindsym $mod+Shift+c reload
-bindsym $mod+Return exec $term
-bindsym $mod+KP_Enter exec $term
+bindsym $mod+t exec $term
 bindsym $mod+q kill
 
-bindsym $mod+t exec "$term -e ranger"
+# bindsym $mod+t exec "$term -e ranger"
 bindsym --no-repeat $mod+b exec $browser
 bindsym Control+Shift+Escape exec "$term -e btop"
 
-bindsym $mod+greater opacity plus 0.1
-bindsym $mod+less opacity minus 0.1
-
 bindsym --no-repeat $mod+F7 exec openrgb
-bindcode --release 133 exec "pkill fuzzel || fuzzel --no-exit-on-keyboard-focus-loss"
+# bindcode --release 133 exec "pkill fuzzel || fuzzel --no-exit-on-keyboard-focus-loss"
+bindsym  $mod+Return exec "pkill fuzzel || fuzzel --no-exit-on-keyboard-focus-loss"
 bindsym $mod+O exec "killall -SIGUSR1 waybar"
-bindsym --no-repeat $mod+F11 exec wdisplays
+bindsym --no-repeat $mod+Shift+F11 exec wdisplays
+bindsym --no-repeat $mod+F11 exec "~/dotfiles/scripts/configure-outputs.sh"
+bindsym --no-repeat $mod+Mod1+F11 exec "~/dotfiles/scripts/configure-outputs.sh auto"
 
 bindsym Print exec "grim"
 bindsym Shift+Print exec "slurp | grim -g -"
 bindsym $mod+Print exec "slurp | grim -g - - | swappy -f -"
 
 bindsym $mod+F4 exec "/home/ivan/dotfiles/scripts/dwt-toggle.sh"
-bindsym --no-repeat $mod+F8 exec "/home/ivan/dotfiles/scripts/color_switcher/color_switcher.py -k"
+bindsym --no-repeat $mod+F8 exec "/home/ivan/dotfiles/scripts/rgb-picker.sh"
+bindsym --no-repeat $mod+Shift+F8 exec "/home/ivan/dotfiles/scripts/color_switcher/color_switcher.py -k"
 bindsym $mod+F9 exec light -U 5
 bindsym $mod+F10 exec light -A 5
 bindsym $mod+F3 exec "/home/ivan/dotfiles/scripts/change-volume.sh @DEFAULT_AUDIO_SINK@ 5%+"
@@ -113,18 +136,17 @@ bindsym $mod+F1 exec "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 bindsym $mic_mute exec "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
 bindsym $mod+F5 exec "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
 bindsym XF86AudioPlay exec "playerctl play-pause"
+bindsym XF86AudioPause exec "playerctl play-pause"
 bindsym Pause exec "playerctl play-pause"
 bindsym XF86AudioPrev exec "playerctl next"
 bindsym XF86AudioNext exec "playerctl previous"
 
-bindsym $mod+c splith
-bindsym $mod+v splitv
-
-bindsym $mod+s exec swaymsg sticky toggle
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+v split toggle
+bindsym $mod+s layout toggle split
+bindsym $mod+w layout toggle tabbed split
 bindsym $mod+f fullscreen
 bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+s exec swaymsg sticky toggle
 bindsym $mod+space focus mode_toggle
 
 bindsym $mod+a focus parent
@@ -155,10 +177,10 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-bindsym $mod+bracketleft focus output left
-bindsym $mod+bracketright focus output right
-bindsym $mod+Shift+bracketleft move workspace to output left
-bindsym $mod+Shift+bracketright move workspace to output right
+bindsym $mod+comma focus output left
+bindsym $mod+period focus output right
+bindsym $mod+less move workspace to output left
+bindsym $mod+greater move workspace to output right
 
 bindsym $mod+left focus output left
 bindsym $mod+down focus output down
@@ -303,19 +325,14 @@ for_window [title=("*(DEBUG)")] floating enable
 for_window [app_id="mpv"] floating enable
 for_window [app_id="pavucontrol"]: {
     floating enable
-    move position 1161 px -5 px
-    resize set width 725 px
-    resize set height 492 px
+    resize set width 35 ppt
+    resize set height 25 ppt
+    # move absolute position center
+    move position 63 ppt -5 px
 }
 for_window [title="Sign In*"] floating enable
-for_window [app_id="nm-connection-editor"]: {
-    floating enable
-    move absolute position 1299 px 53 px
-}
 for_window [app_id="blueman-manager"] floating enable
-for_window [app_id="imv"]: {
-    floating enable
-}
+for_window [app_id="imv"] floating enable
 for_window [app_id=".*transmission.*"] floating enable
 for_window [title="Torrent Options" app_id=".*transmission.*"] focus
 for_window [app_id="wdisplays"] floating enable

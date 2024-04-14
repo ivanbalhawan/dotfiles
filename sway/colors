@@ -1,7 +1,30 @@
-set $focused #cdd6f4
-set $urgent #f38ba8
-set $unfocused #585b70
+set $bgcolor #434c5e
+set $focused #88c0d0
+set $unfocused #4c566a
+set $indicator #5e81ac
+set $urgent #d08770
 
-set $gtk-theme 'Catppuccin-Mocha-Standard-Sapphire-Dark'
+# dark nord colors
+set $color-nord-dark0 #2e3440
+set $color-nord-dark-1 #3b4252
+set $color-nord-dark-2 #434c5e
+set $color-nord-dark-3 #4c566a
 
-output * bg /home/ivan/Pictures/wallpapers/poos_blue.png fill
+# light nord colors
+set $color-nord-light-0 #d8dee9
+set $color-nord-light-1 #e5e9f0
+set $color-nord-light-2 #eceff4
+
+# frost nord colors
+set $color-nord-frost-0 #8fbcbb
+set $color-nord-frost-1 #88c0d0
+set $color-nord-frost-2 #81a1c1
+set $color-nord-frost-3 #5e81ac
+
+# aurora nord colors
+set $color-nord-red #bf616a
+set $color-nord-orange #d08770
+set $color-nord-yellow #ebcb8b
+set $color-nord-green #a3be8c
+set $color-nord-magenta #b48ead
+

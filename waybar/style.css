@@ -16,15 +16,15 @@
 @define-color nord10 #5e81ac;
 
 /* aurora nord colors */
-@define-color nord11 #bf616a;
-@define-color nord12 #d08770;
-@define-color nord13 #ebcb8b;
-@define-color nord14 #a3be8c;
-@define-color nord15 #b48ead;
+@define-color nord11 #bf616a; /* red */
+@define-color nord12 #d08770; /* orange */
+@define-color nord13 #ebcb8b; /* yellow */
+@define-color nord14 #a3be8c; /* green */
+@define-color nord15 #b48ead; /* magenta */
 
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: Symbols Nerd Font, Cairo;
+    font-family: Cairo, Iosevka Nerd Font Propo;
     font-weight: normal;
     min-width: 25px;
     /*background-color: transparent;*/
@@ -175,6 +175,7 @@ window#waybar.chromium {
 #custom-media,
 #tray,
 #mode,
+#mpris,
 #idle_inhibitor,
 #window,
 #mpd {
@@ -205,6 +206,11 @@ window#waybar.chromium {
     color: @nord13;
     margin-top: 8px;
     margin-bottom: 8px;
+}
+
+
+#mpris {
+    padding: 0 10px;
 }
 
 #video {
@@ -297,9 +303,6 @@ button:hover {
     background-color: @nord2;
     color: @nord14;
 }
-#battery.charging, #battery.plugged, #battery.full {
-    color: @nord14;
-}
 
 @keyframes blink {
     to {
@@ -337,6 +340,7 @@ label:focus {
 #network.disconnected {
     color: @nord12;
 }
+
 
 #pulseaudio {
   font-size: 18px;

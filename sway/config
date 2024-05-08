@@ -14,6 +14,8 @@ set $browser firefox
 set $gtk-theme Adwaita-dark
 set $gnome-schema org.gnome.desktop.interface
 
+exec_always /home/ivan/.config/waybar/launch-waybar.sh &
+
 exec {
      gsettings set $gnome-schema gtk-theme $gtk-theme
      gsettings set $gnome-schema icon-theme 'Papirus-Dark'
@@ -85,6 +87,8 @@ exec wl-paste -t text --watch clipman store
 ### Input configuration
 input "1356:1476:Wireless_Controller_Touchpad" events disabled
 input "1356:1476:Sony_Computer_Entertainment_Wireless_Controller_Touchpad" events disabled
+input "1:1:AT_Translated_Set_2_keyboard" xkb_layout "us(colemak_dh)"
+input "1:1:AT_Translated_Set_2_keyboard" xkb_options altwin:swap_alt_win
 input "1739:32382:PNP0C50:0e_06CB:7E7E_Touchpad" {
     dwt enabled
     drag enabled
@@ -94,12 +98,7 @@ input "1739:32382:PNP0C50:0e_06CB:7E7E_Touchpad" {
     scroll_factor 0.25
 }
 
-input * {
-    repeat_rate 35
-}
-
-
-bindsym $mod+Shift+e exec swaynag -t default -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+bindsym $mod+Shift+e exec swaynag -t  warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 bindsym $mod+Shift+c reload
 bindsym $mod+t exec $term
 bindsym $mod+q kill
@@ -299,12 +298,6 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-
-bar {
-    swaybar_command waybar
-}
-
-
 
 for_window [app_id="piper"] floating enable
 for_window [app_id="gamescope"] move workspace 9

@@ -69,6 +69,8 @@ PS1=$PS1'\[\033[35m\] \W\n'
 export PS1=$PS1'\[\033[33m\]λ \[\033[0;37m\]'
 
 ### Define Aliases ###
+alias fetch="fastfetch --config ~/.local/share/fastfetch/presets/custom.jsonc"
+alias icat="kitten icat"
 alias upscale='gamescope -h 1080 -H 1440 -F fsr -f'
 alias gl='git log --oneline --graph'
 alias gpsup='git push -u origin "$(git branch --show-current)"'
@@ -83,6 +85,8 @@ alias ls="eza"
 alias ll="eza -lh"
 alias la="eza -lAh"
 alias tree="eza -T"
+alias cd="z"
+alias pygrep="rg -t python"
 
 alias wifi="nmcli device wifi"
 

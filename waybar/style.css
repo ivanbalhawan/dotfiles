@@ -30,13 +30,6 @@
     /*background-color: transparent;*/
 }
 
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 20px;
-}
-.modules-left > widget:last-child > #workspaces {
-    margin-right: 20px;
-}
 
 window#waybar {
   background-color: transparent;
@@ -157,6 +150,13 @@ window#waybar.chromium {
     text-shadow: inherit;
 }
 
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 20px;
+}
+.modules-left > widget:last-child > #workspaces {
+    margin-right: 20px;
+}
 
 
 #battery,

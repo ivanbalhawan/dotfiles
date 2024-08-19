@@ -74,7 +74,7 @@ c = get_config()  #noqa
 #          the default matplotlib backend.
 #  Choices: any of ['auto', 'agg', 'gtk', 'gtk3', 'gtk4', 'inline', 'ipympl', 'nbagg', 'notebook', 'osx', 'pdf', 'ps', 'qt', 'qt4', 'qt5', 'qt6', 'svg', 'tk', 'webagg', 'widget', 'wx'] (case-insensitive) or None
 #  Default: None
-# c.InteractiveShellApp.matplotlib = None
+c.InteractiveShellApp.matplotlib = None
 
 ## Run the module as a script.
 #  Default: ''
@@ -248,7 +248,7 @@ c = get_config()  #noqa
 
 ## Execute the given command string.
 #  See also: InteractiveShellApp.code_to_run
-# c.TerminalIPythonApp.code_to_run = ''
+# c.TerminalIPythonApp.code_to_run = '%load_ext autoreload; %autoreload 2'
 
 ## Whether to install the default config files into the profile dir.
 #  See also: BaseIPythonApplication.copy_config_files
@@ -439,7 +439,7 @@ c.InteractiveShell.autoindent = True
 ## Set the color scheme (NoColor, Neutral, Linux, or LightBG).
 #  Choices: any of ['Neutral', 'NoColor', 'LightBG', 'Linux'] (case-insensitive)
 #  Default: 'Neutral'
-# c.InteractiveShell.colors = 'Neutral'
+c.InteractiveShell.colors = 'Linux'
 
 #  Default: False
 # c.InteractiveShell.debug = False

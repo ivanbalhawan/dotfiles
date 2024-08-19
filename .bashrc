@@ -85,7 +85,6 @@ alias ls="eza"
 alias ll="eza -lh"
 alias la="eza -lAh"
 alias tree="eza -T"
-alias cd="z"
 alias pygrep="rg -t python"
 
 alias wifi="nmcli device wifi"
@@ -118,3 +117,6 @@ ranger() {
     fi
 }
 eval "$(zoxide init bash)"
+z () {
+    __zoxide_z "$@" && pwd
+}

@@ -1,21 +1,24 @@
 include colors
 
 # Define Global Variables
+set $meh Control+Mod1+Shift
 set $mod Mod4
 set $left h
 set $down j
 set $up k
 set $right l
-set $term alacritty
+set $term kitty
 set $browser firefox
+
 
 # Set Theme/Colorscheme/etc.
 ### Colors
 set $gtk-theme Adwaita-dark
 set $gnome-schema org.gnome.desktop.interface
 
-exec_always /home/ivan/.config/waybar/launch-waybar.sh &
+exec /home/ivan/.config/waybar/launch-waybar.sh &
 
+font Iosevka Term Extended 10
 exec {
      gsettings set $gnome-schema gtk-theme $gtk-theme
      gsettings set $gnome-schema icon-theme 'Papirus-Dark'
@@ -42,22 +45,24 @@ client.urgent \
     $color-nord-orange
 
 client.focused_inactive \
-    $color-nord-dark-1 \
-    $color-nord-dark-1 \
-    $color-nord-dark-1 \
+    $color-nord-frost-3 \
+    $color-nord-dark-3 \
+    $color-nord-light-0 \
     $color-nord-dark-1 \
     $color-nord-dark-1
 
 client.unfocused \
-    $color-nord-dark-1 \
-    $color-nord-dark-1 \
-    $color-nord-dark-1 \
+    $color-nord-frost-3 \
+    $color-nord-dark-3 \
+    $color-nord-light-0 \
     $color-nord-dark-1 \
     $color-nord-dark-1
 
 # Set Layout Options
 gaps outer 10
 gaps inner 10
+
+titlebar_border_thickness 2
 default_border pixel 2
 default_floating_border pixel 2
 focus_on_window_activation focus
@@ -74,7 +79,6 @@ set $mic_mute XF86AudioMicMute
 
 
 output * bg /home/ivan/Pictures/wallpapers/poos_wallpapers/poos_nord.png fill
-exec "/home/ivan/dotfiles/scripts/configure-outputs.sh auto"
 
 
 exec --no-startup-id dbus-update-activation-environment --all
@@ -87,8 +91,13 @@ exec wl-paste -t text --watch clipman store
 ### Input configuration
 input "1356:1476:Wireless_Controller_Touchpad" events disabled
 input "1356:1476:Sony_Computer_Entertainment_Wireless_Controller_Touchpad" events disabled
-input "1:1:AT_Translated_Set_2_keyboard" xkb_layout "us(colemak_dh)"
-input "1:1:AT_Translated_Set_2_keyboard" xkb_options altwin:swap_alt_win
+
+# input "2321:8584:Hantick_USB_Keyboard" xkb_layout "us(colemak_dh)"
+# input "2321:8584:Hantick_USB_Keyboard" xkb_options altwin:swap_alt_win,altwin:swap_lalt_lwin,caps:capslock
+# input "2321:8584:HID_0911:2188" xkb_layout "us(colemak_dh)"
+# input "2321:8584:HID_0911:2188" xkb_options altwin:swap_alt_win,altwin:swap_lalt_lwin,caps:capslock
+# input "1:1:AT_Translated_Set_2_keyboard" xkb_layout "us(colemak_dh)"
+# input "1:1:AT_Translated_Set_2_keyboard" xkb_options altwin:swap_alt_win,caps:capslock
 input "1739:32382:PNP0C50:0e_06CB:7E7E_Touchpad" {
     dwt enabled
     drag enabled
@@ -103,9 +112,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+t exec $term
 bindsym $mod+q kill
 
-# bindsym $mod+t exec "$term -e ranger"
 bindsym --no-repeat $mod+b exec $browser
-bindsym Control+Shift+Escape exec "$term -e btop"
+bindsym Control+Shift+Escape exec "$term btop"
 
 bindsym --no-repeat $mod+F7 exec openrgb
 # bindcode --release 133 exec "pkill fuzzel || fuzzel --no-exit-on-keyboard-focus-loss"
@@ -118,27 +126,40 @@ bindsym --no-repeat $mod+Mod1+F11 exec "~/dotfiles/scripts/configure-outputs.sh 
 bindsym Print exec "grim"
 bindsym Shift+Print exec "slurp | grim -g -"
 bindsym $mod+Print exec "slurp | grim -g - - | swappy -f -"
+bindsym $mod+Shift+Print exec "grim - | swappy -f -"
 
 bindsym $mod+F4 exec "/home/ivan/dotfiles/scripts/dwt-toggle.sh"
 bindsym --no-repeat $mod+F8 exec "/home/ivan/dotfiles/scripts/rgb-picker.sh"
 bindsym --no-repeat $mod+Shift+F8 exec "/home/ivan/dotfiles/scripts/color_switcher/color_switcher.py -k"
 bindsym $mod+F9 exec light -U 5
 bindsym $mod+F10 exec light -A 5
+bindsym $brightness_down exec light -U 5
+bindsym $brightness_up exec light -A 5
+
+# Volume Up/Down
 bindsym $mod+F3 exec "/home/ivan/dotfiles/scripts/change-volume.sh @DEFAULT_AUDIO_SINK@ 5%+"
 bindsym $vol_up exec "/home/ivan/dotfiles/scripts/change-volume.sh @DEFAULT_AUDIO_SINK@ 5%+"
 bindsym $mod+F2 exec "/home/ivan/dotfiles/scripts/change-volume.sh @DEFAULT_AUDIO_SINK@ 5%-"
 bindsym $vol_down exec "/home/ivan/dotfiles/scripts/change-volume.sh @DEFAULT_AUDIO_SINK@ 5%-"
+
+# Mic Volume Up/Down
 bindsym $mod+Shift+F3 exec "/home/ivan/dotfiles/scripts/change-volume.sh @DEFAULT_AUDIO_SOURCE@ 5%+"
 bindsym $mod+Shift+F2 exec "/home/ivan/dotfiles/scripts/change-volume.sh @DEFAULT_AUDIO_SOURCE@ 5%-"
+bindsym Shift+$vol_up exec "/home/ivan/dotfiles/scripts/change-volume.sh @DEFAULT_AUDIO_SOURCE@ 5%+"
+bindsym Shift+$vol_down exec "/home/ivan/dotfiles/scripts/change-volume.sh @DEFAULT_AUDIO_SOURCE@ 5%-"
+
+# Mute Audio/Mic
 bindsym $vol_mute exec "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 bindsym $mod+F1 exec "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 bindsym $mic_mute exec "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
+bindsym Shift+$vol_mute exec "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
 bindsym $mod+F5 exec "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"
+
 bindsym XF86AudioPlay exec "playerctl play-pause"
-bindsym XF86AudioPause exec "playerctl play-pause"
-bindsym Pause exec "playerctl play-pause"
-bindsym XF86AudioPrev exec "playerctl next"
-bindsym XF86AudioNext exec "playerctl previous"
+bindsym XF86AudioPause exec "playerctl pause"
+bindsym Pause exec "playerctl pause"
+bindsym XF86AudioPrev exec "playerctl previous"
+bindsym XF86AudioNext exec "playerctl next"
 
 bindsym $mod+v split toggle
 bindsym $mod+s layout toggle split
@@ -160,12 +181,13 @@ bindgesture swipe:4:right exec /home/ivan/dotfiles/scripts/sway-change-workspace
 bindgesture swipe:4:left exec /home/ivan/dotfiles/scripts/sway-change-workspace.sh next
 bindgesture pinch:3:inward exec /home/ivan/dotfiles/scripts/enable-floating-sway.sh
 bindgesture pinch:3:outward floating disable
-bindgesture swipe:3:down focus output down
-bindgesture swipe:3:up focus output up
+bindgesture swipe:3:down move scratchpad
+bindgesture swipe:3:up scratchpad show
 bindgesture swipe:4:down move workspace output down
 bindgesture swipe:4:up move workspace output up
 bindgesture hold:3 exec killall -SIGUSR1 waybar
 
+focus_wrapping no
 bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
@@ -181,15 +203,15 @@ bindsym $mod+period focus output right
 bindsym $mod+less move workspace to output left
 bindsym $mod+greater move workspace to output right
 
-bindsym $mod+left focus output left
-bindsym $mod+down focus output down
-bindsym $mod+up focus output up
-bindsym $mod+right focus output right
+bindsym $mod+left focus left
+bindsym $mod+down focus down
+bindsym $mod+up focus up
+bindsym $mod+right focus right
 
-bindsym $mod+Shift+left move workspace to output left
-bindsym $mod+Shift+down move workspace to output down
-bindsym $mod+Shift+up move workspace to output up
-bindsym $mod+Shift+right move workspace to output right
+bindsym $mod+Shift+left move left
+bindsym $mod+Shift+down move down
+bindsym $mod+Shift+up move up
+bindsym $mod+Shift+right move right
 
 bindsym $mod+KP_1 workspace number 1
 bindsym $mod+KP_2 workspace number 2
@@ -257,15 +279,26 @@ mode "move" {
     bindsym $right move right 20px
     bindsym $down move down 20px
 
+    bindsym left move left 20px
+    bindsym up move up 20px
+    bindsym right move right 20px
+    bindsym down move down 20px
+
     bindsym Shift+$left move left 10px
     bindsym Shift+$up move up 10px
     bindsym Shift+$right move right 10px
     bindsym Shift+$down move down 10px
 
+    bindsym Shift+left move left 10px
+    bindsym Shift+up move up 10px
+    bindsym Shift+right move right 10px
+    bindsym Shift+down move down 10px
+
     bindsym 0 move position center
 
     bindsym Return mode "default"
     bindsym Escape mode "default"
+    bindsym $mod+m mode "default"
 }
 
 
@@ -290,13 +323,24 @@ mode "resize" {
     bindsym $up resize shrink height 20px
     bindsym $right resize grow width 20px
 
+    bindsym left resize shrink width 20px
+    bindsym down resize grow height 20px
+    bindsym up resize shrink height 20px
+    bindsym right resize grow width 20px
+
     bindsym Shift+$left resize shrink width 10px
     bindsym Shift+$down resize grow height 10px
     bindsym Shift+$up resize shrink height 10px
     bindsym Shift+$right resize grow width 10px
 
+    bindsym Shift+left resize shrink width 10px
+    bindsym Shift+down resize grow height 10px
+    bindsym Shift+up resize shrink height 10px
+    bindsym Shift+right resize grow width 10px
+
     bindsym Return mode "default"
     bindsym Escape mode "default"
+    bindsym $mod+r mode "default"
 }
 
 for_window [app_id="piper"] floating enable

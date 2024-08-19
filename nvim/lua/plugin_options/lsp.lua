@@ -40,7 +40,7 @@ require("conform").setup({
 	},
 })
 vim.keymap.set("n", "<leader>fo", function()
-	require("conform").format({})
+	require("conform").format({ async = true})
 end)
 
 -- Use LspAttach autocommand to only map the following keys

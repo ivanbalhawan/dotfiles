@@ -57,7 +57,7 @@ automatic_config() {
 }
 
 if [[ (-z $mode) ]]; then
-	modes="auto\ngaming\ndual-gaming\nwork\nbattery-saver"
+	modes="auto\ngaming\ndual-gaming\nwork\nbattery-saver\ngaming-tv"
 	mode=$(echo -e $modes | fuzzel -p "layout: " -d -f Iosevka)
 fi
 
@@ -71,6 +71,9 @@ elif [[ $mode == "dual-gaming" ]]; then
 	activate_all_outputs
 	swaymsg output eDP-1 pos 0 0 mode 1920x1080@240Hz
 	swaymsg output DP-1 mode 2560x1440@165Hz pos 1920 0 adaptive_sync on
+elif [[ $mode == "gaming-tv" ]]; then
+    swaymsg output eDP-1 disable
+    swaymsg output HDMI-A-1 mode 3840x2160@60Hz pos 0 0
 elif [[ $mode == "work" ]]; then
 	activate_all_outputs
 	swaymsg output eDP-1 pos 0 0 mode 1920x1080@240Hz

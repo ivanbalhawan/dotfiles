@@ -18,8 +18,8 @@ vim.keymap.set("n", "<m-q>", ":wincmd c<CR>")
 vim.keymap.set("n", "<m-Q>", ":wincmd q<CR>")
 
 -- manipulate buffers
-vim.keymap.set("n", "<leader>l", vim.cmd.bnext)
-vim.keymap.set("n", "<leader>h", vim.cmd.bprevious)
+vim.keymap.set("n", "<leader>i", vim.cmd.bnext)
+vim.keymap.set("n", "<leader>m", vim.cmd.bprevious)
 vim.keymap.set("n", "<leader><backspace>", vim.cmd.bdelete)
 
 

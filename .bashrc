@@ -52,13 +52,11 @@ export VISUAL="/usr/bin/nvim"
 export PAGER="/usr/bin/less"
 export MOZ_ENABLE_WAYLAND=1
 export WLR_DRM_NO_MODIFIERS=1
-export XDG_CURRENT_DESKTOP=sway
-
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-export PATH="$PATH:~/.local/bin:~/dotfiles/scripts"
+export PATH="~/.local/bin:$PATH:~/dotfiles/scripts"
 
 # customize prompt
 PS1=''
@@ -81,10 +79,10 @@ alias swayconf='nvim ~/.config/sway/config'
 alias riverconf='nvim ~/.config/river/init'
 alias hyprconf='nvim ~/.config/hypr/hyprland.conf'
 
-alias ls="eza"
-alias ll="eza -lh"
-alias la="eza -lAh"
-alias tree="eza -T"
+alias ls="eza --icons"
+alias ll="eza -lh --icons"
+alias la="eza -lAh --icons"
+alias tree="eza -T --icons"
 alias pygrep="rg -t python"
 
 alias wifi="nmcli device wifi"

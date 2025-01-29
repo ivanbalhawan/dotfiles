@@ -1,4 +1,3 @@
 #!/bin/bash
-CONFIG_FILES='/home/ivan/.config/waybar/config\n/home/ivan/.config/waybar/style.css'
-killall waybar ; waybar &
-echo -e "${CONFIG_FILES}" | entr bash -c 'killall waybar ; waybar'
+WAYBAR_DIR=$HOME/.config/waybar
+eza $WAYBAR_DIR/config $WAYBAR_DIR/style.css | entr -rn waybar

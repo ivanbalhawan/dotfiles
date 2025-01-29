@@ -1,2 +1,2 @@
-timeout 120 'light -O && light -S 0' resume 'light -I'
-timeout 240 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on" && light -I'
+timeout 180 'brightnessctl -s && brightnessctl s 10' resume 'brightnessctl -r'
+timeout 240 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on" && brightnessctl -r'

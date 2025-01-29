@@ -12,7 +12,7 @@ fi
 msgTag="myvolume"
 wpctl set-volume $device $value
 volume="$(wpctl get-volume $device | awk '{print $2}' | sed 's/\.//' | sed 's/^0//')"
-dunstify -a "changeVolume" -u low -i audio-volume-high -h string:x-dunst-stack-tag:$msgTag \
+dunstify -a "progressBar" -u low -i audio-volume-high -h string:x-dunst-stack-tag:$msgTag \
     -h int:value:"$volume" "$label ${volume}%"
 
 if [[ -z $is_source ]]

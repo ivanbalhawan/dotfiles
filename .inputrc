@@ -20,3 +20,4 @@ set history-preserve-point on
 set keymap vi-command
 "j": history-search-backward
 "k": history-search-backward
+

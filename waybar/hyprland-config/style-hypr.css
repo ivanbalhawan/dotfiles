@@ -1,0 +1,360 @@
+/* dark nord colors */
+@define-color nord0 #2e3440;
+@define-color nord1 #3b4252;
+@define-color nord2 #434c5e;
+@define-color nord3 #4c566a;
+
+/* light nord colors */
+@define-color nord4 #d8dee9;
+@define-color nord5 #e5e9f0;
+@define-color nord6 #eceff4;
+
+/* frost nord colors */
+@define-color nord7 #8fbcbb;
+@define-color nord8 #88c0d0;
+@define-color nord9 #81a1c1;
+@define-color nord10 #5e81ac;
+
+/* aurora nord colors */
+@define-color nord11 #bf616a; /* red */
+@define-color nord12 #d08770; /* orange */
+@define-color nord13 #ebcb8b; /* yellow */
+@define-color nord14 #a3be8c; /* green */
+@define-color nord15 #b48ead; /* magenta */
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: IosevkaTerm Nerd Font Propo;
+    font-weight: normal;
+    /* color: @nord5 */
+    /* min-width: 25px; */
+    /*background-color: transparent;*/
+}
+
+
+window#waybar {
+  background-color: transparent;
+  border-radius: 0px;
+  /*background-color: @3ord1;*/
+  transition-property: color;
+  transition-duration: 2s;
+}
+
+window#waybar.test {
+    background-color: transparent;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+window#waybar.empty #window {
+    border:none;
+}
+
+.modulse-left * {
+    font-size: 14px;
+}
+
+.modules-right * {
+    font-size: 14px;
+    color: @nord5;
+}
+.modules-right {
+    border: 2px solid @nord1;
+    background-color: @nord2;
+    border-radius: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.modules-center {
+  border-radius: 0px;
+}
+.modules-left {
+  border-radius: 0px;
+}
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
+
+window#waybar.termite {
+    background-color: #3F3F3F;
+}
+
+window#waybar.chromium {
+    background-color: #000000;
+    border: none;
+}
+
+#workspaces {
+    /* font-family: IosevkaTerm Nerd Font Propo; */
+    background-color: @nord2;
+    border: 2px solid @nord1;
+    border-radius: 8px;
+}
+
+#workspaces button {
+    color: @nord5;
+    font-size: 16px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: none;
+    border-radius: 0px;
+    margin: 2px 0px;
+}
+
+/* #workspaces button.hosting-monitor { */
+/*     border-right: 2px solid @nord5; */
+/* } */
+
+#workspaces button.empty {
+    color: @nord15;
+    border-right: none;
+}
+
+#workspaces button.visible.empty.hosting-monitor {
+    color: @nord5;
+    border-right: 2px solid @nord5;
+}
+
+#workspaces button.active {
+  color: @nord8;
+}
+
+#workspaces button.active.hosting-monitor {
+  color: @nord8;
+  border-right: 2px solid @nord8;
+}
+#workspaces button.active.empty.hosting-monitor {
+  color: @nord8;
+  border-right: 2px solid @nord8;
+}
+
+#workspaces button.urgent {
+    border-right: 2px solid @nord12;
+    color: @nord12;
+}
+
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+    color: @nord7;
+    /* border-bottom: 3px solid @nord8; */
+    background: transparent;
+    /*box-shadow: inset 0 -0px transparent; */
+    box-shadow: inherit;
+    text-shadow: inherit;
+}
+
+#workspaces > button:first-child {
+    margin-top: 8px;
+}
+#workspaces > button:last-child {
+    margin-bottom: 8px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    /* margin-left: 20px; */
+}
+.modules-left > widget:last-child > #workspaces {
+    /* margin-right: 20px; */
+}
+
+
+#battery,
+#bluetooth,
+#custom-launcher,
+#custom-nightlight,
+#custom-dnd,
+#clock,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#mpris,
+#idle_inhibitor,
+#window,
+#mpd {
+    padding: 0 10px;
+}
+
+#tray {
+    border-radius: 0px;
+    border: 2px solid @nord1;
+    background-color: @nord2;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#hardware {
+    border-radius: 0px;
+    border: 2px solid @nord1;
+    background-color: @nord2;
+    color: @nord12;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#audio {
+    border-radius: 0px;
+    border: 2px solid @nord1;
+    background-color: @nord2;
+    color: @nord13;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+
+#mpris {
+    padding: 0 10px;
+}
+
+#video {
+    border-radius: 0px;
+    border: 2px solid @nord1;
+    background-color: @nord2;
+    color: @nord8;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#mode {
+    font-weight: bold;
+    font-size: 16px;
+    border-bottom: 3px solid @nord4;
+    /*border-radius: 4px;*/
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+#window {
+    font-weight: bold;
+    border-radius: 0px;
+    border-bottom: 2px solid @nord4;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+    margin-top: 2px;
+    margin-bottom: 2px;
+    min-width: 80px;
+
+}
+
+
+/* If workspaces is the rightmost module, omit right margin */
+/*
+ *.modules-right > widget:last-child > #battery{
+ *    margin-right: 10px;
+ *}
+ */
+
+button:hover {
+    background-color: transparent;
+}
+
+#custom-launcher {
+    margin-top: 0px;
+    /* margin-bottom: 4px; */
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 8px;
+    color: @nord5;
+    border: 2px solid @nord1;
+    background-color: @nord2;
+}
+
+#clock {
+    border-radius: 8px;
+    border: 2px solid @nord1;
+    background-color: @nord2;
+    color: @nord5;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+    /* min-width: 100px; */
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+
+#battery {
+    /* border-radius: 8px; */
+    margin-top: 0px;
+    /* margin-bottom: 10px; */
+    /* margin-right: 12px; */
+    /* border: 2px solid @nord1; */
+    /* background-color: @nord2; */
+    /* color: @nord14; */
+}
+
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+        color: #000000;
+    }
+}
+
+#battery.critical:not(.charging) {
+    color: @nord12;
+}
+
+tooltip {
+    background-color: @nord1;
+    font-size: 12px;
+}
+
+label:focus {
+    background-color: #000000;
+}
+
+#memory {
+  /*font-size: 18px;*/
+}
+
+#connectivity {
+    border-radius: 0px;
+    border: 2px solid @nord1;
+    background-color: @nord2;
+    color: @nord15;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#network.disconnected {
+    color: @nord12;
+}
+
+
+#pulseaudio {
+  font-size: 18px;
+    /*set min-width because muting makes module thinner*/
+}
+#pulseaudio.muted {
+}
+
+#idle_inhibitor {
+    /* set min width because active icon is slightly wider */
+}
+
+#custom-nightlight.active {
+  color: @nord13;
+}
+
+#idle_inhibitor.activated {
+    color: @nord13;
+}

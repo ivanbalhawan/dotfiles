@@ -1,0 +1,557 @@
+[2024-11-06 18:36:06.379] [info] Using configuration file /home/ivan/.config/waybar/config
+[2024-11-06 18:36:06.483] [info] Discovered appearance 'dark'
+[2024-11-06 18:36:06.484] [info] Using CSS file /home/ivan/.config/waybar/style.css
+[2024-11-06 18:36:06.488] [info] Hyprland IPC starting
+[2024-11-06 18:36:06.488] [info] Loading persistent workspaces from Waybar config
+[2024-11-06 18:36:06.488] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-06 18:36:06.626] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-06 20:06:46.771] [info] Using configuration file /home/ivan/.config/waybar/config
+[2024-11-06 20:06:46.909] [info] Discovered appearance 'dark'
+[2024-11-06 20:06:46.909] [info] Using CSS file /home/ivan/.config/waybar/style.css
+[2024-11-06 20:06:46.913] [info] Hyprland IPC starting
+[2024-11-06 20:06:46.914] [info] Loading persistent workspaces from Waybar config
+[2024-11-06 20:06:46.914] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-06 20:06:47.071] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-06 20:06:54.812] [info] Bar removed from output: DP-1
+[2024-11-06 20:06:54.812] [error] Monitor 'FALLBACK' does not have an ID? Using 0
+[2024-11-06 20:06:54.812] [warning] module hyprland/workspaces: Disabling module "hyprland/workspaces", Error parsing JSON: * Line 1, Column 1
+  Syntax error: value, object or array expected.
+
+[2024-11-06 20:06:54.925] [info] Bar configured (width: 38, height: 364) for output: FALLBACK
+[2024-11-07 07:31:23.962] [info] Using configuration file /home/ivan/.config/waybar/config
+[2024-11-07 07:31:24.062] [info] Discovered appearance 'dark'
+[2024-11-07 07:31:24.062] [info] Using CSS file /home/ivan/.config/waybar/style.css
+[2024-11-07 07:31:24.066] [info] Hyprland IPC starting
+[2024-11-07 07:31:24.067] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 07:31:24.067] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 07:31:24.203] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 08:01:15.440] [info] Using configuration file /home/ivan/.config/waybar/config
+[2024-11-07 08:01:15.576] [info] Discovered appearance 'dark'
+[2024-11-07 08:01:15.576] [info] Using CSS file /home/ivan/.config/waybar/style.css
+[2024-11-07 08:01:15.581] [info] Hyprland IPC starting
+[2024-11-07 08:01:15.581] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:01:15.581] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:01:15.741] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 08:01:26.704] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:01:26.704] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:01:26.821] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 08:08:54.831] [info] Using configuration file /home/ivan/.config/waybar/config
+[2024-11-07 08:08:54.975] [info] Discovered appearance 'dark'
+[2024-11-07 08:08:54.975] [info] Using CSS file /home/ivan/.config/waybar/style.css
+[2024-11-07 08:08:54.980] [info] Hyprland IPC starting
+[2024-11-07 08:08:54.980] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:08:54.980] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:08:55.030] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:08:55.030] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:08:55.155] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 08:08:55.155] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 08:13:05.736] [info] Using configuration file /home/ivan/.config/waybar/config
+[2024-11-07 08:13:05.834] [info] Discovered appearance 'dark'
+[2024-11-07 08:13:05.834] [info] Using CSS file /home/ivan/.config/waybar/style.css
+[2024-11-07 08:13:05.839] [info] Hyprland IPC starting
+[2024-11-07 08:13:05.840] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:13:05.840] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:13:05.907] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:13:05.907] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:13:06.034] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 08:13:06.034] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 08:18:15.924] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:18:15.963] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:18:15.963] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:18:15.963] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:18:15.964] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:18:15.964] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:18:15.974] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 08:18:15.979] [info] Bar configured (width: 38, height: 700) for output: eDP-1
+[2024-11-07 08:18:25.682] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:18:25.684] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:18:25.684] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:18:25.685] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:18:25.685] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:18:25.685] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:18:25.696] [info] Bar configured (width: 38, height: 700) for output: eDP-1
+[2024-11-07 08:18:25.700] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 08:19:58.757] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:19:58.760] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:19:58.760] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:19:58.760] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:19:58.761] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:19:58.761] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:20:24.250] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:20:24.253] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:20:24.253] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:20:24.253] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:20:24.253] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:20:24.253] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:20:24.263] [info] Bar removed from output: eDP-1
+[2024-11-07 08:20:52.299] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:20:52.301] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:20:52.301] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:20:57.351] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:20:57.354] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:20:57.354] [info] Loading persistent workspaces from Hyprland workspace rules
+Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/3)
+[2024-11-07 08:21:48.417] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:21:48.419] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:21:48.419] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:21:49.930] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:21:49.931] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:21:49.931] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:21:49.957] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:21:49.957] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:21:50.076] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 08:22:42.239] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:22:42.242] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:22:42.242] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:22:42.242] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:22:42.242] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:22:42.242] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:26:35.200] [info] Using configuration file /home/ivan/.config/waybar/config
+[2024-11-07 08:26:35.302] [info] Discovered appearance 'dark'
+[2024-11-07 08:26:35.302] [info] Using CSS file /home/ivan/.config/waybar/style.css
+[2024-11-07 08:26:35.307] [info] Hyprland IPC starting
+[2024-11-07 08:26:35.307] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:26:35.307] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:26:35.372] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:26:35.373] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:26:35.501] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 08:26:35.501] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 08:47:25.856] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:47:25.858] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:47:25.858] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:47:25.858] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:47:25.858] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:47:25.858] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:47:29.690] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:47:29.692] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:47:29.692] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:47:29.692] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:47:29.693] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:47:29.693] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:49:10.696] [info] Using configuration file /home/ivan/.config/waybar/config
+[2024-11-07 08:49:10.817] [info] Discovered appearance 'dark'
+[2024-11-07 08:49:10.818] [info] Using CSS file /home/ivan/.config/waybar/style.css
+[2024-11-07 08:49:10.877] [info] Hyprland IPC starting
+[2024-11-07 08:49:10.878] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:49:10.878] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:49:10.924] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:49:10.924] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:49:11.045] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 08:49:11.045] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 08:52:12.282] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:52:12.329] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:52:12.329] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 08:52:12.329] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 08:52:12.330] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 08:52:12.330] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 09:30:45.924] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 09:30:45.924] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 09:30:45.926] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 09:30:45.926] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-07 09:31:06.150] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 09:31:06.151] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 09:31:06.183] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 09:31:06.183] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-07 09:31:06.185] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 09:31:06.185] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/4)
+[2024-11-07 09:31:53.141] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 09:31:53.141] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 09:31:53.177] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 09:31:53.177] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-07 09:31:53.184] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 09:31:53.184] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 09:31:56.784] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 09:31:56.786] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 09:31:56.831] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 09:31:56.831] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-07 09:31:56.835] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 09:31:56.835] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 09:33:32.953] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 09:33:32.953] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 09:33:32.983] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 09:33:32.983] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 09:33:32.983] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 09:33:32.983] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-07 09:33:47.418] [info] Using configuration file /home/ivan/.config/waybar/config
+[2024-11-07 09:33:47.522] [info] Discovered appearance 'dark'
+[2024-11-07 09:33:47.522] [info] Using CSS file /home/ivan/.config/waybar/style.css
+[2024-11-07 09:33:47.526] [info] Hyprland IPC starting
+[2024-11-07 09:33:47.570] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 09:33:47.570] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 09:33:47.599] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 09:33:47.599] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 09:33:47.613] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 09:33:47.613] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 09:33:58.851] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 09:33:58.851] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 09:33:58.857] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 09:33:58.857] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-07 09:34:33.358] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 09:34:33.359] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 09:34:33.388] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 09:34:33.388] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-07 09:34:33.394] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 09:34:33.394] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 10:23:13.201] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 10:23:13.207] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 10:23:13.246] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 10:23:13.246] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-07 10:23:13.259] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 10:23:13.259] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 10:23:14.027] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 10:23:14.041] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 10:30:55.090] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 10:30:55.090] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 10:30:55.090] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 10:30:55.090] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-07 10:31:02.976] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 10:31:02.987] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 10:31:03.028] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 10:31:03.028] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-07 10:31:03.038] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 10:31:03.038] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 10:33:50.828] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 10:33:50.829] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 10:33:50.861] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 10:33:50.861] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 10:33:50.862] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 10:33:50.862] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-07 10:35:20.285] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 10:35:20.286] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 10:35:20.396] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 10:35:20.396] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-07 10:35:20.406] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 10:35:20.406] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 10:35:22.579] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 10:35:22.580] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 10:35:22.636] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 10:35:22.636] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 10:36:48.794] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 10:36:48.794] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/5)
+[2024-11-07 10:41:49.616] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 10:41:49.624] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 10:41:49.727] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 10:41:49.727] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-07 10:41:49.731] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 10:41:49.732] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 10:41:51.836] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 10:41:51.837] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 10:41:51.898] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 10:41:51.898] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 10:41:51.903] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 10:41:51.903] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-07 11:24:10.919] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 11:24:10.922] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 11:54:41.710] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 11:54:41.713] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 11:54:41.713] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 11:54:41.713] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 11:54:41.714] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 11:54:41.714] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 12:13:19.916] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 12:13:19.916] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 12:13:19.923] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 12:13:19.923] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/6)
+[2024-11-07 12:40:26.180] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 12:40:26.190] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 12:40:26.190] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 12:40:26.190] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 12:40:26.191] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 12:40:26.191] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 12:41:10.390] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 12:41:10.397] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 13:12:03.937] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 13:12:03.937] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 13:12:03.939] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 13:12:03.939] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-07 14:06:31.560] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 14:06:31.561] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 14:11:06.144] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 14:11:06.144] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 14:11:06.149] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 14:11:06.149] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/7)
+Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/8)
+[2024-11-07 15:02:35.086] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 15:02:35.097] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 16:44:59.929] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 16:44:59.929] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-07 16:44:59.935] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 16:44:59.935] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 16:45:27.542] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 16:45:27.550] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 16:45:27.574] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 16:45:27.574] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-07 16:45:27.584] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 16:45:27.584] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 17:03:24.877] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 17:03:24.882] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 17:03:24.921] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 17:03:24.921] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-07 17:03:24.930] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-07 17:03:24.930] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-07 17:03:26.373] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-07 17:03:26.380] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-07 17:42:54.382] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 17:42:54.636] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 17:42:54.636] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 17:42:54.636] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 17:42:54.637] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 17:42:54.637] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 19:12:41.421] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 19:12:41.424] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 19:12:41.424] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-07 19:12:41.424] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-07 19:12:41.425] [info] Loading persistent workspaces from Waybar config
+[2024-11-07 19:12:41.425] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 07:24:07.819] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-08 07:24:07.821] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 07:24:07.821] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 07:24:07.821] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-08 07:24:07.822] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 07:24:07.822] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 07:25:31.227] [info] Using configuration file /home/ivan/.config/waybar/config
+[2024-11-08 07:25:31.388] [info] Discovered appearance 'dark'
+[2024-11-08 07:25:31.388] [info] Using CSS file /home/ivan/.config/waybar/style.css
+[2024-11-08 07:25:31.394] [info] Hyprland IPC starting
+[2024-11-08 07:25:31.395] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 07:25:31.395] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 07:25:31.441] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 07:25:31.441] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 07:25:31.568] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 07:25:31.568] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 09:45:07.658] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-08 09:45:07.694] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 09:45:07.694] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 09:45:07.694] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-08 09:45:07.695] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 09:45:07.695] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 09:45:17.379] [info] Using configuration file /home/ivan/.config/waybar/config
+[2024-11-08 09:45:17.485] [info] Discovered appearance 'dark'
+[2024-11-08 09:45:17.485] [info] Using CSS file /home/ivan/.config/waybar/style.css
+[2024-11-08 09:45:17.490] [info] Hyprland IPC starting
+[2024-11-08 09:45:17.491] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 09:45:17.491] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 09:45:17.534] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 09:45:17.534] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 09:45:17.661] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 09:45:17.661] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 09:45:20.357] [info] Bar removed from output: DP-1
+[2024-11-08 09:46:58.562] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 09:46:58.562] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 09:46:58.684] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 10:30:07.963] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 10:30:07.963] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 10:30:07.964] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 10:30:07.964] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 10:30:21.869] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 10:30:21.874] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 10:30:21.897] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 10:30:21.897] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 10:30:21.901] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 10:30:21.901] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 10:34:56.136] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 10:34:56.137] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 10:34:56.172] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 10:34:56.172] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 10:34:56.182] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 10:34:56.182] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 10:38:05.022] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 10:38:05.033] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 10:38:05.050] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 10:38:05.050] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 10:38:05.057] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 10:38:05.057] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 10:38:07.135] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 10:38:07.136] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 10:38:07.171] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 10:38:07.171] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 10:38:20.151] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 10:38:20.151] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 10:44:18.045] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 10:44:18.049] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 10:44:18.079] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 10:44:18.079] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 10:44:18.083] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 10:44:18.083] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 10:44:20.162] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 10:44:20.163] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 10:44:20.211] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 10:44:20.212] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 10:45:38.144] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 10:45:38.144] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 10:47:55.692] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 10:47:55.698] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 10:47:55.743] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 10:47:55.743] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 10:47:55.747] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 10:47:55.747] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 10:47:57.810] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 10:47:57.859] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 10:47:57.859] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 11:17:06.778] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-08 11:17:07.015] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 11:17:07.015] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 11:17:07.016] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-08 11:17:07.017] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 11:17:07.017] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 11:17:12.621] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-08 11:17:12.624] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 11:17:12.624] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 11:17:12.625] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-08 11:17:12.625] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 11:17:12.625] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 13:18:04.303] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 13:18:04.304] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 13:27:23.652] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 13:27:23.652] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 13:27:23.661] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 13:27:23.661] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 13:59:36.541] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-08 13:59:36.545] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 13:59:36.545] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 13:59:36.545] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-08 13:59:36.546] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 13:59:36.546] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 14:00:17.051] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 14:00:17.063] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 14:00:17.107] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 14:00:17.107] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 14:00:17.113] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 14:00:17.113] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 14:00:19.308] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 14:00:19.363] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 14:00:19.363] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 14:01:20.102] [warning] Requested width: 39 is less than the minimum width: 56 required by the modules
+[2024-11-08 14:01:20.102] [info] Bar configured (width: 56, height: 1060) for output: eDP-1
+[2024-11-08 14:01:20.102] [warning] Requested width: 39 is less than the minimum width: 56 required by the modules
+[2024-11-08 14:01:20.102] [info] Bar configured (width: 56, height: 1420) for output: DP-1
+[2024-11-08 14:10:45.377] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 14:10:45.377] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 14:52:50.112] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 14:52:50.113] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 15:15:35.675] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 15:15:35.675] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 15:15:35.682] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 15:15:35.682] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 15:15:35.813] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 15:15:35.815] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 15:15:35.858] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 15:15:35.859] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 15:15:35.866] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 15:15:35.866] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 15:16:32.602] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 15:16:32.603] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 15:16:32.642] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 15:16:32.642] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 15:16:32.648] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 15:16:32.648] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 15:16:37.803] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 15:16:37.814] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 15:16:37.852] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 15:16:37.852] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 15:16:37.857] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 15:16:37.857] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 15:16:59.685] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 15:16:59.692] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 15:16:59.720] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 15:16:59.720] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 15:16:59.724] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 15:16:59.724] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 15:17:10.691] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 15:17:10.698] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 15:17:10.727] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 15:17:10.727] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 15:17:10.730] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 15:17:10.731] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 15:30:34.896] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 15:30:34.906] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 15:30:34.931] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 15:30:34.932] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 15:30:34.938] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 15:30:34.938] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 15:31:20.958] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 15:31:20.974] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 15:31:38.130] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 15:31:38.130] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 15:31:38.138] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 15:31:38.139] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 15:31:39.049] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 15:31:39.049] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 15:31:39.083] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 15:31:39.083] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 15:31:39.091] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 15:31:39.091] [info] Bar configured (width: 39, height: 1060) for output: eDP-1
+[2024-11-08 15:51:06.305] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 15:51:06.338] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 15:51:06.342] [warning] Requested width: 38 is less than the minimum width: 39 required by the modules
+[2024-11-08 15:51:06.342] [info] Bar configured (width: 39, height: 1420) for output: DP-1
+[2024-11-08 15:51:06.358] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 16:38:38.057] [info] Using configuration file /home/ivan/.config/waybar/config
+[2024-11-08 16:38:38.175] [info] Discovered appearance 'dark'
+[2024-11-08 16:38:38.175] [info] Using CSS file /home/ivan/.config/waybar/style.css
+[2024-11-08 16:38:38.180] [info] Hyprland IPC starting
+[2024-11-08 16:38:38.181] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 16:38:38.181] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 16:38:38.366] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 16:39:32.434] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-08 16:39:32.435] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 16:39:32.435] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 16:40:17.277] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 16:40:17.277] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 16:40:17.393] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 18:27:39.714] [info] Using configuration file /home/ivan/.config/waybar/config
+[2024-11-08 18:27:39.844] [info] Discovered appearance 'dark'
+[2024-11-08 18:27:39.845] [info] Using CSS file /home/ivan/.config/waybar/style.css
+[2024-11-08 18:27:39.850] [info] Hyprland IPC starting
+[2024-11-08 18:27:39.851] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 18:27:39.851] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 18:27:39.894] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 18:27:39.895] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 18:27:40.016] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 18:27:40.016] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-08 19:26:12.128] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-08 19:26:12.130] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 19:26:12.130] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 19:26:12.130] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-11-08 19:26:12.131] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 19:26:12.131] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 20:18:18.287] [info] Using configuration file /home/ivan/.config/waybar/config
+[2024-11-08 20:18:18.415] [info] Discovered appearance 'dark'
+[2024-11-08 20:18:18.415] [info] Using CSS file /home/ivan/.config/waybar/style.css
+[2024-11-08 20:18:18.420] [info] Hyprland IPC starting
+[2024-11-08 20:18:18.421] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 20:18:18.421] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 20:18:18.466] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 20:18:18.466] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 20:18:18.590] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 20:18:18.590] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/3)
+[2024-11-08 20:46:02.376] [info] Using configuration file /home/ivan/.config/waybar/config
+[2024-11-08 20:46:02.516] [info] Discovered appearance 'dark'
+[2024-11-08 20:46:02.516] [info] Using CSS file /home/ivan/.config/waybar/style.css
+[2024-11-08 20:46:02.522] [info] Hyprland IPC starting
+[2024-11-08 20:46:02.523] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 20:46:02.523] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 20:46:02.565] [info] Loading persistent workspaces from Waybar config
+[2024-11-08 20:46:02.565] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-08 20:46:02.686] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-08 20:46:02.686] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-09 08:25:05.926] [info] Using configuration file /home/ivan/.config/waybar/config
+[2024-11-09 08:25:06.050] [info] Discovered appearance 'dark'
+[2024-11-09 08:25:06.050] [info] Using CSS file /home/ivan/.config/waybar/style.css
+[2024-11-09 08:25:06.054] [info] Hyprland IPC starting
+[2024-11-09 08:25:06.055] [info] Loading persistent workspaces from Waybar config
+[2024-11-09 08:25:06.055] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-09 08:25:06.098] [info] Loading persistent workspaces from Waybar config
+[2024-11-09 08:25:06.098] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-09 08:25:06.222] [info] Bar configured (width: 38, height: 1060) for output: eDP-1
+[2024-11-09 08:25:06.222] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+[2024-11-09 08:27:37.986] [info] Bar removed from output: DP-1
+[2024-11-09 08:27:38.551] [info] Loading persistent workspaces from Waybar config
+[2024-11-09 08:27:38.551] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-11-09 08:27:38.668] [info] Bar configured (width: 38, height: 1420) for output: DP-1
+Connection successfully activated (D-Bus active path: /org/freedesktop/NetworkManager/ActiveConnection/3)

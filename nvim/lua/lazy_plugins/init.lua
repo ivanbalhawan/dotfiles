@@ -1,4 +1,17 @@
 return {
+
+    {
+        "Exafunction/codeium.nvim",
+        requires = {
+            "nvim-lua/plenary.nvim",
+            "hrsh7th/nvim-cmp",
+        },
+        config = function()
+            require("codeium").setup({
+            })
+        end
+    },
+
     {
         "vhyrro/luarocks.nvim",
         priority = 1000,
@@ -34,18 +47,22 @@ return {
         "folke/todo-comments.nvim",
         dependencies = {"nvim-lua/plenary.nvim"},
     },
+
     {
         "shaunsingh/nord.nvim",
         name = "nord",
     },
+
     {
         "nvim-telescope/telescope.nvim",
         dependencies = {"nvim-lua/plenary.nvim"},
     },
+
     {
         "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate",
     },
+
     {
         "kylechui/nvim-surround",
         version = "*",
@@ -56,16 +73,20 @@ return {
             })
         end
     },
+
+
     {
         "nvim-tree/nvim-tree.lua",
         dependencies = {"nvim-tree/nvim-web-devicons"},
     },
+
     {
         "numToStr/Comment.nvim",
          config = function()
                 require("Comment").setup()
             end
     },
+
     -- LSP, Completion, Linter, Formatter
     "neovim/nvim-lspconfig",
     "hrsh7th/cmp-nvim-lsp",
@@ -78,6 +99,7 @@ return {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "mfussenegger/nvim-lint",
+
     {
         'stevearc/conform.nvim',
         opts = {},

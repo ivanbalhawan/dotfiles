@@ -1,120 +1,121 @@
-# /etc/skel/.bashrc
-#
-# This file is sourced by all *interactive* bash shells on startup,
-# including some apparently interactive shells such as scp and rcp
-# that can't tolerate any output.  So make sure this doesn't display
-# anything or bad things will happen !
+# .bashrc
 
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
 
-# Test for an interactive shell.  There is no need to set anything
-# past this point for scp and rcp, and it's important to refrain from
-# outputting anything in those cases.
-if [[ $- != *i* ]] ; then
-	# Shell is non-interactive.  Be done now!
-	return
-fi
+HISTSIZE=-1
+HISTFILESIZE=-1
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$HOME/.local/bin:$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 set -o vi
 bind -m vi-command 'Control-l: clear-screen'
 bind -m vi-insert 'Control-l: clear-screen'
 
-
-source /usr/share/bash-completion/completions/eza
-source /usr/share/bash-completion/completions/git
-source /usr/share/bash-completion/completions/gsettings
-source /usr/share/bash-completion/completions/sway
-source /usr/share/bash-completion/completions/swaymsg
-source /usr/share/bash-completion/completions/man
-source /usr/share/bash-completion/completions/fd
-source /usr/share/bash-completion/completions/jq
-source /usr/share/bash-completion/completions/kill
-source /usr/share/bash-completion/completions/killall
-source /usr/share/bash-completion/completions/libreoffice
-source /usr/share/bash-completion/completions/nmcli
-source /usr/share/bash-completion/completions/rc-update
-source /usr/share/bash-completion/completions/rc-status
-source /usr/share/bash-completion/completions/rc-service
-source /usr/share/bash-completion/completions/sftp
-
-# source /usr/share/bash-completion/completions/systemctl
-# source /usr/share/fzf/completion.bash
-source /usr/share/fzf/key-bindings.bash
-
-### Set env variables ###
-HISTSIZE=-1
-HISTFILESIZE=-1
-export IPYTHONDIR="$HOME/.config/ipython"
-export VISUAL_EDITOR="/usr/bin/nvim"
-export GIT_EDITOR="/usr/bin/nvim"
-export EDITOR="/usr/bin/nvim"
-export VISUAL="/usr/bin/nvim"
-export PAGER="/usr/bin/less"
-export MOZ_ENABLE_WAYLAND=1
-export WLR_DRM_NO_MODIFIERS=1
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-export PATH="~/.local/bin:$PATH:~/dotfiles/scripts"
-
-# customize prompt
 PS1=''
 PS1=$PS1'\[\033[1;36m\]\u'
 PS1=$PS1'\[\033[34m\]@'
 PS1=$PS1'\[\033[34m\]\H'
 PS1=$PS1'\[\033[35m\] \W\n'
-export PS1=$PS1'\[\033[33m\]λ \[\033[0;37m\]'
+export PS1=$PS1'\[\033[33m\]λ \[\033[0m\]'
 
-### Define Aliases ###
-alias fetch="fastfetch --config ~/.local/share/fastfetch/presets/custom.jsonc"
+alias full-system-update="pipx upgrade-all && sudo emerge --sync && eix-update && sudo emerge -auvDN @world"
+alias full-system-update-bin="pipx upgrade-all && sudo emerge --sync && eix-update && sudo emerge -gauvDN @world"
+alias fetch="fastfetch"
 alias icat="kitten icat"
-alias upscale='gamescope -h 1080 -H 1440 -F fsr -f'
-alias gl='git log --oneline --graph'
-alias gpsup='git push -u origin "$(git branch --show-current)"'
-alias connect='/usr/bin/nmcli connection up'
-alias volta-env='source ~/volta/dev/.volta-venv/bin/activate'
-alias shconf='nvim ~/.bashrc'
-alias swayconf='nvim ~/.config/sway/config'
-alias riverconf='nvim ~/.config/river/init'
-alias hyprconf='nvim ~/.config/hypr/hyprland.conf'
+alias ls='eza --icons'
+alias ll='eza -lh --icons'
+alias la='eza -lAh --icons'
+alias lh='eza -a | grep ^\\.'
+alias tree='eza -T --icons'
+alias pygrep='rg -t python'
+alias activate='source $(fd -up --regex "bin/activate$")'
+alias shconf='nvim $HOME/.bashrc && source $HOME/.bashrc'
 
-alias ls="eza --icons"
-alias ll="eza -lh --icons"
-alias la="eza -lAh --icons"
-alias tree="eza -T --icons"
-alias pygrep="rg -t python"
+toggle-coolerboost() {
+    $HOME/dotfiles/scripts/toggle-coolerboost.sh
+}
 
-alias wifi="nmcli device wifi"
+set-shift-mode() {
+    msi_ec_path='/sys/devices/platform/msi-ec'
+    shift_mode=$(cat $msi_ec_path/available_shift_modes | fzf)
+    echo $shift_mode | sudo tee $msi_ec_path/shift_mode
+}
+    
 
-
-# Shell integration for Foot term
-# osc7_cwd() {
-#     local strlen=${#PWD}
-#     local encoded=""
-#     local pos c o
-#     for (( pos=0; pos<strlen; pos++ )); do
-#         c=${PWD:$pos:1}
-#         case "$c" in
-#             [-/:_.!\'\(\)~[:alnum:]] ) o="${c}" ;;
-#             * ) printf -v o '%%%02X' "'${c}" ;;
-#         esac
-#         encoded+="${o}"
-#     done
-#     printf '\e]7;file://%s%s\e\\' "${HOSTNAME}" "${encoded}"
-# }
-# PROMPT_COMMAND=${PROMPT_COMMAND:+$PROMPT_COMMAND; }osc7_cwd
-
-
-# Ranger function (to prevent nested ranger instances)
-ranger() {
-    if [ -z "$RANGER_LEVEL" ]; then
-        /usr/bin/ranger "$@"
+bring-from-downloads () {
+    filename=$(ls $HOME/Downloads | fzf);
+    if [[ -z $filename ]]; then
+        echo "No file selected";
     else
-        exit
+        mv -i $HOME/Downloads/$filename .;
     fi
 }
-eval "$(zoxide init bash)"
-z () {
-    __zoxide_z "$@" && pwd
+
+
+# ################################################################################ #
+# Git aliases/commands
+# ################################################################################ #
+alias gl='git log --oneline --graph'
+alias gpsu='git push -u origin "$(git branch --show-current)"'
+alias gpf="git push --force-with-lease"
+# alias gk='git checkout $(git branch | fzf | sed "s/^\*//")'
+alias gdiff-origin='git diff origin/$(git branch --show-current)'
+gk() {
+    branch=$1
+    if [[ -z $branch ]]; then
+        git checkout $(git branch | fzf | sed "s/^\*//");
+    else
+        git checkout $branch;
+    fi
 }
+gka() {
+    tmp_file="/tmp/git-checkout-branches.txt";
+    git branch -lra | sed "s/^\*//" > $tmp_file;
+    git tag -l  >> $tmp_file;
+    cat $tmp_file | fzf | sed "s/^\ *remotes\/origin\///" | xargs git checkout;
+    rm $tmp_file;
+}
+
+gstash() {
+    command=$(echo -e "apply\ndrop\nlist\npop\npush" | fzf)
+    echo $command
+    if [[ -z $command ]]; then
+        echo Aborted
+        return 0
+    fi
+
+    if [[ $command == "push" ]]; then
+        cat | xargs -- git stash push -m
+        return 0
+    fi
+
+    if [[ $command == "list" ]]; then
+        git stash list
+        return 0
+    fi
+
+    entry=$(git stash list | fzf | sed -E 's/.*@\{([[:digit:]]+)\}:.*/\1/')
+    if [[ -n $entry ]]; then
+        git stash $command $entry
+    else
+        echo Aborted
+    fi
+}
+# ################################################################################ #
+
+
+start_sway() {
+    # export XCURSOR_THEME="Adwaita";
+    # export XCURSOR_SIZE=24;
+    export XDG_CURRENT_DESKTOP="sway";
+    export XDG_SESSION_TYPE="wayland";
+    export XDG_SESSION_DESKTOP="sway";
+    dbus-run-session sway;
+}
+
+export _ZO_ECHO=1
+eval "$(fzf --bash)"
+eval "$(zoxide init bash)"

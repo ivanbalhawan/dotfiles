@@ -1,0 +1,2521 @@
+[LOG] Registered timeout rule for 180s:
+      on-timeout: brightnessctl -s && brightnessctl s 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 240s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on
+[LOG] Registered timeout rule for 3600s:
+      on-timeout: loginctl suspend
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[LOG] Using dbus path /org/freedesktop/login1/session/_31
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.26) with content Client interface
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1337 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.26) with content Client interface
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1338 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.26) with content Client interface
+[LOG] Inhibit locks: 3
+[LOG] Cookie 1339 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.26) with content Client interface
+[LOG] Inhibit locks: 4
+[LOG] Cookie 1340 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.26) with content Client interface
+[LOG] Inhibit locks: 5
+[LOG] Cookie 1341 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.26) with content Client interface
+[LOG] Inhibit locks: 6
+[LOG] Cookie 1342 sent
+[LOG] Idled: rule 562facbf1c50
+[LOG] Ignoring from onIdled(), inhibit locks: 6
+[LOG] Idled: rule 562facbf1c98
+[LOG] Ignoring from onIdled(), inhibit locks: 6
+[LOG] Resumed: rule 562facbf1c50
+[LOG] Ignoring from onResumed(), inhibit locks: 6
+[LOG] Resumed: rule 562facbf1c98
+[LOG] Ignoring from onResumed(), inhibit locks: 6
+[LOG] Registered timeout rule for 180s:
+      on-timeout: brightnessctl -s && brightnessctl s 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 240s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on
+[LOG] Registered timeout rule for 3600s:
+      on-timeout: loginctl suspend
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[LOG] Using dbus path /org/freedesktop/login1/session/_31
+[LOG]   | got iface: wl_output v4
+[LOG]   | got iface: wl_output v4
+[LOG]   | got iface: wl_output v4
+[LOG] Idled: rule 56325fb58c50
+[LOG] Running brightnessctl -s && brightnessctl s 10
+[LOG] Executing brightnessctl -s && brightnessctl s 10
+[LOG] Process Created with pid 4064
+Device 'amdgpu_bl1' of class 'backlight':
+	Current brightness: 255 (100%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl1':
+Device 'amdgpu_bl1' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+[LOG] Idled: rule 56325fb58c98
+[LOG] Running hyprctl dispatch dpms off
+[LOG] Executing hyprctl dispatch dpms off
+[LOG] Process Created with pid 4081
+ok
+[LOG] Idled: rule 56325fb58ce0
+[LOG] Running loginctl suspend
+[LOG] Executing loginctl suspend
+[LOG] Process Created with pid 5081
+[LOG] Got PrepareForSleep from dbus with sleep true
+[LOG] Got PrepareForSleep from dbus with sleep false
+[LOG] Resumed: rule 56325fb58c50
+[LOG] Running brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Process Created with pid 16609
+[LOG] Resumed: rule 56325fb58c98
+[LOG] Running hyprctl dispatch dpms on
+[LOG] Executing hyprctl dispatch dpms on
+[LOG] Process Created with pid 16611
+[LOG] Resumed: rule 56325fb58ce0
+[LOG] Ignoring, onRestore is empty.
+Device 'amdgpu_bl1' of class 'backlight':
+	Current brightness: 255 (100%)
+	Max brightness: 255
+
+ok
+[LOG]   | got iface: wl_output v4
+[CRITICAL] [core] Disconnected from pollfd id 1
+[LOG] Registered timeout rule for 180s:
+      on-timeout: brightnessctl -s && brightnessctl s 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 240s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on
+[LOG] Registered timeout rule for 3600s:
+      on-timeout: loginctl suspend
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[LOG] Using dbus path /org/freedesktop/login1/session/_31
+[LOG] ScreenSaver inhibit: true dbus message from ./steamwebhelper (owner: :1.33) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1337 sent
+[LOG] App with owner :1.33 disconnected
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.24) with content Client interface
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1338 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.24) with content Client interface
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1339 sent
+[LOG] ScreenSaver inhibit: true dbus message from ./steamwebhelper (owner: :1.38) with content Video Wake Lock
+[LOG] Inhibit locks: 3
+[LOG] Cookie 1340 sent
+[LOG] App with owner :1.38 disconnected
+[LOG] Inhibit locks: 2
+[LOG] Registered timeout rule for 180s:
+      on-timeout: brightnessctl -s && brightnessctl s 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 240s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on
+[LOG] Registered timeout rule for 3600s:
+      on-timeout: loginctl suspend
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[LOG] Using dbus path /org/freedesktop/login1/session/_31
+[LOG]   | got iface: wl_output v4
+[LOG] Registered timeout rule for 180s:
+      on-timeout: brightnessctl -s && brightnessctl s 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 240s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on
+[LOG] Registered timeout rule for 3600s:
+      on-timeout: loginctl suspend
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[LOG] Using dbus path /org/freedesktop/login1/session/_31
+[CRITICAL] [core] Disconnected from pollfd id 1
+[LOG] Registered timeout rule for 180s:
+      on-timeout: brightnessctl -s && brightnessctl s 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 240s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on
+[LOG] Registered timeout rule for 3600s:
+      on-timeout: loginctl suspend
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[LOG] Using dbus path /org/freedesktop/login1/session/_34
+[LOG]   | got iface: wl_output v4
+[CRITICAL] [core] Disconnected from pollfd id 1
+[LOG] Registered timeout rule for 180s:
+      on-timeout: brightnessctl -s && brightnessctl s 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 240s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on
+[LOG] Registered timeout rule for 3600s:
+      on-timeout: loginctl suspend
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[LOG] Using dbus path /org/freedesktop/login1/session/_34
+[LOG] ScreenSaver inhibit: true dbus message from ./steamwebhelper (owner: :1.35) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1337 sent
+[LOG] App with owner :1.35 disconnected
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.26) with content Client interface
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1338 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.26) with content Client interface
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1339 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.26) with content Client interface
+[LOG] Inhibit locks: 3
+[LOG] Cookie 1340 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.26) with content Client interface
+[LOG] Inhibit locks: 4
+[LOG] Cookie 1341 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.26) with content Client interface
+[LOG] Inhibit locks: 5
+[LOG] Cookie 1342 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.26) with content Client interface
+[LOG] Inhibit locks: 6
+[LOG] Cookie 1343 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.26) with content Client interface
+[LOG] Inhibit locks: 7
+[LOG] Cookie 1344 sent
+[LOG] App with owner :1.26 disconnected
+[LOG] Inhibit locks: 6
+[LOG] Registered timeout rule for 180s:
+      on-timeout: brightnessctl -s && brightnessctl s 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 240s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on
+[LOG] Registered timeout rule for 3600s:
+      on-timeout: loginctl suspend
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[LOG] Using dbus path /org/freedesktop/login1/session/_31
+[LOG] ScreenSaver inhibit: true dbus message from ./steamwebhelper (owner: :1.41) with content Video Wake Lock
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1337 sent
+[LOG] App with owner :1.41 disconnected
+[LOG] Inhibit locks: 0
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.31) with content Client interface
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1338 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.31) with content Client interface
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1339 sent
+[LOG] Idled: rule 56293eac91d0
+[LOG] Ignoring from onIdled(), inhibit locks: 2
+[LOG] Idled: rule 56293eac9218
+[LOG] Ignoring from onIdled(), inhibit locks: 2
+[LOG] Resumed: rule 56293eac91d0
+[LOG] Ignoring from onResumed(), inhibit locks: 2
+[LOG] Resumed: rule 56293eac9218
+[LOG] Ignoring from onResumed(), inhibit locks: 2
+[LOG] ScreenSaver inhibit: true dbus message from ./steamwebhelper (owner: :1.45) with content Video Wake Lock
+[LOG] Inhibit locks: 3
+[LOG] Cookie 1340 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.31) with content Client interface
+[LOG] Inhibit locks: 4
+[LOG] Cookie 1341 sent
+[LOG] App with owner :1.45 disconnected
+[LOG] Inhibit locks: 3
+[LOG] App with owner :1.31 disconnected
+[LOG] Inhibit locks: 2
+[LOG] ScreenSaver inhibit: true dbus message from firefox (owner: :1.25) with content video-playing
+[LOG] Inhibit locks: 3
+[LOG] Cookie 1342 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 4
+[LOG] Cookie 1343 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 5
+[LOG] Cookie 1344 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 6
+[LOG] Cookie 1345 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 7
+[LOG] Cookie 1346 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 8
+[LOG] Cookie 1347 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 9
+[LOG] Cookie 1348 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 10
+[LOG] Cookie 1349 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 11
+[LOG] Cookie 1350 sent
+[LOG] App with owner :1.25 disconnected
+[LOG] Inhibit locks: 10
+[CRITICAL] [core] Disconnected from pollfd id 1
+[LOG] Registered timeout rule for 180s:
+      on-timeout: brightnessctl -s && brightnessctl s 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 240s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on
+[LOG] Registered timeout rule for 3600s:
+      on-timeout: loginctl suspend
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[LOG] Using dbus path /org/freedesktop/login1/session/_31
+[LOG] ScreenSaver inhibit: true dbus message from firefox (owner: :1.32) with content video-playing
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1337 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1338 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 3
+[LOG] Cookie 1339 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 4
+[LOG] Cookie 1340 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 5
+[LOG] Cookie 1341 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 6
+[LOG] Cookie 1342 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 7
+[LOG] Cookie 1343 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 8
+[LOG] Cookie 1344 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 9
+[LOG] Cookie 1345 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 10
+[LOG] Cookie 1346 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 11
+[LOG] Cookie 1347 sent
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 11
+[LOG] Idled: rule 55d4e763f218
+[LOG] Ignoring from onIdled(), inhibit locks: 11
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 11
+[LOG] Resumed: rule 55d4e763f218
+[LOG] Ignoring from onResumed(), inhibit locks: 11
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 11
+[LOG] Idled: rule 55d4e763f218
+[LOG] Ignoring from onIdled(), inhibit locks: 11
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 11
+[LOG] Resumed: rule 55d4e763f218
+[LOG] Ignoring from onResumed(), inhibit locks: 11
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 12
+[LOG] Cookie 1348 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 13
+[LOG] Cookie 1349 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 14
+[LOG] Cookie 1350 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 15
+[LOG] Cookie 1351 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 16
+[LOG] Cookie 1352 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 17
+[LOG] Cookie 1353 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 18
+[LOG] Cookie 1354 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 19
+[LOG] Cookie 1355 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 20
+[LOG] Cookie 1356 sent
+[LOG] ScreenSaver inhibit: true dbus message from ./steamwebhelper (owner: :1.84) with content Video Wake Lock
+[LOG] Inhibit locks: 21
+[LOG] Cookie 1357 sent
+[LOG] App with owner :1.84 disconnected
+[LOG] Inhibit locks: 20
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 21
+[LOG] Cookie 1358 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Game streaming (server)
+[LOG] Inhibit locks: 22
+[LOG] Cookie 1359 sent
+[LOG] ScreenSaver inhibit: true dbus message from ./steamwebhelper (owner: :1.88) with content Video Wake Lock
+[LOG] Inhibit locks: 23
+[LOG] Cookie 1360 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 24
+[LOG] Cookie 1361 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 25
+[LOG] Cookie 1362 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 26
+[LOG] Cookie 1363 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 27
+[LOG] Cookie 1364 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 28
+[LOG] Cookie 1365 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 29
+[LOG] Cookie 1366 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 30
+[LOG] Cookie 1367 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 31
+[LOG] Cookie 1368 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 32
+[LOG] Cookie 1369 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Game streaming (server)
+[LOG] Inhibit locks: 33
+[LOG] Cookie 1370 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 34
+[LOG] Cookie 1371 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 35
+[LOG] Cookie 1372 sent
+[LOG] App with owner :1.88 disconnected
+[LOG] Inhibit locks: 34
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 35
+[LOG] Cookie 1373 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 36
+[LOG] Cookie 1374 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 37
+[LOG] Cookie 1375 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 38
+[LOG] Cookie 1376 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 39
+[LOG] Cookie 1377 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 40
+[LOG] Cookie 1378 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 41
+[LOG] Cookie 1379 sent
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 41
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 42
+[LOG] Cookie 1380 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 43
+[LOG] Cookie 1381 sent
+[LOG] Idled: rule 55d4e763f218
+[LOG] Ignoring from onIdled(), inhibit locks: 43
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 43
+[LOG] Resumed: rule 55d4e763f218
+[LOG] Ignoring from onResumed(), inhibit locks: 43
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 44
+[LOG] Cookie 1382 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 45
+[LOG] Cookie 1383 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 46
+[LOG] Cookie 1384 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 47
+[LOG] Cookie 1385 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 48
+[LOG] Cookie 1386 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 49
+[LOG] Cookie 1387 sent
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 49
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 50
+[LOG] Cookie 1388 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 51
+[LOG] Cookie 1389 sent
+[LOG] Idled: rule 55d4e763f218
+[LOG] Ignoring from onIdled(), inhibit locks: 51
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 52
+[LOG] Cookie 1390 sent
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 52
+[LOG] Resumed: rule 55d4e763f218
+[LOG] Ignoring from onResumed(), inhibit locks: 52
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 53
+[LOG] Cookie 1391 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 54
+[LOG] Cookie 1392 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 55
+[LOG] Cookie 1393 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 56
+[LOG] Cookie 1394 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 57
+[LOG] Cookie 1395 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 58
+[LOG] Cookie 1396 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 59
+[LOG] Cookie 1397 sent
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 59
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 59
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 60
+[LOG] Cookie 1398 sent
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 60
+[LOG] Idled: rule 55d4e763f218
+[LOG] Ignoring from onIdled(), inhibit locks: 60
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 60
+[LOG] Resumed: rule 55d4e763f218
+[LOG] Ignoring from onResumed(), inhibit locks: 60
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 61
+[LOG] Cookie 1399 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 62
+[LOG] Cookie 1400 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.73) with content Client interface
+[LOG] Inhibit locks: 63
+[LOG] Cookie 1401 sent
+[LOG] App with owner :1.73 disconnected
+[LOG] Inhibit locks: 62
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 62
+[LOG] Idled: rule 55d4e763f218
+[LOG] Ignoring from onIdled(), inhibit locks: 62
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 62
+[LOG] Resumed: rule 55d4e763f218
+[LOG] Ignoring from onResumed(), inhibit locks: 62
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 62
+[LOG] Idled: rule 55d4e763f218
+[LOG] Ignoring from onIdled(), inhibit locks: 62
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 62
+[LOG] Resumed: rule 55d4e763f218
+[LOG] Ignoring from onResumed(), inhibit locks: 62
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 62
+[LOG] Idled: rule 55d4e763f218
+[LOG] Ignoring from onIdled(), inhibit locks: 62
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 62
+[LOG] Resumed: rule 55d4e763f218
+[LOG] Ignoring from onResumed(), inhibit locks: 62
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 63
+[LOG] Cookie 1402 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 64
+[LOG] Cookie 1403 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 65
+[LOG] Cookie 1404 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 66
+[LOG] Cookie 1405 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 67
+[LOG] Cookie 1406 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 68
+[LOG] Cookie 1407 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 69
+[LOG] Cookie 1408 sent
+[LOG] App with owner :1.32 disconnected
+[LOG] Inhibit locks: 68
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 69
+[LOG] Cookie 1409 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 70
+[LOG] Cookie 1410 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 71
+[LOG] Cookie 1411 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 72
+[LOG] Cookie 1412 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 73
+[LOG] Cookie 1413 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 74
+[LOG] Cookie 1414 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 75
+[LOG] Cookie 1415 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 76
+[LOG] Cookie 1416 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 77
+[LOG] Cookie 1417 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 78
+[LOG] Cookie 1418 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 79
+[LOG] Cookie 1419 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 80
+[LOG] Cookie 1420 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 81
+[LOG] Cookie 1421 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 82
+[LOG] Cookie 1422 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 83
+[LOG] Cookie 1423 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 84
+[LOG] Cookie 1424 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 85
+[LOG] Cookie 1425 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 86
+[LOG] Cookie 1426 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 87
+[LOG] Cookie 1427 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 88
+[LOG] Cookie 1428 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 89
+[LOG] Cookie 1429 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 90
+[LOG] Cookie 1430 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 91
+[LOG] Cookie 1431 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 92
+[LOG] Cookie 1432 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 93
+[LOG] Cookie 1433 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 94
+[LOG] Cookie 1434 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 95
+[LOG] Cookie 1435 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 96
+[LOG] Cookie 1436 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 97
+[LOG] Cookie 1437 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 98
+[LOG] Cookie 1438 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 99
+[LOG] Cookie 1439 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 100
+[LOG] Cookie 1440 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 101
+[LOG] Cookie 1441 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 102
+[LOG] Cookie 1442 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 103
+[LOG] Cookie 1443 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 104
+[LOG] Cookie 1444 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 105
+[LOG] Cookie 1445 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 106
+[LOG] Cookie 1446 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 107
+[LOG] Cookie 1447 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 108
+[LOG] Cookie 1448 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 109
+[LOG] Cookie 1449 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 110
+[LOG] Cookie 1450 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 111
+[LOG] Cookie 1451 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 112
+[LOG] Cookie 1452 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 113
+[LOG] Cookie 1453 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 114
+[LOG] Cookie 1454 sent
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 114
+[LOG] Idled: rule 55d4e763f218
+[LOG] Ignoring from onIdled(), inhibit locks: 114
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 114
+[LOG] Resumed: rule 55d4e763f218
+[LOG] Ignoring from onResumed(), inhibit locks: 114
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 115
+[LOG] Cookie 1455 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 116
+[LOG] Cookie 1456 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 117
+[LOG] Cookie 1457 sent
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 117
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 117
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 117
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 117
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 117
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 117
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 118
+[LOG] Cookie 1458 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 119
+[LOG] Cookie 1459 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 120
+[LOG] Cookie 1460 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 121
+[LOG] Cookie 1461 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 122
+[LOG] Cookie 1462 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 123
+[LOG] Cookie 1463 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 124
+[LOG] Cookie 1464 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 125
+[LOG] Cookie 1465 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 126
+[LOG] Cookie 1466 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 127
+[LOG] Cookie 1467 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 128
+[LOG] Cookie 1468 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 129
+[LOG] Cookie 1469 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 130
+[LOG] Cookie 1470 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 131
+[LOG] Cookie 1471 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 132
+[LOG] Cookie 1472 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 133
+[LOG] Cookie 1473 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 134
+[LOG] Cookie 1474 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 135
+[LOG] Cookie 1475 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 136
+[LOG] Cookie 1476 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 137
+[LOG] Cookie 1477 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 138
+[LOG] Cookie 1478 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 139
+[LOG] Cookie 1479 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 140
+[LOG] Cookie 1480 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 141
+[LOG] Cookie 1481 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 142
+[LOG] Cookie 1482 sent
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 142
+[LOG] Idled: rule 55d4e763f218
+[LOG] Ignoring from onIdled(), inhibit locks: 142
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 142
+[LOG] Resumed: rule 55d4e763f218
+[LOG] Ignoring from onResumed(), inhibit locks: 142
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 142
+[LOG] Idled: rule 55d4e763f218
+[LOG] Ignoring from onIdled(), inhibit locks: 142
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 142
+[LOG] Resumed: rule 55d4e763f218
+[LOG] Ignoring from onResumed(), inhibit locks: 142
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 142
+[LOG] Idled: rule 55d4e763f218
+[LOG] Ignoring from onIdled(), inhibit locks: 142
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 142
+[LOG] Resumed: rule 55d4e763f218
+[LOG] Ignoring from onResumed(), inhibit locks: 142
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 142
+[LOG] Idled: rule 55d4e763f218
+[LOG] Ignoring from onIdled(), inhibit locks: 142
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 142
+[LOG] Resumed: rule 55d4e763f218
+[LOG] Ignoring from onResumed(), inhibit locks: 142
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 142
+[LOG] Idled: rule 55d4e763f218
+[LOG] Ignoring from onIdled(), inhibit locks: 142
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 142
+[LOG] Resumed: rule 55d4e763f218
+[LOG] Ignoring from onResumed(), inhibit locks: 142
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 142
+[LOG] Idled: rule 55d4e763f218
+[LOG] Ignoring from onIdled(), inhibit locks: 142
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 142
+[LOG] Resumed: rule 55d4e763f218
+[LOG] Ignoring from onResumed(), inhibit locks: 142
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 143
+[LOG] Cookie 1483 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 144
+[LOG] Cookie 1484 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 145
+[LOG] Cookie 1485 sent
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 145
+[LOG] Idled: rule 55d4e763f218
+[LOG] Ignoring from onIdled(), inhibit locks: 145
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 145
+[LOG] Resumed: rule 55d4e763f218
+[LOG] Ignoring from onResumed(), inhibit locks: 145
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.181) with content Client interface
+[LOG] Inhibit locks: 146
+[LOG] Cookie 1486 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.181) with content Client interface
+[LOG] Inhibit locks: 147
+[LOG] Cookie 1487 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.181) with content Client interface
+[LOG] Inhibit locks: 148
+[LOG] Cookie 1488 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.181) with content Client interface
+[LOG] Inhibit locks: 149
+[LOG] Cookie 1489 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.181) with content Client interface
+[LOG] Inhibit locks: 150
+[LOG] Cookie 1490 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.181) with content Client interface
+[LOG] Inhibit locks: 151
+[LOG] Cookie 1491 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.181) with content Client interface
+[LOG] Inhibit locks: 152
+[LOG] Cookie 1492 sent
+[LOG] App with owner :1.181 disconnected
+[LOG] Inhibit locks: 151
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 151
+[LOG] Idled: rule 55d4e763f218
+[LOG] Ignoring from onIdled(), inhibit locks: 151
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 151
+[LOG] Resumed: rule 55d4e763f218
+[LOG] Ignoring from onResumed(), inhibit locks: 151
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 151
+[LOG] Idled: rule 55d4e763f218
+[LOG] Ignoring from onIdled(), inhibit locks: 151
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 151
+[LOG] Resumed: rule 55d4e763f218
+[LOG] Ignoring from onResumed(), inhibit locks: 151
+[LOG] Idled: rule 55d4e763f1d0
+[LOG] Ignoring from onIdled(), inhibit locks: 151
+[LOG] Idled: rule 55d4e763f218
+[LOG] Ignoring from onIdled(), inhibit locks: 151
+[LOG] Idled: rule 55d4e763f260
+[LOG] Ignoring from onIdled(), inhibit locks: 151
+[LOG] Resumed: rule 55d4e763f1d0
+[LOG] Ignoring from onResumed(), inhibit locks: 151
+[LOG] Resumed: rule 55d4e763f218
+[LOG] Ignoring from onResumed(), inhibit locks: 151
+[LOG] Resumed: rule 55d4e763f260
+[LOG] Ignoring from onResumed(), inhibit locks: 151
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.213) with content Client interface
+[LOG] Inhibit locks: 152
+[LOG] Cookie 1493 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.213) with content Client interface
+[LOG] Inhibit locks: 153
+[LOG] Cookie 1494 sent
+[LOG] App with owner :1.213 disconnected
+[LOG] Inhibit locks: 152
+[LOG] Registered timeout rule for 180s:
+      on-timeout: brightnessctl -s && brightnessctl s 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 240s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on
+[LOG] Registered timeout rule for 3600s:
+      on-timeout: loginctl suspend
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[LOG] Using dbus path /org/freedesktop/login1/session/_31
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1337 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1338 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 3
+[LOG] Cookie 1339 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 4
+[LOG] Cookie 1340 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 5
+[LOG] Cookie 1341 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 6
+[LOG] Cookie 1342 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 7
+[LOG] Cookie 1343 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 8
+[LOG] Cookie 1344 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 9
+[LOG] Cookie 1345 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 10
+[LOG] Cookie 1346 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 11
+[LOG] Cookie 1347 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 12
+[LOG] Cookie 1348 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 13
+[LOG] Cookie 1349 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 14
+[LOG] Cookie 1350 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 15
+[LOG] Cookie 1351 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 16
+[LOG] Cookie 1352 sent
+[LOG] Idled: rule 56238b6d23e0
+[LOG] Ignoring from onIdled(), inhibit locks: 16
+[LOG] Idled: rule 56238b6d2428
+[LOG] Ignoring from onIdled(), inhibit locks: 16
+[LOG] Resumed: rule 56238b6d23e0
+[LOG] Ignoring from onResumed(), inhibit locks: 16
+[LOG] Resumed: rule 56238b6d2428
+[LOG] Ignoring from onResumed(), inhibit locks: 16
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 17
+[LOG] Cookie 1353 sent
+[LOG] App with owner :1.25 disconnected
+[LOG] Inhibit locks: 16
+[LOG] Idled: rule 56238b6d23e0
+[LOG] Ignoring from onIdled(), inhibit locks: 16
+[LOG] Idled: rule 56238b6d2428
+[LOG] Ignoring from onIdled(), inhibit locks: 16
+[LOG] Resumed: rule 56238b6d23e0
+[LOG] Ignoring from onResumed(), inhibit locks: 16
+[LOG] Resumed: rule 56238b6d2428
+[LOG] Ignoring from onResumed(), inhibit locks: 16
+[CRITICAL] [core] Disconnected from pollfd id 1
+[LOG] Registered timeout rule for 180s:
+      on-timeout: brightnessctl -s && brightnessctl s 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 240s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on
+[LOG] Registered timeout rule for 3600s:
+      on-timeout: loginctl suspend
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[LOG] Using dbus path /org/freedesktop/login1/session/_31
+[LOG]   | got iface: wl_output v4
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.29) with content Client interface
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1337 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.29) with content Client interface
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1338 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.29) with content Client interface
+[LOG] Inhibit locks: 3
+[LOG] Cookie 1339 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.29) with content Client interface
+[LOG] Inhibit locks: 4
+[LOG] Cookie 1340 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.29) with content Client interface
+[LOG] Inhibit locks: 5
+[LOG] Cookie 1341 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.29) with content Client interface
+[LOG] Inhibit locks: 6
+[LOG] Cookie 1342 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.29) with content Client interface
+[LOG] Inhibit locks: 7
+[LOG] Cookie 1343 sent
+[LOG] App with owner :1.29 disconnected
+[LOG] Inhibit locks: 6
+[LOG] Idled: rule 55b9db0b43e0
+[LOG] Ignoring from onIdled(), inhibit locks: 6
+[LOG] Resumed: rule 55b9db0b43e0
+[LOG] Ignoring from onResumed(), inhibit locks: 6
+[LOG] ScreenSaver inhibit: true dbus message from firefox (owner: :1.26) with content video-playing
+[LOG] Inhibit locks: 7
+[LOG] Cookie 1344 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 8
+[LOG] Cookie 1345 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 9
+[LOG] Cookie 1346 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 10
+[LOG] Cookie 1347 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 11
+[LOG] Cookie 1348 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 12
+[LOG] Cookie 1349 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 13
+[LOG] Cookie 1350 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 14
+[LOG] Cookie 1351 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 15
+[LOG] Cookie 1352 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 16
+[LOG] Cookie 1353 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 17
+[LOG] Cookie 1354 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.118) with content Client interface
+[LOG] Inhibit locks: 18
+[LOG] Cookie 1355 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.118) with content Client interface
+[LOG] Inhibit locks: 19
+[LOG] Cookie 1356 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.118) with content Client interface
+[LOG] Inhibit locks: 20
+[LOG] Cookie 1357 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.118) with content Client interface
+[LOG] Inhibit locks: 21
+[LOG] Cookie 1358 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.118) with content Client interface
+[LOG] Inhibit locks: 22
+[LOG] Cookie 1359 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.118) with content Client interface
+[LOG] Inhibit locks: 23
+[LOG] Cookie 1360 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.118) with content Client interface
+[LOG] Inhibit locks: 24
+[LOG] Cookie 1361 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.118) with content Client interface
+[LOG] Inhibit locks: 25
+[LOG] Cookie 1362 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.118) with content Client interface
+[LOG] Inhibit locks: 26
+[LOG] Cookie 1363 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.118) with content Client interface
+[LOG] Inhibit locks: 27
+[LOG] Cookie 1364 sent
+[LOG] App with owner :1.118 disconnected
+[LOG] Inhibit locks: 26
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.131) with content Client interface
+[LOG] Inhibit locks: 27
+[LOG] Cookie 1365 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.131) with content Client interface
+[LOG] Inhibit locks: 28
+[LOG] Cookie 1366 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.131) with content Client interface
+[LOG] Inhibit locks: 29
+[LOG] Cookie 1367 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.131) with content Client interface
+[LOG] Inhibit locks: 30
+[LOG] Cookie 1368 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.131) with content Client interface
+[LOG] Inhibit locks: 31
+[LOG] Cookie 1369 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.131) with content Client interface
+[LOG] Inhibit locks: 32
+[LOG] Cookie 1370 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.131) with content Client interface
+[LOG] Inhibit locks: 33
+[LOG] Cookie 1371 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.131) with content Client interface
+[LOG] Inhibit locks: 34
+[LOG] Cookie 1372 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.131) with content Client interface
+[LOG] Inhibit locks: 35
+[LOG] Cookie 1373 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.131) with content Client interface
+[LOG] Inhibit locks: 36
+[LOG] Cookie 1374 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.131) with content Client interface
+[LOG] Inhibit locks: 37
+[LOG] Cookie 1375 sent
+[LOG] App with owner :1.131 disconnected
+[LOG] Inhibit locks: 36
+[LOG] Idled: rule 55b9db0b43e0
+[LOG] Ignoring from onIdled(), inhibit locks: 36
+[LOG] Idled: rule 55b9db0b4428
+[LOG] Ignoring from onIdled(), inhibit locks: 36
+[LOG] Resumed: rule 55b9db0b43e0
+[LOG] Ignoring from onResumed(), inhibit locks: 36
+[LOG] Resumed: rule 55b9db0b4428
+[LOG] Ignoring from onResumed(), inhibit locks: 36
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 37
+[LOG] Cookie 1376 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 38
+[LOG] Cookie 1377 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 39
+[LOG] Cookie 1378 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 40
+[LOG] Cookie 1379 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 41
+[LOG] Cookie 1380 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 42
+[LOG] Cookie 1381 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 43
+[LOG] Cookie 1382 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 44
+[LOG] Cookie 1383 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 45
+[LOG] Cookie 1384 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 46
+[LOG] Cookie 1385 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 47
+[LOG] Cookie 1386 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 48
+[LOG] Cookie 1387 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 49
+[LOG] Cookie 1388 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 50
+[LOG] Cookie 1389 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 51
+[LOG] Cookie 1390 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 52
+[LOG] Cookie 1391 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 53
+[LOG] Cookie 1392 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 54
+[LOG] Cookie 1393 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 55
+[LOG] Cookie 1394 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 56
+[LOG] Cookie 1395 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 57
+[LOG] Cookie 1396 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 58
+[LOG] Cookie 1397 sent
+[LOG] App with owner :1.26 disconnected
+[LOG] Inhibit locks: 57
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 58
+[LOG] Cookie 1398 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 59
+[LOG] Cookie 1399 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 60
+[LOG] Cookie 1400 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 61
+[LOG] Cookie 1401 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 62
+[LOG] Cookie 1402 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 63
+[LOG] Cookie 1403 sent
+[LOG] Idled: rule 55b9db0b43e0
+[LOG] Ignoring from onIdled(), inhibit locks: 63
+[LOG] Resumed: rule 55b9db0b43e0
+[LOG] Ignoring from onResumed(), inhibit locks: 63
+[LOG] Idled: rule 55b9db0b43e0
+[LOG] Ignoring from onIdled(), inhibit locks: 63
+[LOG] Idled: rule 55b9db0b4428
+[LOG] Ignoring from onIdled(), inhibit locks: 63
+[LOG] Resumed: rule 55b9db0b43e0
+[LOG] Ignoring from onResumed(), inhibit locks: 63
+[LOG] Resumed: rule 55b9db0b4428
+[LOG] Ignoring from onResumed(), inhibit locks: 63
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 64
+[LOG] Cookie 1404 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 65
+[LOG] Cookie 1405 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 66
+[LOG] Cookie 1406 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 67
+[LOG] Cookie 1407 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 68
+[LOG] Cookie 1408 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 69
+[LOG] Cookie 1409 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 70
+[LOG] Cookie 1410 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 71
+[LOG] Cookie 1411 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 72
+[LOG] Cookie 1412 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 73
+[LOG] Cookie 1413 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 74
+[LOG] Cookie 1414 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 75
+[LOG] Cookie 1415 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 76
+[LOG] Cookie 1416 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 77
+[LOG] Cookie 1417 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 78
+[LOG] Cookie 1418 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 79
+[LOG] Cookie 1419 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 80
+[LOG] Cookie 1420 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 81
+[LOG] Cookie 1421 sent
+[LOG] Idled: rule 55b9db0b43e0
+[LOG] Ignoring from onIdled(), inhibit locks: 81
+[LOG] Idled: rule 55b9db0b4428
+[LOG] Ignoring from onIdled(), inhibit locks: 81
+[LOG] Resumed: rule 55b9db0b43e0
+[LOG] Ignoring from onResumed(), inhibit locks: 81
+[LOG] Resumed: rule 55b9db0b4428
+[LOG] Ignoring from onResumed(), inhibit locks: 81
+[LOG] Idled: rule 55b9db0b43e0
+[LOG] Ignoring from onIdled(), inhibit locks: 81
+[LOG] Idled: rule 55b9db0b4428
+[LOG] Ignoring from onIdled(), inhibit locks: 81
+[LOG] Resumed: rule 55b9db0b43e0
+[LOG] Ignoring from onResumed(), inhibit locks: 81
+[LOG] Resumed: rule 55b9db0b4428
+[LOG] Ignoring from onResumed(), inhibit locks: 81
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.322) with content Client interface
+[LOG] Inhibit locks: 82
+[LOG] Cookie 1422 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.322) with content Client interface
+[LOG] Inhibit locks: 83
+[LOG] Cookie 1423 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.322) with content Client interface
+[LOG] Inhibit locks: 84
+[LOG] Cookie 1424 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.322) with content Client interface
+[LOG] Inhibit locks: 85
+[LOG] Cookie 1425 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.322) with content Client interface
+[LOG] Inhibit locks: 86
+[LOG] Cookie 1426 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.322) with content Client interface
+[LOG] Inhibit locks: 87
+[LOG] Cookie 1427 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.322) with content Client interface
+[LOG] Inhibit locks: 88
+[LOG] Cookie 1428 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.322) with content Client interface
+[LOG] Inhibit locks: 89
+[LOG] Cookie 1429 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.322) with content Client interface
+[LOG] Inhibit locks: 90
+[LOG] Cookie 1430 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.322) with content Client interface
+[LOG] Inhibit locks: 91
+[LOG] Cookie 1431 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.322) with content Client interface
+[LOG] Inhibit locks: 92
+[LOG] Cookie 1432 sent
+[LOG] App with owner :1.322 disconnected
+[LOG] Inhibit locks: 91
+[LOG] Idled: rule 55b9db0b43e0
+[LOG] Ignoring from onIdled(), inhibit locks: 91
+[LOG] Idled: rule 55b9db0b4428
+[LOG] Ignoring from onIdled(), inhibit locks: 91
+[LOG] Resumed: rule 55b9db0b43e0
+[LOG] Ignoring from onResumed(), inhibit locks: 91
+[LOG] Resumed: rule 55b9db0b4428
+[LOG] Ignoring from onResumed(), inhibit locks: 91
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.504) with content Client interface
+[LOG] Inhibit locks: 92
+[LOG] Cookie 1433 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.504) with content Client interface
+[LOG] Inhibit locks: 93
+[LOG] Cookie 1434 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.504) with content Client interface
+[LOG] Inhibit locks: 94
+[LOG] Cookie 1435 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.504) with content Client interface
+[LOG] Inhibit locks: 95
+[LOG] Cookie 1436 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.504) with content Client interface
+[LOG] Inhibit locks: 96
+[LOG] Cookie 1437 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.504) with content Client interface
+[LOG] Inhibit locks: 97
+[LOG] Cookie 1438 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.504) with content Client interface
+[LOG] Inhibit locks: 98
+[LOG] Cookie 1439 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.504) with content Client interface
+[LOG] Inhibit locks: 99
+[LOG] Cookie 1440 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.504) with content Client interface
+[LOG] Inhibit locks: 100
+[LOG] Cookie 1441 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.504) with content Client interface
+[LOG] Inhibit locks: 101
+[LOG] Cookie 1442 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.504) with content Client interface
+[LOG] Inhibit locks: 102
+[LOG] Cookie 1443 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.504) with content Client interface
+[LOG] Inhibit locks: 103
+[LOG] Cookie 1444 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.504) with content Client interface
+[LOG] Inhibit locks: 104
+[LOG] Cookie 1445 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.504) with content Client interface
+[LOG] Inhibit locks: 105
+[LOG] Cookie 1446 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.504) with content Client interface
+[LOG] Inhibit locks: 106
+[LOG] Cookie 1447 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.504) with content Client interface
+[LOG] Inhibit locks: 107
+[LOG] Cookie 1448 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.504) with content Client interface
+[LOG] Inhibit locks: 108
+[LOG] Cookie 1449 sent
+[LOG] App with owner :1.504 disconnected
+[LOG] Inhibit locks: 107
+[LOG] Idled: rule 55b9db0b43e0
+[LOG] Ignoring from onIdled(), inhibit locks: 107
+[LOG] Resumed: rule 55b9db0b43e0
+[LOG] Ignoring from onResumed(), inhibit locks: 107
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 108
+[LOG] Cookie 1450 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 109
+[LOG] Cookie 1451 sent
+[LOG] ScreenSaver inhibit: true dbus message from firefox (owner: :1.520) with content video-playing
+[LOG] Inhibit locks: 110
+[LOG] Cookie 1452 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 111
+[LOG] Cookie 1453 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 112
+[LOG] Cookie 1454 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 113
+[LOG] Cookie 1455 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 114
+[LOG] Cookie 1456 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 115
+[LOG] Cookie 1457 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 116
+[LOG] Cookie 1458 sent
+[LOG] Idled: rule 55b9db0b43e0
+[LOG] Ignoring from onIdled(), inhibit locks: 116
+[LOG] Idled: rule 55b9db0b4428
+[LOG] Ignoring from onIdled(), inhibit locks: 116
+[LOG] Resumed: rule 55b9db0b43e0
+[LOG] Ignoring from onResumed(), inhibit locks: 116
+[LOG] Resumed: rule 55b9db0b4428
+[LOG] Ignoring from onResumed(), inhibit locks: 116
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 117
+[LOG] Cookie 1459 sent
+[LOG] Idled: rule 55b9db0b43e0
+[LOG] Ignoring from onIdled(), inhibit locks: 117
+[LOG] Idled: rule 55b9db0b4428
+[LOG] Ignoring from onIdled(), inhibit locks: 117
+[LOG] Resumed: rule 55b9db0b43e0
+[LOG] Ignoring from onResumed(), inhibit locks: 117
+[LOG] Resumed: rule 55b9db0b4428
+[LOG] Ignoring from onResumed(), inhibit locks: 117
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.533) with content Client interface
+[LOG] Inhibit locks: 118
+[LOG] Cookie 1460 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.533) with content Client interface
+[LOG] Inhibit locks: 119
+[LOG] Cookie 1461 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.533) with content Client interface
+[LOG] Inhibit locks: 120
+[LOG] Cookie 1462 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.533) with content Client interface
+[LOG] Inhibit locks: 121
+[LOG] Cookie 1463 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.533) with content Client interface
+[LOG] Inhibit locks: 122
+[LOG] Cookie 1464 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.533) with content Client interface
+[LOG] Inhibit locks: 123
+[LOG] Cookie 1465 sent
+[LOG] Registered timeout rule for 180s:
+      on-timeout: brightnessctl -s && brightnessctl s 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 240s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on
+[LOG] Registered timeout rule for 3600s:
+      on-timeout: loginctl suspend
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[LOG] Using dbus path /org/freedesktop/login1/session/_31
+[LOG]   | got iface: wl_output v4
+[LOG] Idled: rule 5614e64392e0
+[LOG] Running brightnessctl -s && brightnessctl s 10
+[LOG] Executing brightnessctl -s && brightnessctl s 10
+[LOG] Process Created with pid 4632
+Device 'amdgpu_bl1' of class 'backlight':
+	Current brightness: 255 (100%)
+	Max brightness: 255
+
+Updated device 'amdgpu_bl1':
+Device 'amdgpu_bl1' of class 'backlight':
+	Current brightness: 10 (4%)
+	Max brightness: 255
+
+[LOG] Idled: rule 5614e6439328
+[LOG] Running hyprctl dispatch dpms off
+[LOG] Executing hyprctl dispatch dpms off
+[LOG] Process Created with pid 4650
+ok
+[LOG] Resumed: rule 5614e64392e0
+[LOG] Running brightnessctl -r
+[LOG] Executing brightnessctl -r
+[LOG] Process Created with pid 4827
+[LOG] Resumed: rule 5614e6439328
+[LOG] Running hyprctl dispatch dpms on
+[LOG] Executing hyprctl dispatch dpms on
+[LOG] Process Created with pid 4829
+Device 'amdgpu_bl1' of class 'backlight':
+	Current brightness: 255 (100%)
+	Max brightness: 255
+
+Couldn't commit output {}
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.38) with content Client interface
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1337 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.38) with content Client interface
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1338 sent
+[LOG] Idled: rule 5614e64392e0
+[LOG] Ignoring from onIdled(), inhibit locks: 2
+[LOG] Idled: rule 5614e6439328
+[LOG] Ignoring from onIdled(), inhibit locks: 2
+[LOG] Resumed: rule 5614e64392e0
+[LOG] Ignoring from onResumed(), inhibit locks: 2
+[LOG] Resumed: rule 5614e6439328
+[LOG] Ignoring from onResumed(), inhibit locks: 2
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.38) with content Client interface
+[LOG] Inhibit locks: 3
+[LOG] Cookie 1339 sent
+[LOG] App with owner :1.38 disconnected
+[LOG] Inhibit locks: 2
+[LOG] Idled: rule 5614e64392e0
+[LOG] Ignoring from onIdled(), inhibit locks: 2
+[LOG] Idled: rule 5614e6439328
+[LOG] Ignoring from onIdled(), inhibit locks: 2
+[LOG] Resumed: rule 5614e64392e0
+[LOG] Ignoring from onResumed(), inhibit locks: 2
+[LOG] Resumed: rule 5614e6439328
+[LOG] Ignoring from onResumed(), inhibit locks: 2
+[LOG] Registered timeout rule for 180s:
+      on-timeout: brightnessctl -s && brightnessctl s 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 240s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on
+[LOG] Registered timeout rule for 3600s:
+      on-timeout: loginctl suspend
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[LOG] Using dbus path /org/freedesktop/login1/session/_31
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1337 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1338 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 3
+[LOG] Cookie 1339 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 4
+[LOG] Cookie 1340 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 5
+[LOG] Cookie 1341 sent
+[LOG] Idled: rule 55f559595470
+[LOG] Ignoring from onIdled(), inhibit locks: 5
+[LOG] Idled: rule 55f5595954b8
+[LOG] Ignoring from onIdled(), inhibit locks: 5
+[LOG] Resumed: rule 55f559595470
+[LOG] Ignoring from onResumed(), inhibit locks: 5
+[LOG] Resumed: rule 55f5595954b8
+[LOG] Ignoring from onResumed(), inhibit locks: 5
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 6
+[LOG] Cookie 1342 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 7
+[LOG] Cookie 1343 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 8
+[LOG] Cookie 1344 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.25) with content Client interface
+[LOG] Inhibit locks: 9
+[LOG] Cookie 1345 sent
+[LOG] Idled: rule 55f559595470
+[LOG] Ignoring from onIdled(), inhibit locks: 9
+[LOG] Idled: rule 55f5595954b8
+[LOG] Ignoring from onIdled(), inhibit locks: 9
+[LOG] Resumed: rule 55f559595470
+[LOG] Ignoring from onResumed(), inhibit locks: 9
+[LOG] Resumed: rule 55f5595954b8
+[LOG] Ignoring from onResumed(), inhibit locks: 9
+[LOG] Registered timeout rule for 180s:
+      on-timeout: brightnessctl -s && brightnessctl s 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 240s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on
+[LOG] Registered timeout rule for 3600s:
+      on-timeout: loginctl suspend
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[LOG] Using dbus path /org/freedesktop/login1/session/_31
+[LOG] ScreenSaver inhibit: true dbus message from firefox (owner: :1.26) with content video-playing
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1337 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1338 sent
+[LOG] App with owner :1.26 disconnected
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1339 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 3
+[LOG] Cookie 1340 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 4
+[LOG] Cookie 1341 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 5
+[LOG] Cookie 1342 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 6
+[LOG] Cookie 1343 sent
+[LOG] Registered timeout rule for 180s:
+      on-timeout: brightnessctl -s && brightnessctl s 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 240s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on
+[LOG] Registered timeout rule for 3600s:
+      on-timeout: loginctl suspend
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[LOG] Using dbus path /org/freedesktop/login1/session/_31
+[LOG] ScreenSaver inhibit: true dbus message from firefox (owner: :1.25) with content video-playing
+[LOG] Inhibit locks: 1
+[LOG] Cookie 1337 sent
+[LOG] ScreenSaver inhibit: true dbus message from  (owner: :1.18) with content video-playing
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1338 sent
+[LOG] App with owner :1.25 disconnected
+[LOG] Inhibit locks: 1
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.26) with content Client interface
+[LOG] Inhibit locks: 2
+[LOG] Cookie 1339 sent
+[LOG] ScreenSaver inhibit: true dbus message from Steam (owner: :1.26) with content Client interface
+[LOG] Inhibit locks: 3
+[LOG] Cookie 1340 sent
+[LOG] Registered timeout rule for 180s:
+      on-timeout: brightnessctl -s && brightnessctl s 10
+      on-resume: brightnessctl -r
+[LOG] Registered timeout rule for 240s:
+      on-timeout: hyprctl dispatch dpms off
+      on-resume: hyprctl dispatch dpms on
+[LOG] Registered timeout rule for 3600s:
+      on-timeout: loginctl suspend
+      on-resume: 
+[LOG]   | got iface: wl_seat v9
+[LOG]    > Bound to wl_seat v9
+[LOG]   | got iface: wl_data_device_manager v3
+[LOG]   | got iface: wl_compositor v6
+[LOG]   | got iface: wl_subcompositor v1
+[LOG]   | got iface: wl_shm v1
+[LOG]   | got iface: wp_viewporter v1
+[LOG]   | got iface: wp_tearing_control_manager_v1 v1
+[LOG]   | got iface: wp_fractional_scale_manager_v1 v1
+[LOG]   | got iface: zxdg_output_manager_v1 v3
+[LOG]   | got iface: wp_cursor_shape_manager_v1 v1
+[LOG]   | got iface: zwp_idle_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_relative_pointer_manager_v1 v1
+[LOG]   | got iface: zxdg_decoration_manager_v1 v1
+[LOG]   | got iface: wp_alpha_modifier_v1 v1
+[LOG]   | got iface: zwlr_gamma_control_manager_v1 v1
+[LOG]   | got iface: ext_foreign_toplevel_list_v1 v1
+[LOG]   | got iface: zwp_pointer_gestures_v1 v3
+[LOG]   | got iface: zwlr_foreign_toplevel_manager_v1 v3
+[LOG]   | got iface: zwp_keyboard_shortcuts_inhibit_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v1 v1
+[LOG]   | got iface: zwp_text_input_manager_v3 v1
+[LOG]   | got iface: zwp_pointer_constraints_v1 v1
+[LOG]   | got iface: zwlr_output_power_manager_v1 v1
+[LOG]   | got iface: xdg_activation_v1 v1
+[LOG]   | got iface: ext_idle_notifier_v1 v1
+[LOG]    > Bound to ext_idle_notifier_v1 v1
+[LOG]   | got iface: ext_session_lock_manager_v1 v1
+[LOG]   | got iface: zwp_input_method_manager_v2 v1
+[LOG]   | got iface: zwp_virtual_keyboard_manager_v1 v1
+[LOG]   | got iface: zwlr_virtual_pointer_manager_v1 v2
+[LOG]   | got iface: zwlr_output_manager_v1 v4
+[LOG]   | got iface: org_kde_kwin_server_decoration_manager v1
+[LOG]   | got iface: hyprland_focus_grab_manager_v1 v1
+[LOG]   | got iface: zwp_tablet_manager_v2 v1
+[LOG]   | got iface: zwlr_layer_shell_v1 v5
+[LOG]   | got iface: wp_presentation v1
+[LOG]   | got iface: xdg_wm_base v6
+[LOG]   | got iface: zwlr_data_control_manager_v1 v2
+[LOG]   | got iface: zwp_primary_selection_device_manager_v1 v1
+[LOG]   | got iface: xwayland_shell_v1 v1
+[LOG]   | got iface: zwlr_screencopy_manager_v1 v3
+[LOG]   | got iface: hyprland_toplevel_export_manager_v1 v2
+[LOG]   | got iface: hyprland_global_shortcuts_manager_v1 v1
+[LOG]   | got iface: xdg_dialog_v1 v1
+[LOG]   | got iface: wp_single_pixel_buffer_manager_v1 v1
+[LOG]   | got iface: wp_drm_lease_device_v1 v1
+[LOG]   | got iface: wp_linux_drm_syncobj_manager_v1 v1
+[LOG]   | got iface: wl_drm v2
+[LOG]   | got iface: zwp_linux_dmabuf_v1 v5
+[LOG]   | got iface: wl_output v4
+[LOG]   | got iface: wl_output v4
+[LOG] found 3 rules
+[LOG] wayland done, registering dbus
+[LOG] Using dbus path /org/freedesktop/login1/session/_31
+[LOG]   | got iface: wl_output v4
+[CRITICAL] [core] Disconnected from pollfd id 1

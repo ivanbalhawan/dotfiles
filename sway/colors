@@ -28,3 +28,37 @@ set $color-nord-yellow #ebcb8b
 set $color-nord-green #a3be8c
 set $color-nord-magenta #b48ead
 
+
+# border
+# background
+# text
+# indicator
+# child_border
+
+client.focused \
+    $color-nord-light-2 \
+    $color-nord-dark-1 \
+    $color-nord-frost-2 \
+    $color-nord-yellow \
+    $color-nord-light-2
+
+client.urgent \
+    $color-nord-orange \
+    $color-nord-dark-1 \
+    $color-nord-orange \
+    $color-nord-orange \
+    $color-nord-orange
+
+client.focused_inactive \
+    $color-nord-frost-3 \
+    $color-nord-dark-3 \
+    $color-nord-light-0 \
+    $color-nord-dark-1 \
+    $color-nord-dark-1
+
+client.unfocused \
+    $color-nord-frost-3 \
+    $color-nord-dark-3 \
+    $color-nord-light-0 \
+    $color-nord-dark-1 \
+    $color-nord-dark-1

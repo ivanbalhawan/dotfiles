@@ -6,9 +6,7 @@
 HISTSIZE=-1
 HISTFILESIZE=-1
 
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$HOME/.local/bin:$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
+export PATH="$HOME/.local/bin:$PATH"
 
 set -o vi
 bind -m vi-command 'Control-l: clear-screen'
@@ -21,8 +19,8 @@ PS1=$PS1'\[\033[34m\]\H'
 PS1=$PS1'\[\033[35m\] \W\n'
 export PS1=$PS1'\[\033[33m\]λ \[\033[0m\]'
 
-alias full-system-update="pipx upgrade-all && sudo emerge --sync && eix-update && sudo emerge -auvDN @world"
-alias full-system-update-bin="pipx upgrade-all && sudo emerge --sync && eix-update && sudo emerge -gauvDN @world"
+alias full-system-update="pipx upgrade-all && sudo emerge --sync && sudo emerge -auvDN @world"
+alias full-system-update-bin="pipx upgrade-all && sudo emerge --sync && sudo emerge -gauvDN @world"
 alias fetch="fastfetch"
 alias icat="kitten icat"
 alias ls='eza --icons'
@@ -31,8 +29,10 @@ alias la='eza -lAh --icons'
 alias lh='eza -a | grep ^\\.'
 alias tree='eza -T --icons'
 alias pygrep='rg -t python'
-alias activate='source $(fd -up --regex "bin/activate$")'
+alias activate='source .venv/bin/activate || source $(fd -up --regex "bin/activate$ | head -n 1")'
 alias shconf='nvim $HOME/.bashrc && source $HOME/.bashrc'
+alias watch-mem='watch -n 2 grep -e "Dirty" -e "Writeback" /proc/meminfo'
+alias kssh="kitten ssh"
 
 toggle-coolerboost() {
     $HOME/dotfiles/scripts/toggle-coolerboost.sh
@@ -61,8 +61,8 @@ bring-from-downloads () {
 alias gl='git log --oneline --graph'
 alias gpsu='git push -u origin "$(git branch --show-current)"'
 alias gpf="git push --force-with-lease"
-# alias gk='git checkout $(git branch | fzf | sed "s/^\*//")'
 alias gdiff-origin='git diff origin/$(git branch --show-current)'
+
 gk() {
     branch=$1
     if [[ -z $branch ]]; then
@@ -71,6 +71,7 @@ gk() {
         git checkout $branch;
     fi
 }
+
 gka() {
     tmp_file="/tmp/git-checkout-branches.txt";
     git branch -lra | sed "s/^\*//" > $tmp_file;
@@ -117,5 +118,9 @@ start_sway() {
 }
 
 export _ZO_ECHO=1
-eval "$(fzf --bash)"
+eval "$(fzf --bash 2>/dev/null)"
 eval "$(zoxide init bash)"
+
+if [[ -f $HOME/.bashrc_local ]]; then
+    source $HOME/.bashrc_local
+fi

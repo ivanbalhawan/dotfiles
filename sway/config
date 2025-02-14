@@ -31,7 +31,11 @@ exec swayidle -w
 exec "/usr/libexec/polkit-gnome-authentication-agent-1"
 exec wl-paste -t text --watch clipman store 
 exec gsettings set org.gnome.desktop.interface cursor-theme 'Adwaita'
+exec gsettings set org.gnome.desktop.interface icon-theme 'Papirus'
 exec gsettings set org.gnome.desktop.interface cursor-size 24
+exec gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+exec gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+exec gsettings set org.gnome.desktop.sound theme-name 'freedesktop'
 seat seat0 xcursor_theme Adwaita 24
 
 

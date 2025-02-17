@@ -1,7 +1,0 @@
-set $focused #cdd6f4
-set $urgent #f38ba8
-set $unfocused #585b70
-
-set $gtk-theme 'Catppuccin-Mocha-Standard-Sapphire-Dark'
-
-output * bg /home/ivan/Pictures/wallpapers/poos_blue.png fill

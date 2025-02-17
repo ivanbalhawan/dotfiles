@@ -165,8 +165,8 @@
         "format-off": "󰂲",
         "format-disabled": "󰂲",
         "format-connected": "󰂱",
-        "on-click": "/home/ivan/dotfiles/scripts/toggle-bluetooth.sh client",
-        "on-click-right": "/home/ivan/dotfiles/scripts/toggle-bluetooth.sh power",
+        "on-click": "$HOME/dotfiles/scripts/toggle-bluetooth.sh client",
+        "on-click-right": "$HOME/dotfiles/scripts/toggle-bluetooth.sh power",
     },
 
     "network": {
@@ -225,7 +225,7 @@
         "tooltip": false,
         "on-click": "(pkill gammastep || gammastep -O 3500k&) && kill -SIGRTMIN+1 $(pidof waybar)",
         "return-type": "json",
-        "exec": "/home/ivan/dotfiles/scripts/check_nightlight.sh",
+        "exec": "$HOME/dotfiles/scripts/check_nightlight.sh",
         "signal": 1,
         // "interval": "once",
         "exec-on-event": false,
@@ -241,7 +241,7 @@
         "format": "{}",
         "on-click": "dunstctl set-paused toggle && kill -SIGRTMIN+2 $(pidof waybar)",
         "tooltip": false,
-        "exec": "/home/ivan/dotfiles/scripts/check_dunst_paused.sh",
+        "exec": "$HOME/dotfiles/scripts/check_dunst_paused.sh",
         "return-type": "json",
         "signal": 2,
         "exec-on-event": false,

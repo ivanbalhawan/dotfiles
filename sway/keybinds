@@ -38,12 +38,12 @@ bindsym $brightness_down exec brightnessctl set 5%-
 bindsym $brightness_up exec brightnessctl set 5%+
 
 # Volume Up/Down
-bindsym $vol_up exec "/home/ivan/dotfiles/scripts/change-volume.sh @DEFAULT_AUDIO_SINK@ 5%+"
-bindsym $vol_down exec "/home/ivan/dotfiles/scripts/change-volume.sh @DEFAULT_AUDIO_SINK@ 5%-"
+bindsym $vol_up exec "$HOME/dotfiles/scripts/change-volume.sh @DEFAULT_AUDIO_SINK@ 5%+"
+bindsym $vol_down exec "$HOME/dotfiles/scripts/change-volume.sh @DEFAULT_AUDIO_SINK@ 5%-"
 
 # Mic Volume Up/Down
-bindsym Shift+$vol_up exec "/home/ivan/dotfiles/scripts/change-volume.sh @DEFAULT_AUDIO_SOURCE@ 5%+"
-bindsym Shift+$vol_down exec "/home/ivan/dotfiles/scripts/change-volume.sh @DEFAULT_AUDIO_SOURCE@ 5%-"
+bindsym Shift+$vol_up exec "$HOME/dotfiles/scripts/change-volume.sh @DEFAULT_AUDIO_SOURCE@ 5%+"
+bindsym Shift+$vol_down exec "$HOME/dotfiles/scripts/change-volume.sh @DEFAULT_AUDIO_SOURCE@ 5%-"
 
 # Mute Audio/Mic
 bindsym $vol_mute exec "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
@@ -71,9 +71,9 @@ bindsym $mod+s scratchpad show
 
 bindgesture swipe:3:down workspace prev_on_output
 bindgesture swipe:3:up workspace next_on_output
-bindgesture swipe:4:down exec /home/ivan/dotfiles/scripts/sway-change-workspace.sh previous
-bindgesture swipe:4:up exec /home/ivan/dotfiles/scripts/sway-change-workspace.sh next
-bindgesture pinch:3:inward exec /home/ivan/dotfiles/scripts/enable-floating-sway.sh
+bindgesture swipe:4:down exec $HOME/dotfiles/scripts/sway-change-workspace.sh previous
+bindgesture swipe:4:up exec $HOME/dotfiles/scripts/sway-change-workspace.sh next
+bindgesture pinch:3:inward exec $HOME/dotfiles/scripts/enable-floating-sway.sh
 bindgesture pinch:3:outward floating disable
 bindgesture hold:3 exec killall -SIGUSR1 waybar
 

@@ -1,5 +1,5 @@
 configuration {
-  modes: "window,drun,run,ssh";
+  modes: "drun,run,ssh";
   font: "IosevkaTerm Nerd Font Propo 16";
   terminal: "kitty";
   show-icons: false;

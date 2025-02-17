@@ -19,8 +19,6 @@ PS1=$PS1'\[\033[34m\]\H'
 PS1=$PS1'\[\033[35m\] \W\n'
 export PS1=$PS1'\[\033[33m\]λ \[\033[0m\]'
 
-alias full-system-update="pipx upgrade-all && sudo emerge --sync && sudo emerge -auvDN @world"
-alias full-system-update-bin="pipx upgrade-all && sudo emerge --sync && sudo emerge -gauvDN @world"
 alias fetch="fastfetch"
 alias icat="kitten icat"
 alias ls='eza --icons'

@@ -26,14 +26,14 @@ lsp.pylsp.setup({
 })
 
 require("conform").setup({
-	formatters = {
-		black = {
-			prepend_args = { "--fast" },
-		},
-	},
+	-- formatters = {
+	-- 	black = {
+	-- 		prepend_args = { "--fast" },
+	-- 	},
+	-- },
 	formatters_by_ft = {
 		lua = { "stylua" },
-		python = { "isort", "black" },
+		python = { "isort", "ruff_format" },
 		bash = { "shfmt" },
 		shell = { "shfmt" },
 		sh = { "shfmt" },

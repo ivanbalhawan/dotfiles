@@ -92,12 +92,14 @@ bindsym $mod+End focus output right
 bindsym $mod+Shift+Home move workspace to output left
 bindsym $mod+Shift+End move workspace to output right
 
-bindsym $mod+Prior exec swaymsg workspace $($HOME/.config/sway/scripts/get-workspace.sh prev auto)
-bindsym $mod+Next exec swaymsg workspace $($HOME/.config/sway/scripts/get-workspace.sh next auto)
-bindsym $mod+Control+Prior exec swaymsg workspace $($HOME/.config/sway/scripts/get-workspace.sh prev empty)
-bindsym $mod+Control+Next exec swaymsg workspace $($HOME/.config/sway/scripts/get-workspace.sh next empty)
-bindsym $mod+Shift+Prior exec swaymsg move container to workspace $($HOME/.config/sway/scripts/get-workspace.sh prev auto)
-bindsym $mod+Shift+Next exec swaymsg move container to workspace $($HOME/.config/sway/scripts/get-workspace.sh next auto)
+bindsym --no-repeat $mod+Prior exec $HOME/.config/sway/scripts/get-workspace.sh focus prev
+bindsym --no-repeat $mod+Next exec $HOME/.config/sway/scripts/get-workspace.sh focus next
+bindsym --no-repeat $mod+Shift+Prior exec $HOME/.config/sway/scripts/get-workspace.sh move prev
+bindsym --no-repeat $mod+Shift+Next exec $HOME/.config/sway/scripts/get-workspace.sh move next
+# bindsym $mod+Control+Prior exec swaymsg workspace $($HOME/.config/sway/scripts/get-workspace.sh prev empty)
+# bindsym $mod+Control+Next exec swaymsg workspace $($HOME/.config/sway/scripts/get-workspace.sh next empty)
+# bindsym $mod+Shift+Prior exec swaymsg move container to workspace $($HOME/.config/sway/scripts/get-workspace.sh prev auto)
+# bindsym $mod+Shift+Next exec swaymsg move container to workspace $($HOME/.config/sway/scripts/get-workspace.sh next auto)
 
 bindsym $mod+1 workspace number 1
 bindsym $mod+2 workspace number 2

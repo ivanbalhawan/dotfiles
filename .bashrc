@@ -32,17 +32,6 @@ alias shconf='nvim $HOME/.bashrc && source $HOME/.bashrc'
 alias watch-mem='watch -n 2 grep -e "Dirty" -e "Writeback" /proc/meminfo'
 alias kssh="kitten ssh"
 
-toggle-coolerboost() {
-    $HOME/dotfiles/scripts/toggle-coolerboost.sh
-}
-
-set-shift-mode() {
-    msi_ec_path='/sys/devices/platform/msi-ec'
-    shift_mode=$(cat $msi_ec_path/available_shift_modes | fzf)
-    echo $shift_mode | sudo tee $msi_ec_path/shift_mode
-}
-    
-
 bring-from-downloads () {
     filename=$(ls $HOME/Downloads | fzf);
     if [[ -z $filename ]]; then
@@ -56,6 +45,7 @@ bring-from-downloads () {
 # ################################################################################ #
 # Git aliases/commands
 # ################################################################################ #
+alias gtl='git tag --sort="-v:refname"'
 alias gl='git log --oneline --graph'
 alias gpsu='git push -u origin "$(git branch --show-current)"'
 alias gpf="git push --force-with-lease"
@@ -105,15 +95,6 @@ gstash() {
 }
 # ################################################################################ #
 
-
-start_sway() {
-    # export XCURSOR_THEME="Adwaita";
-    # export XCURSOR_SIZE=24;
-    export XDG_CURRENT_DESKTOP="sway";
-    export XDG_SESSION_TYPE="wayland";
-    export XDG_SESSION_DESKTOP="sway";
-    dbus-run-session sway;
-}
 
 export _ZO_ECHO=1
 eval "$(fzf --bash 2>/dev/null)"

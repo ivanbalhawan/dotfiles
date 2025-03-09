@@ -23,6 +23,7 @@ exec --no-startup-id dbus-update-activation-environment --all
 output eDP-1 mode 1920x1080@60Hz pos 0 0
 output * bg ~/Pictures/wallpapers/mountain-dark.png fill
 
+exec sway-audio-idle-inhibit
 exec dunst &
 exec $HOME/.config/waybar/launch-waybar.sh &
 exec gentoo-pipewire-launcher restart &
@@ -40,9 +41,9 @@ seat seat0 xcursor_theme Adwaita 24
 
 
 for_window [app_id="gamescope"] inhibit_idle visible
+for_window [app_id="keymapp"] floating enable
 for_window [title="ncspot|Spotify.*"] exec $HOME/.config/sway/scripts/add-mark.sh "music" [title="ncspot|Spotify.*"]
 for_window [app_id="firefox"] exec $HOME/.config/sway/scripts/add-mark.sh "browser" [app_id="firefox"]
-for_window [app_id="firefox" title="Meet - .*"] inhibit_idle visible
 
 for_window [app_id="piper"] floating enable
 # for_window [urgent=recent] focus
@@ -63,9 +64,9 @@ for_window [app_id="mpv"] floating enable
 for_window [app_id="pavucontrol"]: {
     floating enable
     resize set width 35 ppt
-    resize set height 25 ppt
+    resize set height 65 ppt
     # move absolute position center
-    move position 65 ppt 75 ppt
+    move position 65 ppt 35 ppt
 }
 for_window [title="Sign In*"] floating enable
 for_window [app_id="blueman-manager"] floating enable

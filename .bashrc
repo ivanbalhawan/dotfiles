@@ -60,6 +60,14 @@ gk() {
     fi
 }
 
+gclone() {
+    repo=$1
+    identity=$(eza -f -I "*.pub|authorized_keys|known_hosts*" ~/.ssh | fzf)
+    if [[ -n $identity ]]; then
+        git clone -c core.sshCommand="ssh -i ~/.ssh/$identity" $repo
+    fi
+}
+
 gka() {
     tmp_file="/tmp/git-checkout-branches.txt";
     git branch -lra | sed "s/^\*//" > $tmp_file;

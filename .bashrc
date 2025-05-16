@@ -24,7 +24,6 @@ alias icat="kitten icat"
 alias ls='eza --icons'
 alias ll='eza -lh --icons'
 alias la='eza -lAh --icons'
-alias lh='eza -a | grep ^\\.'
 alias tree='eza -T --icons'
 alias pygrep='rg -t python'
 alias activate='source .venv/bin/activate || source $(fd -up --regex "bin/activate$ | head -n 1")'
@@ -32,12 +31,18 @@ alias shconf='nvim $HOME/.bashrc && source $HOME/.bashrc'
 alias watch-mem='watch -n 2 grep -e "Dirty" -e "Writeback" /proc/meminfo'
 alias kssh="kitten ssh"
 
+lh () {
+    eza -lah $1 | grep " \."
+}
+
+# alias lh='eza -a | grep ^\\.'
+
 bring-from-downloads () {
-    filename=$(ls $HOME/Downloads | fzf);
+    filename=$(ls --no-quotes $HOME/Downloads | fzf);
     if [[ -z $filename ]]; then
         echo "No file selected";
     else
-        mv -i $HOME/Downloads/$filename .;
+        mv -i "$HOME/Downloads/${filename}" .;
     fi
 }
 
@@ -50,6 +55,7 @@ alias gl='git log --oneline --graph'
 alias gpsu='git push -u origin "$(git branch --show-current)"'
 alias gpf="git push --force-with-lease"
 alias gdiff-origin='git diff origin/$(git branch --show-current)'
+alias gkb='git checkout -b'
 
 gk() {
     branch=$1
@@ -61,10 +67,9 @@ gk() {
 }
 
 gclone() {
-    repo=$1
     identity=$(eza -f -I "*.pub|authorized_keys|known_hosts*" ~/.ssh | fzf)
     if [[ -n $identity ]]; then
-        git clone -c core.sshCommand="ssh -i ~/.ssh/$identity" $repo
+        git clone -c core.sshCommand="ssh -i ~/.ssh/$identity" $1 $2
     fi
 }
 
@@ -72,7 +77,7 @@ gka() {
     tmp_file="/tmp/git-checkout-branches.txt";
     git branch -lra | sed "s/^\*//" > $tmp_file;
     git tag -l  >> $tmp_file;
-    cat $tmp_file | fzf | sed "s/^\ *remotes\/origin\///" | xargs git checkout;
+    cat $tmp_file | fzf | sed "s/^\ *remotes\/\origin\///" | xargs git checkout;
     rm $tmp_file;
 }
 

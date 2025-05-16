@@ -1,5 +1,10 @@
 return {
+    {
+        "nvim-treesitter/nvim-treesitter-context",
+        event = "BufEnter",
+    },
 
+    "fneu/breezy",
     {
         "Exafunction/codeium.nvim",
         requires = {

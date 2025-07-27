@@ -1,20 +1,12 @@
 require("mason").setup()
 require("mason-lspconfig").setup()
-local lsp = require("lspconfig")
 local telescope_builtin = require("telescope.builtin")
 
 local cmp_capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-lsp.lua_ls.setup({
-	capabilities = cmp_capabilities,
-})
-
-lsp.markdown_oxide.setup({})
-
-lsp.pylsp.setup({
-	-- single_file_support = false,
-	capabilities = cmp_capabilities,
-	settings = {
+vim.lsp.config('pylsp', {
+    capabilities = cmp_capabilities,
+    settings = {
 		pylsp = {
 			plugins = {
 				pycodestyle = {
@@ -22,8 +14,28 @@ lsp.pylsp.setup({
 				},
 			},
 		},
-	},
+    },
 })
+
+-- lsp.lua_ls.setup({
+-- 	capabilities = cmp_capabilities,
+-- })
+
+-- lsp.markdown_oxide.setup({})
+
+-- lsp.pylsp.setup({
+-- 	-- single_file_support = false,
+-- 	capabilities = cmp_capabilities,
+-- 	settings = {
+-- 		pylsp = {
+-- 			plugins = {
+-- 				pycodestyle = {
+-- 					maxLineLength = 100,
+-- 				},
+-- 			},
+-- 		},
+-- 	},
+-- })
 
 require("conform").setup({
 	-- formatters = {

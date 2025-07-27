@@ -52,6 +52,7 @@ return {
         "folke/todo-comments.nvim",
         dependencies = {"nvim-lua/plenary.nvim"},
     },
+    { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, },
 
     {
         "shaunsingh/nord.nvim",

@@ -6,7 +6,9 @@
 HISTSIZE=-1
 HISTFILESIZE=-1
 
+export NPM_CONFIG_PREFIX=$HOME/.npm_install
 export PATH="$HOME/.local/bin:$PATH"
+export PATH=$PATH:$NPM_CONFIG_PREFIX/bin
 
 set -o vi
 bind -m vi-command 'Control-l: clear-screen'
@@ -38,11 +40,12 @@ lh () {
 # alias lh='eza -a | grep ^\\.'
 
 bring-from-downloads () {
+    output_name=$1
     filename=$(ls --no-quotes $HOME/Downloads | fzf);
     if [[ -z $filename ]]; then
         echo "No file selected";
     else
-        mv -i "$HOME/Downloads/${filename}" .;
+        mv -i "$HOME/Downloads/${filename}" ./$output_name;
     fi
 }
 

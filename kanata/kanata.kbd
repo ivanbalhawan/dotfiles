@@ -18,14 +18,14 @@
     tab     q   w   f   p   b   j   l   u   y   '   [   ]   \
     bspc    @a   @r   @s   @t   g   m   @n   @e   @i   @o   ;   ret
     @sym    x   c   d   v   z   k   h   ,   .   /   @sym
-    caps    @num    @num    @spc @nav    prtsc   rctl
+    caps    @num    @num    @spc @num    prtsc   rctl
 )
 
 (deflayer num
     @grl    1   2   3   4   5   6   7   8   9   0   -   =   del
-    tab     q   w   f   p   b   j   7   8   9   '   [   ]   \
-    bspc    S-=   =   S--   -   XX   XX   4   5   6   XX   S-;   ret
-    lsft    XX   XX   XX   XX   XX   XX   1   2   3   .   rsft
+    tab     q   w   f   p   b   j   @seven   @eight   @nine   '   [   ]   \
+    bspc    S-=   =   S--   -   XX   XX   @four   @five   @six   XX   S-;   ret
+    lsft    XX   XX   XX   XX   XX   XX   @one   @two   @three   .   rsft
     caps    lmet    lalt    @zero 0    prtsc   rctl
 )
 
@@ -73,6 +73,15 @@
     num (layer-while-held num)
     spc (tap-hold 180 180 spc @nav)
     zero (tap-hold 180 180 0 spc)
+    one (tap-hold 180 180 1 f1)
+    two (tap-hold 180 180 2 f2)
+    three (tap-hold 180 180 3 f3)
+    four (tap-hold 180 180 4 f4)
+    five (tap-hold 180 180 5 f5)
+    six (tap-hold 180 180 6 f6)
+    seven (tap-hold 180 180 7 f7)
+    eight (tap-hold 180 180 8 f8)
+    nine (tap-hold 180 180 9 f9)
 
 )
 

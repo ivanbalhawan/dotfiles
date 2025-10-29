@@ -1,2 +1,0 @@
-key_bindings:
-  - { key: N, mods: Shift|Control, action: CreateNewWindow}

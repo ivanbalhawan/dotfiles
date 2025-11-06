@@ -181,3 +181,7 @@ eval "$(zoxide init bash)"
 if [[ -f $HOME/.bashrc_local ]]; then
     source $HOME/.bashrc_local
 fi
+
+if [ -z "$TMUX" ]; then
+    tmux new-session -A -t default
+fi

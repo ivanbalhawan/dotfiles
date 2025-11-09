@@ -1,4 +1,5 @@
 return {
+    require("lazy_plugins/iron"),
     {
         "nvim-treesitter/nvim-treesitter-context",
         event = "BufEnter",
@@ -40,7 +41,6 @@ return {
             vim.g.vimtex_view_method = "zathura"
         end
     },
-    "tpope/vim-fugitive",
     {
         "akinsho/bufferline.nvim",
         dependencies = {

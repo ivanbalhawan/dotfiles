@@ -49,6 +49,17 @@ fzf-smart() {
     fi
 }
 
+tma() {
+    if [ -n "$TMUX" ]; then
+        echo "Already inside a tmux instance!"
+        return 1
+    fi
+
+    selected_session=$(tmux start && tmux ls -F '#{session_name}' | fzf-smart)
+    tmux a -t $selected_session
+
+}
+
 bring-from-downloads () {
     output_name=$1
     filename=$(ls --no-quotes $HOME/Downloads | fzf-smart);
@@ -180,8 +191,4 @@ eval "$(zoxide init bash)"
 
 if [[ -f $HOME/.bashrc_local ]]; then
     source $HOME/.bashrc_local
-fi
-
-if [ -z "$TMUX" ]; then
-    tmux new-session -A -t default
 fi

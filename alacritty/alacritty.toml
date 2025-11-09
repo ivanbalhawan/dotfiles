@@ -25,6 +25,8 @@ bindings = [
 ]
 
 [window]
+dimensions = { columns = 100, lines = 32 }
+
 opacity = 1.0
 dynamic_title = true
 

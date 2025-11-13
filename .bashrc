@@ -10,7 +10,7 @@ HISTFILESIZE=-1
 
 shopt -s histappend
 
-export PATH="$HOME/.cargo/bin:$HOME/.local/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$HOME/.local/bin:$PATH:$HOME/.apify/bin"
 
 set -o vi
 bind -m vi-command 'Control-l: clear-screen'

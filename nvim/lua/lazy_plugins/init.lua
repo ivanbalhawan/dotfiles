@@ -1,4 +1,5 @@
 return {
+    "tpope/vim-fugitive",
     require("lazy_plugins/iron"),
     {
         "nvim-treesitter/nvim-treesitter-context",

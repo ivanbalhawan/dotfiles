@@ -22,9 +22,9 @@
 )
 
 (deflayer num
-    @grl    1   2   3   4   5   6   7   8   9   0   -   =   del
-    tab     q   w   f   p   b   j   @seven   @eight   @nine   '   [   ]   \
-    bspc    S-=   =   S--   -   XX   XX   @four   @five   @six   XX   S-;   ret
+    @grl    1     2    3    4    5    6   7   8   9   0   -   =   del
+    tab     S-=   =   S--   -   XX   XX   @seven   @eight   @nine   '   [   ]   \
+    bspc    XX   XX   XX   XX   XX   XX   @four   @five   @six   XX   S-;   ret
     lsft    XX   XX   XX   XX   XX   XX   @one   @two   @three   .   rsft
     caps    lmet    lalt    @zero 0    prtsc   rctl
 )

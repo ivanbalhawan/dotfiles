@@ -24,7 +24,6 @@ PS1=$PS1'\[\033[35m\] \W\n'
 export PS1=$PS1'\[\033[33m\]λ \[\033[0m\]'
 
 alias fetch="fastfetch"
-alias icat="kitten icat"
 alias ls='eza --icons'
 alias ll='eza -lh --icons'
 alias la='eza -lAh --icons'
@@ -33,7 +32,6 @@ alias pygrep='rg -t python'
 alias activate='source .venv/bin/activate || source $(fd -up --regex "bin/activate$ | head -n 1")'
 alias shconf='nvim $HOME/.bashrc && source $HOME/.bashrc'
 alias watch-mem='watch -n 2 grep -e "Dirty" -e "Writeback" /proc/meminfo'
-alias kssh="kitten ssh"
 
 lh () {
     eza -lah $1 | grep " \."

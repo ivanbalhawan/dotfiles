@@ -1,5 +1,5 @@
-vim.cmd([[colorscheme gruvbox]])
--- vim.cmd([[colorscheme nord]])
+-- vim.cmd([[colorscheme retrobox]])
+vim.cmd([[colorscheme bamboo]])
 -- -- Example config in lua
 -- vim.g.nord_contrast = true
 -- vim.g.nord_borders = true

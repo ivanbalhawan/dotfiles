@@ -7,6 +7,7 @@ return {
     },
 
     "fneu/breezy",
+    "ribru17/bamboo.nvim",
     {
         "Exafunction/codeium.nvim",
         requires = {

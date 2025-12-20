@@ -34,7 +34,7 @@ get_container_name() {
 PS1=''
 PS1=$PS1'\[\033[1;36m\]\u'
 PS1=$PS1'\[\033[34m\]@'
-PS1=$PS1'\[\033[34m\]$(get_container_name)'
+PS1=$PS1'\[\033[34m\]\H'
 PS1=$PS1'\[\033[35m\] \W\n'
 export PS1=$PS1'\[\033[33m\]λ \[\033[0m\]'
 
@@ -61,18 +61,27 @@ if command -v nvim &> /dev/null; then
 fi
 
 alias watch-mem='watch -n 2 grep -e "Dirty" -e "Writeback" /proc/meminfo'
+tma() {
+    if [ -n "$TMUX" ]; then
+        echo "Already inside a tmux instance!"
+        return 1
+    fi
 
+    selected_session=$(tmux start && tmux ls -F '#{session_name}' | fzf-smart)
+    tmux a -t $selected_session
 
-# tma() {
-#     if [ -n "$TMUX" ]; then
-#         echo "Already inside a tmux instance!"
-#         return 1
-#     fi
+}
 
-#     selected_session=$(tmux start && tmux ls -F '#{session_name}' | fzf-smart)
-#     tmux a -t $selected_session
+bring-from-downloads () {
+    output_name=$1
+    filename=$(ls --no-quotes $HOME/Downloads | fzf-smart);
+    if [[ -z $filename ]]; then
+        echo "No file selected";
+    else
+        mv -i "$HOME/Downloads/${filename}" ./$output_name;
+    fi
+}
 
-# }
 
 
 

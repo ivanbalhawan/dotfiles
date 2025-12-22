@@ -10,33 +10,30 @@ HISTFILESIZE=-1
 
 shopt -s histappend
 
-export PATH="$HOME/.cargo/bin:$HOME/.local/bin:$PATH:$HOME/.apify/bin"
+if [[ "$PATH" != *"$HOME/.cargo/bin"* ]]; then
+    PATH="$HOME/.cargo/bin:$HOME/.local/bin:$PATH:$HOME/.apify/bin"
+fi
+
+export PATH
+
 
 set -o vi
 bind -m vi-command 'Control-l: clear-screen'
 bind -m vi-insert 'Control-l: clear-screen'
 
-# --- Function to get the Toolbox/Podman Container Name ---
-get_container_name() {
-    # Check if we are inside a container using the standard .containerenv file
-    if [ -f "/run/.containerenv" ]; then
-        # Use grep and sed to extract the name= attribute
-        # Output: [container_name]
-        TOOLBOX_NAME=$(grep -oP 'name="\K[^"]+' /run/.containerenv)
-        # Use ANSI escape codes for coloring (e.g., green text)
-        printf "$TOOLBOX_NAME"
-    else
-        printf "\H"
-    fi
-}
-
 
 PS1=''
 PS1=$PS1'\[\033[1;36m\]\u'
 PS1=$PS1'\[\033[34m\]@'
-PS1=$PS1'\[\033[34m\]\H'
+if [ -f "/run/.containerenv" ]; then
+    TOOLBOX_NAME=$(grep -oP 'name="\K[^"]+' /run/.containerenv)
+    PS1=$PS1'\[\033[34m\]$TOOLBOX_NAME'
+else
+    PS1=$PS1'\[\033[34m\]\H'
+fi
 PS1=$PS1'\[\033[35m\] \W\n'
-export PS1=$PS1'\[\033[33m\]λ \[\033[0m\]'
+PS1=$PS1'\[\033[33m\]λ \[\033[0m\]'
+export PS1
 
 if command -v eza &> /dev/null; then
     alias ls='eza --icons'
@@ -61,6 +58,7 @@ if command -v nvim &> /dev/null; then
 fi
 
 alias watch-mem='watch -n 2 grep -e "Dirty" -e "Writeback" /proc/meminfo'
+
 tma() {
     if [ -n "$TMUX" ]; then
         echo "Already inside a tmux instance!"
@@ -81,8 +79,6 @@ bring-from-downloads () {
         mv -i "$HOME/Downloads/${filename}" ./$output_name;
     fi
 }
-
-
 
 
 # User specific aliases and functions

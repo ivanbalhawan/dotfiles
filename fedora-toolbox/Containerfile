@@ -1,0 +1,22 @@
+FROM registry.fedoraproject.org/fedora-toolbox:43
+
+RUN dnf install -y \
+    tmux \
+    fastfetch \
+    fzf \
+    zoxide \
+    neovim \
+    python-neovim \
+    fd-find \
+    ripgrep \
+    btop \
+    pipx \
+    cargo \
+    tealdeer \
+    ranger \
+    git \
+    just
+
+LABEL com.github.containers.toolbox="true"
+
+CMD = ["/bin/bash"]

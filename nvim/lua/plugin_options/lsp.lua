@@ -12,6 +12,7 @@ require("conform").setup({
 		bash = { "shfmt" },
 		shell = { "shfmt" },
 		sh = { "shfmt" },
+        html = { "prettierd" },
 		jsonc = { "prettierd" },
 		json = { "jq" },
 		markdown = { "mdformat" },

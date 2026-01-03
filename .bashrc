@@ -22,11 +22,18 @@ bind -m vi-command 'Control-l: clear-screen'
 bind -m vi-insert 'Control-l: clear-screen'
 
 
+get_container_name () {
+    TOOLBOX_NAME=$(grep -oP 'name="\K[^"]+' /run/.containerenv)
+    printf $TOOLBOX_NAME
+}
+
+
+
 PS1=''
 PS1=$PS1'\[\033[1;36m\]\u'
 PS1=$PS1'\[\033[34m\]@'
 if [ -f "/run/.containerenv" ]; then
-    TOOLBOX_NAME=$(grep -oP 'name="\K[^"]+' /run/.containerenv)
+    TOOLBOX_NAME=$(get_container_name)
     PS1=$PS1'\[\033[34m\]$TOOLBOX_NAME'
 else
     PS1=$PS1'\[\033[34m\]\H'
@@ -59,14 +66,28 @@ fi
 
 alias watch-mem='watch -n 2 grep -e "Dirty" -e "Writeback" /proc/meminfo'
 
+tmux () {
+    if [ -f "/run/.containerenv" ]; then
+        TOOLBOX_NAME=$(get_container_name)
+        /usr/bin/tmux -L $TOOLBOX_NAME $@
+    else
+        /usr/bin/tmux $@
+    fi
+}
+
+
 tma() {
     if [ -n "$TMUX" ]; then
         echo "Already inside a tmux instance!"
         return 1
     fi
 
-    selected_session=$(tmux start && tmux ls -F '#{session_name}' | fzf-smart)
-    tmux a -t $selected_session
+    if command -v fzf &> /dev/null; then
+        selected_session=$(tmux start && tmux ls -F '#{session_name}' | fzf-smart)
+        tmux a -t $selected_session
+    else
+        tmux a
+    fi
 
 }
 

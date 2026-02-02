@@ -7,33 +7,33 @@
 
 (defsrc
     grv     1   2   3   4   5   6   7   8   9   0   -   =   bspc
-    tab     q   w   e   r   t   y   u   i   o   p   [   ]   \
-    caps    a   s   d   f   g   h   j   k   l   ;   '   ret
-    lsft    z   x   c   v   b   n   m   ,   .   /   rsft
-    lctl    lmet    lalt    spc ralt    prtsc   rctl
+    tab     q   w   e   r   t   y   u   i   o   p   [   ]   ret
+    caps    a   s   d   f   g   h   j   k   l   ;   '   \
+    lsft    nubs z   x   c   v   b   n   m   ,   .   /   rsft
+    lctl    lmet    lalt    spc ralt   rmet rctl 
 )
 
 (deflayer colemak-dh
     @grl    1   2   3   4   5   6   7   8   9   0   -   =   del
-    tab     q   w   f   p   b   j   l   u   y   '   [   ]   \
-    bspc    @a   @r   @s   @t   g   m   @n   @e   @i   @o   ;   ret
-    @sym    x   c   d   v   z   k   h   ,   .   /   @sym
+    tab     q   w   f   p   b   j   l   u   y   '   \   \   ret
+    bspc    @a   @r   @s   @t   g   m   @n   @e   @i   @o   ;   \
+    @sym    @sym x   c   d   v   z   k   h   ,   .   /   @sym
     caps    @num    @num    @spc @num    prtsc   rctl
 )
 
 (deflayer num
     @grl    1     2    3    4    5    6   7   8   9   0   -   =   del
-    tab     S-=   =   S--   -   XX   XX   @seven   @eight   @nine   '   [   ]   \
-    bspc    XX   XX   XX   XX   XX   XX   @four   @five   @six   XX   S-;   ret
-    lsft    XX   XX   XX   XX   XX   XX   @one   @two   @three   .   rsft
+    tab     S-=   =   S--   -   XX   XX   @seven   @eight   @nine   '   [   ]   ret
+    bspc    XX   XX   XX   XX   XX   XX   @four   @five   @six   XX   S-;   \
+    lsft    XX XX   XX   XX   XX   XX   XX   @one   @two   @three   .   rsft
     caps    lmet    lalt    @zero 0    prtsc   rctl
 )
 
 (deflayer sym
     @grl    1   2   3   4   5   6   7   8   9   0   -   =   del
-    tab     grv   S-1   S-2   S-7   S-\   S-6   S-8   S-3   S-4   S-'   [   ]   S-\
-    bspc    [   ]   S-9   S-0   S-grv   S-5   -   S--   =   S-=   S-;   ret
-    XX    XX   XX   S-[   S-]   XX   XX   XX   S-,   S-.   S-/   XX
+    tab     grv   S-1   S-2   S-7   S-\   S-6   S-8   S-3   S-4   S-'   S-\   S-\   ret
+    bspc    [   ]   S-9   S-0   S-grv   S-5   -   S--   =   S-=   S-;   S-\
+    XX    XX XX   XX   S-[   S-]   XX   XX   XX   S-,   S-.   S-/   XX
     caps    _    lalt    spc ralt    prtsc   rctl
 )
 
@@ -41,7 +41,7 @@
     @grl    1   2   3   4   5   6   7   8   9   0   -   =   bspc
     tab     q   w   e   r   t   y   u   i   o   p   [   ]   \
     caps    a   s   d   f   g   h   j   k   l   ;   '   ret
-    lsft    z   x   c   v   b   n   m   ,   .   /   rsft
+    lsft    lsft z   x   c   v   b   n   m   ,   .   /   rsft
     lctl    lmet    lalt    spc ralt    prtsc   rctl
 )
 
@@ -49,7 +49,7 @@
     @grl    1   2   3   4   5   6   7   8   9   0   -   =   del
     tab     XX  XX  XX  XX  XX  home    pgdn    pgup    end XX  XX  XX XX
     bspc    lctl    lalt    lmet    lsft    XX  lft     down    up  rght    XX  XX  ret
-    lsft    XX      XX      XX      XX      XX  C-lft      C-tab      C-S-tab  C-rght      XX  XX
+    lsft    lsft XX      XX      XX      XX      XX  C-lft      C-tab      C-S-tab  C-rght      XX  XX
     XX      lmet      XX      spc XX      rmet      XX
 )
 
@@ -90,7 +90,7 @@
     @grl     XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
     XX     XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
     XX    XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
-    XX    XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+    XX    XX XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
     XX    XX    XX    XX XX    XX   XX
 )
 
@@ -101,6 +101,6 @@
     _     _   _   _   _   _   _   _   _   _   _   _   _   _
     _    _   _   _   _   _   _   _   _   _   _   _   _
     _    _   _   _   _   _   _   _   _   _   _   _
-    _    _    _    _ _    _   _
+    _    _ _    _    _ _    _   _
 )
 

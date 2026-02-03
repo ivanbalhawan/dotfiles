@@ -1,8 +1,10 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
+switch-to-activity-3a91b328-5a75-447d-b51c-6895b028fb78=none,none,Switch to activity "Default"
 switch-to-activity-dc64570c-5093-41fa-bcb0-cd5cc7a6316a=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
+Switch keyboard layout to English (US)=none,none,Switch keyboard layout to English (US)
 Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Keyboard Layout
 Switch to Next Keyboard Layout=none,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
@@ -289,7 +291,9 @@ RecordRegion=Meta+Shift+R
 RecordWindow=none
 
 [services][org.kde.touchpadshortcuts.desktop]
-ToggleTouchpad=Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku
+DisableTouchpad=none
+EnableTouchpad=none
+ToggleTouchpad=none
 
 [services][org.mozilla.firefox.desktop]
 _launch=Meta+B

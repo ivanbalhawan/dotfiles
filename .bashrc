@@ -30,18 +30,19 @@ get_container_name () {
 
 
 PS1=''
-PS1=$PS1'\[\033[1;36m\]\u'
-PS1=$PS1'\[\033[34m\]@'
+PS1=$PS1'\[\033[1;37m\]\u'
+PS1=$PS1'\[\033[37m\]@'
 if [ -f "/run/.containerenv" ]; then
     TOOLBOX_NAME=$(get_container_name)
-    PS1=$PS1'\[\033[34m\]$TOOLBOX_NAME'
+    PS1=$PS1'\[\033[37m\]$TOOLBOX_NAME'
 else
-    PS1=$PS1'\[\033[34m\]\H'
+    PS1=$PS1'\[\033[37m\]\H'
 fi
-PS1=$PS1'\[\033[35m\] \W\n'
-PS1=$PS1'\[\033[33m\]λ \[\033[0m\]'
+PS1=$PS1'\[\033[31m\] \W\n'
+PS1=$PS1'\[\033[31m\]λ \[\033[0m\]'
 export PS1
 
+alias tml='tmux list-sessions'
 if command -v eza &> /dev/null; then
     alias ls='eza --icons'
     alias ll='eza -lh --icons'
@@ -66,14 +67,6 @@ fi
 
 alias watch-mem='watch -n 2 grep -e "Dirty" -e "Writeback" /proc/meminfo'
 
-tmux () {
-    if [ -f "/run/.containerenv" ]; then
-        TOOLBOX_NAME=$(get_container_name)
-        /usr/bin/tmux -L $TOOLBOX_NAME $@
-    else
-        /usr/bin/tmux $@
-    fi
-}
 
 
 tma() {

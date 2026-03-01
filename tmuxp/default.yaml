@@ -1,0 +1,7 @@
+session_name: default
+windows:
+- start_directory: /home/ivan/
+- window_name: config
+  start_directory: /home/ivan/.config
+- window_name: monitor
+  start_directory: /home/ivan/

@@ -1,0 +1,27 @@
+session_name: volta
+windows:
+- window_name: workspace
+  options: {}
+  panes:
+    - shell_command: source .venv/bin/activate
+  start_directory: /home/ivan/voltaware/libraries/volta-workspace-ds
+- window_name: library
+  options: {}
+  panes:
+    - shell_command: source .venv/bin/activate
+  start_directory: /home/ivan/voltaware/libraries/thirty-minutes-library
+- window_name: service
+  options: {}
+  panes:
+    - shell_command: source .venv/bin/activate
+  start_directory: /home/ivan/voltaware/libraries/thirty-minutes-service
+- window_name: redis
+  options: {}
+  panes:
+    - shell_command: toolbox enter
+  start_directory: /home/ivan
+- window_name: logs
+  options: {}
+  panes:
+    - shell_command: source .venv/bin/activate
+  start_directory: /home/ivan/voltaware/logs

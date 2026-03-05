@@ -29,14 +29,12 @@ get_container_name () {
 
 
 
-PS1=''
-PS1=$PS1'\[\033[1;37m\]\u'
-PS1=$PS1'\[\033[37m\]@'
+PS1='\[\033[1m\]\u@'
 if [ -f "/run/.containerenv" ]; then
     TOOLBOX_NAME=$(get_container_name)
-    PS1=$PS1'\[\033[37m\]$TOOLBOX_NAME'
+    PS1=$PS1'$TOOLBOX_NAME'
 else
-    PS1=$PS1'\[\033[37m\]\H'
+    PS1=$PS1'\H'
 fi
 PS1=$PS1'\[\033[31m\] \W\n'
 PS1=$PS1'\[\033[31m\]λ \[\033[0m\]'

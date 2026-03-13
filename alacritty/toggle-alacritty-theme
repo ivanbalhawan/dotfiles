@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Define paths
+CONFIG_DIR="$HOME/dotfiles/alacritty"
+CURRENT="$CONFIG_DIR/current_theme.toml"
+LIGHT="$CONFIG_DIR/breeze_light.toml"
+DARK="$CONFIG_DIR/breeze_dark.toml"
+
+# Check if the current theme is pointing to dark or doesn't exist
+if [ ! -L "$CURRENT" ] || [[ $(readlink -f "$CURRENT") == *"$DARK"* ]]; then
+    ln -sf "$LIGHT" "$CURRENT"
+    echo "Switched to Breeze Light"
+else
+    ln -sf "$DARK" "$CURRENT"
+    echo "Switched to Breeze Dark"
+fi
+
+touch $CONFIG_DIR/alacritty.toml

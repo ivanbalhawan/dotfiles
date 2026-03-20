@@ -1,0 +1,119 @@
+(defcfg
+    linux-dev-names-include (
+        "platform-i8042-serio-0-event-kbd"
+        "AT Translated Set 2 keyboard"
+    )
+)
+
+(defsrc
+    grv     1   2   3   4   5   6   7   8   9   0   -   =   bspc
+    tab     q   w   e   r   t   y   u   i   o   p   [   ]   ret
+    caps    a   s   d   f   g   h   j   k   l   ;   '   \
+    lsft    nubs z   x   c   v   b   n   m   ,   .   /   rsft
+    lctl    lmet    lalt    spc ralt   rmet rctl pgup up pgdn
+                                                 left down rght
+)
+
+(deflayer colemak-dh
+    @grl    1   2   3   4   5   6   7   8   9   0   -   =   del
+    tab     q   w   f   p   b   j   l   u   y   '   \   \   ret
+    bspc    @a   @r   @s   @t   g   m   @n   @e   @i   @o   ;   \
+    @sym    @sym x   c   d   v   z   k   h   ,   .   /   @sym
+    caps    @num    @num    @spc @num    prtsc   rctl pgup up pgdn
+                                                      left down rght
+)
+
+(deflayer num
+    @grl    1     2    3    4    5    6   7   8   9   0   -   =   del
+    tab     S-=   =   S--   -   XX   XX   @seven   @eight   @nine   '   [   ]   ret
+    bspc    lctl   lalt   lmet   lsft   XX   XX   @four   @five   @six   XX   S-;   \
+    lsft    XX XX   XX   XX   XX   XX   XX   @one   @two   @three   .   rsft
+    caps    lmet    lalt    @zero 0    prtsc   rctl pgup up pgdn
+                                                      left down rght
+
+)
+
+(deflayer sym
+    @grl    1   2   3   4   5   6   7   8   9   0   -   =   del
+    tab     grv   S-1   S-2   S-7   S-\   S-6   S-8   S-3   S-4   S-'   S-\   S-\   ret
+    bspc    [   ]   S-9   S-0   S-grv   S-5   -   S--   =   S-=   S-;   S-\
+    XX    XX XX   XX   S-[   S-]   XX   XX   XX   S-,   S-.   S-/   XX
+    caps    _    lalt    spc ralt    prtsc   rctl pgup up pgdn
+                                                      prev pp next
+
+)
+
+(deflayer qwerty
+    @grl    1   2   3   4   5   6   7   8   9   0   -   =   bspc
+    tab     q   w   e   r   t   y   u   i   o   p   [   ]   \
+    caps    a   s   d   f   g   h   j   k   l   ;   '   ret
+    lsft    lsft z   x   c   v   b   n   m   ,   .   /   rsft
+    lctl    lmet    lalt    spc ralt    prtsc   rctl pgup up pgdn
+                                                      left down rght
+
+)
+
+(deflayer nav
+    @grl    1   2   3   4   5   6   7   8   9   0   -   =   del
+    tab     XX  XX  XX  XX  XX  home    pgdn    pgup    end XX  XX  XX XX
+    bspc    lctl    lalt    lmet    lsft    XX  lft     down    up  rght    XX  XX  ret
+    lsft    lsft XX      XX      XX      XX      XX  C-lft      C-tab      C-S-tab  C-rght      XX  XX
+    XX      lmet      XX      spc XX      rmet      XX pgup up pgdn
+                                                      left down rght
+
+)
+
+
+
+(defalias
+    grl (tap-hold 200 200 grv (layer-toggle layers))
+    col (layer-switch colemak-dh)
+    qwr (layer-switch qwerty)
+    dis (layer-switch disabled)
+    a   (tap-hold 200 200 a lctl)
+    r   (tap-hold 200 200 r lalt)
+    s   (tap-hold 180 180 s lmet)
+    t   (tap-hold 180 180 t lsft)
+    n   (tap-hold 180 180 n rsft)
+    e   (tap-hold 180 180 e rmet)
+    i   (tap-hold 200 200 i ralt)
+    o   (tap-hold 200 200 o rctl)
+    nav (layer-while-held nav)
+    sym (layer-while-held sym)
+    num (layer-while-held num)
+    spc (tap-hold 180 180 spc @nav)
+    zero (tap-hold 180 180 0 spc)
+    one (tap-hold 180 180 1 f1)
+    two (tap-hold 180 180 2 f2)
+    three (tap-hold 180 180 3 f3)
+    four (tap-hold 180 180 4 f4)
+    five (tap-hold 180 180 5 f5)
+    six (tap-hold 180 180 6 f6)
+    seven (tap-hold 180 180 7 f7)
+    eight (tap-hold 180 180 8 f8)
+    nine (tap-hold 180 180 9 f9)
+
+)
+
+
+( deflayer disabled
+    @grl     XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+    XX     XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+    XX    XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+    XX    XX XX   XX   XX   XX   XX   XX   XX   XX   XX   XX   XX
+    XX    XX    XX    XX XX    XX   XX XX XX XX
+                                                      XX XX XX
+
+)
+
+
+
+( deflayer layers
+    _     @col   @qwr   lrld   @dis   _   _   _   _   _   _   _   _   _
+    _     _   _   _   _   _   _   _   _   _   _   _   _   _
+    _    _   _   _   _   _   _   _   _   _   _   _   _
+    _    _   _   _   _   _   _   _   _   _   _   _
+    _    _ _    _    _ _    _   _ _ _ _
+    _ _ _
+)
+

@@ -1,0 +1,9 @@
+[ -f $HOME/.bashrc ] && . $HOME/.bashrc
+
+export MOZ_ENABLE_WAYLAND=1
+export IPYTHONDIR="$HOME/.config/ipython"
+export VISUAL_EDITOR="/usr/bin/nvim"
+export EDITOR="/usr/bin/nvim"
+export GIT_EDITOR="/usr/bin/nvim"
+export VISUAL="/usr/bin/nvim"
+export PAGER="/usr/bin/less"

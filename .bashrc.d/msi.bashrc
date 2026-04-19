@@ -9,6 +9,4 @@ if [[ -d $MSI_DIR ]]; then
         NEW_FAN_MODE=$(cat $MSI_DIR/available_fan_modes | fzf-smart)
         echo $NEW_FAN_MODE | sudo tee $MSI_DIR/fan_mode
     }
-else
-    echo nope
 fi

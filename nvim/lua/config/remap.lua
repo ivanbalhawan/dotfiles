@@ -1,5 +1,3 @@
-vim.g.mapleader = " "
-
 vim.keymap.set("n", "<leader><space>", vim.cmd.nohlsearch)
 
 -- manipulate windows

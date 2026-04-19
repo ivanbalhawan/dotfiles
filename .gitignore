@@ -1,4 +1,7 @@
+*\.bak\.*
+*\.bak
 **/history.sqlite
 **/userstate.cbor
 **/lazy-lock.json
 tmux/plugins
+alacritty/current_theme.toml

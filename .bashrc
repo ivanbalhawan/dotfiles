@@ -11,7 +11,7 @@ HISTFILESIZE=-1
 shopt -s histappend
 
 if [[ "$PATH" != *"$HOME/.cargo/bin"* ]]; then
-    PATH="$HOME/.cargo/bin:$HOME/.local/bin:$PATH:$HOME/.apify/bin"
+    PATH="$HOME/.cargo/bin:$HOME/.local/bin:$PATH"
 fi
 
 export PATH

@@ -1,0 +1,32 @@
+// ThinkPad-inspired themes: the iconic TrackPoint red as the dominant
+// accent. `thinkpad` is the dark default; `thinkpad-light` is the
+// crisp white companion.
+themes {
+    thinkpad {
+        fg "#f2f2f2"
+        bg "#0d0d0d"
+        black "#0d0d0d"
+        red "#e10600"
+        green "#e10600"
+        yellow "#d97706"
+        blue "#9c1f1f"
+        magenta "#ff3b3b"
+        cyan "#bdbdbd"
+        white "#f2f2f2"
+        orange "#e10600"
+    }
+
+    thinkpad-light {
+        fg "#1a1a1a"
+        bg "#fafafa"
+        black "#1a1a1a"
+        red "#c8102e"
+        green "#c8102e"
+        yellow "#a14d00"
+        blue "#7a1a1a"
+        magenta "#8b0000"
+        cyan "#5a5a5a"
+        white "#fafafa"
+        orange "#c8102e"
+    }
+}

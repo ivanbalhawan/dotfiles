@@ -1,6 +1,6 @@
 return {
     { "williamboman/mason.nvim",           opts = {} },
-    { "williamboman/mason-lspconfig.nvim", opts = { ensure_installed = { "ruff", "basedpyright" } } },
+    { "williamboman/mason-lspconfig.nvim", opts = { ensure_installed = { "ruff", "pylsp" } } },
     { "hrsh7th/cmp-nvim-lsp" },
     { "hrsh7th/cmp-buffer" },
     { "hrsh7th/cmp-path" },
@@ -19,19 +19,19 @@ return {
             local telescope_builtin = require("telescope.builtin")
             local cmp_capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-            vim.lsp.config("basedpyright", {
+            vim.lsp.config("pylsp", {
                 capabilities = cmp_capabilities,
                 settings = {
-                    basedpyright = {
-                        analysis = {
-                            typeCheckingMode = "basic",
-                            reportAttributeAccessIssue = "none",
-                            reportIndexIssue = "none",
+                    pylsp = {
+                        plugins = {
+                            pycodestyle = {
+                                maxLineLength = 100,
+                            },
                         },
                     },
                 },
             })
-            vim.lsp.enable("basedpyright")
+            vim.lsp.enable("pylsp")
 
             vim.lsp.config("ruff", {
                 settings = {

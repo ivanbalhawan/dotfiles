@@ -17,6 +17,13 @@ fi
 export PATH
 
 
+if command -v nvim &> /dev/null; then
+    export VISUAL_EDITOR="/usr/bin/nvim"
+    export EDITOR="/usr/bin/nvim"
+    export GIT_EDITOR="/usr/bin/nvim"
+    export VISUAL="/usr/bin/nvim"
+fi
+
 set -o vi
 bind -m vi-command 'Control-l: clear-screen'
 bind -m vi-insert 'Control-l: clear-screen'

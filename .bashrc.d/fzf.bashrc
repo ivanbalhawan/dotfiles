@@ -1,15 +1,8 @@
 if command -v fzf &> /dev/null; then
-    fzf-smart() {
-        if [ -n "$TMUX" ]; then
-            fzf-tmux -p -w 80% -h 60% "$@"
-        else
-            fzf "$@"
-        fi
-    }
 
     bring-from-downloads () {
         output_name=$1
-        filename=$(ls --no-quotes $HOME/Downloads | fzf-smart);
+        filename=$(ls --no-quotes $HOME/Downloads | fzf);
         if [[ -z $filename ]]; then
             echo "No file selected";
         else
@@ -20,14 +13,14 @@ if command -v fzf &> /dev/null; then
     gk() {
         branch=$1
         if [[ -z $branch ]]; then
-            git checkout $(git branch | fzf-smart | sed "s/^\*//");
+            git checkout $(git branch | fzf | sed "s/^\*//");
         else
             git checkout $branch;
         fi
     }
 
     gclone() {
-        identity=$(eza -f -I "*.pub|authorized_keys|known_hosts*" ~/.ssh | fzf-smart)
+        identity=$(eza -f -I "*.pub|authorized_keys|known_hosts*" ~/.ssh | fzf)
         if [[ -n $identity ]]; then
             git clone -c core.sshCommand="ssh -i ~/.ssh/$identity" $1 $2
         fi
@@ -37,19 +30,12 @@ if command -v fzf &> /dev/null; then
         tmp_file="/tmp/git-checkout-branches.txt";
         git branch -lra | sed "s/^\*//" > $tmp_file;
         git tag -l  >> $tmp_file;
-        cat $tmp_file | fzf-smart | sed "s/^\ *remotes\/\origin\///" | xargs git checkout;
+        cat $tmp_file | fzf | sed "s/^\ *remotes\/\origin\///" | xargs git checkout;
         rm $tmp_file;
     }
 
     # --- Smart fzf bindings for tmux-aware popups ---
     # Helper to pick fzf or fzf-tmux depending on environment
-    _fzf_cmd() {
-      if [[ -n "$TMUX" ]]; then
-        fzf-tmux -p -w 80% -h 60% "$@"
-      else
-        fzf "$@"
-      fi
-    }
 
     # ---------------------------
     # Ctrl-R → search shell history
@@ -58,7 +44,7 @@ if command -v fzf &> /dev/null; then
       local selected
       selected=$(
         HISTTIMEFORMAT= history |
-        _fzf_cmd --tac --no-sort --ansi --tiebreak=index |
+        fzf --tac --no-sort --ansi --tiebreak=index --scheme=history |
         sed 's/ *[0-9]* *//'
       ) || return
       READLINE_LINE="$selected"
@@ -74,7 +60,7 @@ if command -v fzf &> /dev/null; then
       local selected
       selected=$(
         command find . -type f 2> /dev/null |
-        _fzf_cmd --multi --preview 'bat --style=numbers --color=always {} || cat {}'
+        fzf --multi --preview 'bat --style=numbers --color=always {} || cat {}'
       ) || return
       READLINE_LINE="${READLINE_LINE}${selected}"
       READLINE_POINT=${#READLINE_LINE}
@@ -88,7 +74,7 @@ if command -v fzf &> /dev/null; then
       local dir
       dir=$(
         command find ${1:-.} -type d 2> /dev/null |
-        _fzf_cmd --preview 'tree -C {} | head -200'
+        fzf --preview 'tree -C {} | head -200'
       ) || return
       cd "$dir" || return
     }

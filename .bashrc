@@ -74,32 +74,6 @@ alias watch-mem='watch -n 2 grep -e "Dirty" -e "Writeback" /proc/meminfo'
 
 
 
-tma() {
-    if [ -n "$TMUX" ]; then
-        echo "Already inside a tmux instance!"
-        return 1
-    fi
-
-    if command -v fzf &> /dev/null; then
-        selected_session=$(tmux start && tmux ls -F '#{session_name}' | fzf-smart)
-        tmux a -t $selected_session
-    else
-        tmux a
-    fi
-
-}
-
-bring-from-downloads () {
-    output_name=$1
-    filename=$(ls --no-quotes $HOME/Downloads | fzf-smart);
-    if [[ -z $filename ]]; then
-        echo "No file selected";
-    else
-        mv -i "$HOME/Downloads/${filename}" ./$output_name;
-    fi
-}
-
-
 # User specific aliases and functions
 if [ -d ~/.bashrc.d ]; then
     for rc in ~/.bashrc.d/*; do

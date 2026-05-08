@@ -3,14 +3,14 @@ return {
     { "shaunsingh/nord.nvim", name = "nord" },
     { "ellisonleao/gruvbox.nvim", priority = 1000, config = true },
     { "ribru17/bamboo.nvim" },
-    { "Mofiqul/adwaita.nvim" },
+    { "rebelot/kanagawa.nvim" },
     { "Mofiqul/vscode.nvim" },
     { 
-        "rebelot/kanagawa.nvim",
+        "Mofiqul/adwaita.nvim",
         lazy = false,
         priority = 1000,
         config = function()
-            vim.cmd.colorscheme("kanagawa")
+            vim.cmd.colorscheme("adwaita")
         end,
     },
     {

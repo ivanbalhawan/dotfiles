@@ -16,6 +16,12 @@ fi
 
 export PATH
 
+if command -v claude &> /dev/null; then
+    export CLAUDE_CONFIG_DIR="/home/ivan/.config/claude-work"  # make work the default claude
+    alias claude-work="CLAUDE_CONFIG_DIR=/home/ivan/.config/claude-work claude"
+    alias claude-personal="CLAUDE_CONFIG_DIR=/home/ivan/.config/claude-personal claude"
+fi
+
 
 if command -v nvim &> /dev/null; then
     export VISUAL_EDITOR="/usr/bin/nvim"

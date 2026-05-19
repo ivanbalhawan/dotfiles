@@ -12,7 +12,7 @@ return {
         { "<leader>fp", function() require("telescope.builtin").registers() end,              desc = "Registers" },
         { "<leader>fv", function() require("telescope.builtin").lsp_document_symbols() end,  desc = "LSP symbols" },
         { "<leader>fr", function() require("telescope.builtin").commands() end,               desc = "Commands" },
-        { "<leader>ft", function() require("telescope.builtin").filetypes() end,              desc = "Filetypes" },
+        { "<leader>fT", function() require("telescope.builtin").filetypes() end,              desc = "Filetypes" },
         { "<leader>fm", function() require("telescope.builtin").marks() end,                  desc = "Marks" },
         { "<leader>fM", function() require("telescope.builtin").keymaps() end,               desc = "Keymaps" },
     },

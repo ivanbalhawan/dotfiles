@@ -19,6 +19,20 @@ return {
             local telescope_builtin = require("telescope.builtin")
             local cmp_capabilities = require("cmp_nvim_lsp").default_capabilities()
 
+            -- Neovim 0.12: JSON null is now vim.NIL (userdata) instead of Lua nil,
+            -- which breaks symbols_to_items when concatenating containerName.
+            local orig_symbols_to_items = vim.lsp.util.symbols_to_items
+            vim.lsp.util.symbols_to_items = function(symbols, bufnr)
+                local function fix(syms)
+                    for _, s in ipairs(syms or {}) do
+                        if type(s.containerName) ~= "string" then s.containerName = nil end
+                        fix(s.children)
+                    end
+                end
+                fix(symbols)
+                return orig_symbols_to_items(symbols, bufnr)
+            end
+
             vim.lsp.config("pylsp", {
                 capabilities = cmp_capabilities,
                 settings = {

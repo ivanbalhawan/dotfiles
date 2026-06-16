@@ -16,11 +16,16 @@ fi
 
 export PATH
 
-if command -v claude &> /dev/null; then
-    export CLAUDE_CONFIG_DIR="/home/ivan/.config/claude-work"  # make work the default claude
-    alias claude-work="CLAUDE_CONFIG_DIR=/home/ivan/.config/claude-work claude"
-    alias claude-personal="CLAUDE_CONFIG_DIR=/home/ivan/.config/claude-personal claude"
-fi
+CLAUDE_WORK_DIR='~/.config/claude-work'
+CLAUDE_PERSONAL_DIR='~/.config/claude-personal'
+export CLAUDE_CONFIG_DIR=$CLAUDE_PERSONAL_DIR
+alias claudia="CLAUDE_CONFIG_DIR=$CLAUDE_WORK_DIR claude"
+
+# if command -v claude &> /dev/null; then
+#     export CLAUDE_CONFIG_DIR="/home/ivan/.config/claude-work"  # make work the default claude
+#     alias claude-work="CLAUDE_CONFIG_DIR=/home/ivan/.config/claude-work claude"
+#     alias claude-personal="CLAUDE_CONFIG_DIR=/home/ivan/.config/claude-personal claude"
+# fi
 
 
 if command -v nvim &> /dev/null; then

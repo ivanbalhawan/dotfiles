@@ -16,8 +16,8 @@ fi
 
 export PATH
 
-CLAUDE_WORK_DIR='~/.config/claude-work'
-CLAUDE_PERSONAL_DIR='~/.config/claude-personal'
+CLAUDE_WORK_DIR="$HOME/.config/claude-work"
+CLAUDE_PERSONAL_DIR="$HOME/.config/claude-personal"
 export CLAUDE_CONFIG_DIR=$CLAUDE_PERSONAL_DIR
 alias claudia="CLAUDE_CONFIG_DIR=$CLAUDE_WORK_DIR claude"
 

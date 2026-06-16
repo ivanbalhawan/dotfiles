@@ -9,11 +9,13 @@ return {
     },
 
     {
-        "numToStr/Comment.nvim",
-        opts = {
-            ignore = "^$",
-            toggler = { line = "<leader>cc", block = "<leader>bc" },
-            opleader = { line = "<leader>cc", block = "<leader>bc" },
+        "folke/ts-comments.nvim",
+        event = "VeryLazy",
+        opts = {},
+        keys = {
+            { "<leader>cc", "gcc", desc = "Toggle comment line",  remap = true },
+            { "<leader>bc", "gbc", desc = "Toggle comment block", remap = true },
+            { "<leader>cc", "gc",  desc = "Toggle comment",       mode = "v",  remap = true },
         },
     },
 

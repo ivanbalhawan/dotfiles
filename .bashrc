@@ -46,6 +46,11 @@ get_container_name () {
 }
 
 
+if [ -f "/run/.containerenv" ]; then
+    PS1='󰦬 '
+else
+    PS1=''
+fi
 
 PS1='\[\033[1m\]\u@'
 if [ -f "/run/.containerenv" ]; then
@@ -58,7 +63,6 @@ PS1=$PS1'\[\033[31m\] \W\n'
 PS1=$PS1'\[\033[31m\]λ \[\033[0m\]'
 export PS1
 
-alias tml='tmux list-sessions'
 if command -v eza &> /dev/null; then
     alias ls='eza --icons'
     alias ll='eza -lh --icons'

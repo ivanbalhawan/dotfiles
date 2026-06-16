@@ -4,5 +4,6 @@ __pycache__
 **/history.sqlite
 **/userstate.cbor
 **/lazy-lock.json
+nvim/lazyvim.json
 tmux/plugins
 alacritty/current_theme.toml

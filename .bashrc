@@ -47,7 +47,7 @@ get_container_name () {
 
 
 if [ -f "/run/.containerenv" ]; then
-    PS1='󰦬 '
+    PS1='󰖷 '
 else
     PS1=''
 fi

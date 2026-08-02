@@ -1,0 +1,13 @@
+[Unit]
+Description=Ollama Server
+After=network-online.target
+
+[Service]
+ExecStart=/usr/local/bin/ollama serve
+Environment="OLLAMA_IGPU_ENABLE=1"
+Environment="OLLAMA_VULKAN=1"
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

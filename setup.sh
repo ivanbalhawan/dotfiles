@@ -21,8 +21,8 @@ ln -sr $HOME/dotfiles/kanata/kanata.kbd $HOME/.config/kanata
 echo "copying .basrc, .inputrc, and .bash_profile"
 mv $HOME/.bashrc $HOME/.bashrc.bak
 mv $HOME/.bash_profile $HOME/.bash_profile.bak
-cp $HOME/.bash_profile.base $HOME/.bash_profile
 ln -s $HOME/dotfiles/.bashrc* $HOME/
+ln -s $HOME/dotfiles/.bash_profile.base $HOME/.bash_profile
 ln -s $HOME/dotfiles/.inputrc $HOME/
 
 echo "adding udev rules"
